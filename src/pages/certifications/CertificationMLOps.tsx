@@ -3,24 +3,24 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Code, Trophy, Clock, Users } from "lucide-react";
+import { Workflow, GitBranch, Monitor, Award } from "lucide-react";
 
-const HackathonIA = () => {
+const CertificationMLOps = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
       <Header />
       
-      <section className="py-20 bg-gradient-to-r from-cyan-600 to-blue-600">
+      <section className="py-20 bg-gradient-to-r from-slate-600 to-gray-600">
         <div className="container mx-auto px-4 text-center">
-          <Code className="h-16 w-16 text-white mx-auto mb-6" />
+          <Workflow className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">
-            Hackathon IA
+            Certification MLOps
           </h1>
-          <p className="text-xl text-cyan-100 mb-8 max-w-3xl mx-auto">
-            48h pour créer la prochaine innovation IA
+          <p className="text-xl text-slate-100 mb-8 max-w-3xl mx-auto">
+            Maîtrisez le déploiement et la maintenance de modèles ML en production
           </p>
-          <Button size="lg" className="bg-white text-cyan-600 hover:bg-gray-100">
-            S'inscrire au hackathon
+          <Button size="lg" className="bg-white text-slate-600 hover:bg-gray-100">
+            Obtenir la certification
           </Button>
         </div>
       </section>
@@ -30,45 +30,45 @@ const HackathonIA = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <Card>
               <CardHeader>
-                <Clock className="h-12 w-12 text-cyan-600 mb-4" />
-                <CardTitle>48 heures</CardTitle>
+                <GitBranch className="h-12 w-12 text-slate-600 mb-4" />
+                <CardTitle>Pipeline ML</CardTitle>
                 <CardDescription>
-                  Challenge intensif
+                  Automatisation complète
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Développez votre solution IA en un weekend.
+                  Construisez des pipelines ML robustes et scalables.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Users className="h-12 w-12 text-cyan-600 mb-4" />
-                <CardTitle>Équipes de 4</CardTitle>
+                <Monitor className="h-12 w-12 text-slate-600 mb-4" />
+                <CardTitle>Monitoring avancé</CardTitle>
                 <CardDescription>
-                  Collaboration créative
+                  Surveillance continue
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Formez une équipe multidisciplinaire pour maximiser vos chances.
+                  Surveillez la performance et la dérive des modèles.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Trophy className="h-12 w-12 text-cyan-600 mb-4" />
-                <CardTitle>50k€ de prix</CardTitle>
+                <Award className="h-12 w-12 text-slate-600 mb-4" />
+                <CardTitle>Certification reconnue</CardTitle>
                 <CardDescription>
-                  Récompenses exceptionnelles
+                  Standard industrie
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Prix en espèces et opportunités d'incubation pour les gagnants.
+                  Certification reconnue par les leaders tech.
                 </p>
               </CardContent>
             </Card>
@@ -81,4 +81,4 @@ const HackathonIA = () => {
   );
 };
 
-export default HackathonIA;
+export default CertificationMLOps;

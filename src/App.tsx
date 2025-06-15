@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -135,6 +134,12 @@ import PolitiqueQualite from "./pages/PolitiqueQualite";
 import CertificationISO from "./pages/CertificationISO";
 import LabIA from "./pages/LabIA";
 import NotFound from "./pages/NotFound";
+import MediaIA from "./pages/industries/MediaIA";
+import TourismIA from "./pages/industries/TourismIA";
+import LegalIA from "./pages/industries/LegalIA";
+import FormationExecutives from "./pages/formations/FormationExecutives";
+import FormationEthiqueIA from "./pages/formations/FormationEthiqueIA";
+import CertificationMLOps from "./pages/certifications/CertificationMLOps";
 
 const queryClient = new QueryClient();
 
@@ -275,6 +280,12 @@ const App = () => (
           <Route path="/lab-ia" element={<LabIA />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/industries/media" element={<MediaIA />} />
+          <Route path="/industries/tourism" element={<TourismIA />} />
+          <Route path="/industries/legal" element={<LegalIA />} />
+          <Route path="/formations/executives" element={<FormationExecutives />} />
+          <Route path="/formations/ethique-ia" element={<FormationEthiqueIA />} />
+          <Route path="/certifications/mlops" element={<CertificationMLOps />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

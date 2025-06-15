@@ -3,24 +3,24 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Code, Trophy, Clock, Users } from "lucide-react";
+import { Scale, FileText, Search, Shield } from "lucide-react";
 
-const HackathonIA = () => {
+const LegalIA = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <Header />
       
-      <section className="py-20 bg-gradient-to-r from-cyan-600 to-blue-600">
+      <section className="py-20 bg-gradient-to-r from-gray-600 to-slate-600">
         <div className="container mx-auto px-4 text-center">
-          <Code className="h-16 w-16 text-white mx-auto mb-6" />
+          <Scale className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">
-            Hackathon IA
+            IA pour le Secteur Juridique
           </h1>
-          <p className="text-xl text-cyan-100 mb-8 max-w-3xl mx-auto">
-            48h pour créer la prochaine innovation IA
+          <p className="text-xl text-gray-100 mb-8 max-w-3xl mx-auto">
+            Automatisez la recherche juridique et l'analyse de documents
           </p>
-          <Button size="lg" className="bg-white text-cyan-600 hover:bg-gray-100">
-            S'inscrire au hackathon
+          <Button size="lg" className="bg-white text-gray-600 hover:bg-gray-100">
+            Moderniser le droit
           </Button>
         </div>
       </section>
@@ -30,45 +30,45 @@ const HackathonIA = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <Card>
               <CardHeader>
-                <Clock className="h-12 w-12 text-cyan-600 mb-4" />
-                <CardTitle>48 heures</CardTitle>
+                <FileText className="h-12 w-12 text-gray-600 mb-4" />
+                <CardTitle>Analyse de contrats</CardTitle>
                 <CardDescription>
-                  Challenge intensif
+                  Review automatisé
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Développez votre solution IA en un weekend.
+                  Analysez et révisez les contrats automatiquement.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Users className="h-12 w-12 text-cyan-600 mb-4" />
-                <CardTitle>Équipes de 4</CardTitle>
+                <Search className="h-12 w-12 text-gray-600 mb-4" />
+                <CardTitle>Recherche jurisprudentielle</CardTitle>
                 <CardDescription>
-                  Collaboration créative
+                  Base de données intelligente
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Formez une équipe multidisciplinaire pour maximiser vos chances.
+                  Trouvez rapidement les précédents juridiques pertinents.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Trophy className="h-12 w-12 text-cyan-600 mb-4" />
-                <CardTitle>50k€ de prix</CardTitle>
+                <Shield className="h-12 w-12 text-gray-600 mb-4" />
+                <CardTitle>Conformité automatisée</CardTitle>
                 <CardDescription>
-                  Récompenses exceptionnelles
+                  Monitoring réglementaire
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Prix en espèces et opportunités d'incubation pour les gagnants.
+                  Surveillez les changements réglementaires en continu.
                 </p>
               </CardContent>
             </Card>
@@ -81,4 +81,4 @@ const HackathonIA = () => {
   );
 };
 
-export default HackathonIA;
+export default LegalIA;
