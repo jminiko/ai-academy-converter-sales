@@ -3,24 +3,24 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Shield, Scale, Users, Eye } from "lucide-react";
+import { GraduationCap, BookOpen, Users, Brain } from "lucide-react";
 
-const IAEthiqueResponsable = () => {
+const IAEducation = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-teal-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Header />
       
-      <section className="py-20 bg-gradient-to-r from-teal-600 to-green-600">
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-600">
         <div className="container mx-auto px-4 text-center">
-          <Shield className="h-16 w-16 text-white mx-auto mb-6" />
+          <GraduationCap className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">
-            IA Éthique & Responsable
+            IA pour l'Éducation
           </h1>
-          <p className="text-xl text-teal-100 mb-8 max-w-3xl mx-auto">
-            Développez une IA respectueuse des valeurs humaines et éthiques
+          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+            Personnalisez l'apprentissage avec l'intelligence artificielle
           </p>
-          <Button size="lg" className="bg-white text-teal-600 hover:bg-gray-100">
-            IA responsable
+          <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+            Apprendre avec l'IA
           </Button>
         </div>
       </section>
@@ -30,45 +30,45 @@ const IAEthiqueResponsable = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <Card>
               <CardHeader>
-                <Scale className="h-12 w-12 text-teal-600 mb-4" />
-                <CardTitle>Équité algorithmique</CardTitle>
+                <BookOpen className="h-12 w-12 text-blue-600 mb-4" />
+                <CardTitle>Parcours adaptatifs</CardTitle>
                 <CardDescription>
-                  Biais éliminés
+                  Apprentissage personnalisé
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Créez des algorithmes équitables pour tous.
+                  Créez des parcours d'apprentissage sur mesure.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Users className="h-12 w-12 text-teal-600 mb-4" />
-                <CardTitle>Impact social</CardTitle>
+                <Users className="h-12 w-12 text-blue-600 mb-4" />
+                <CardTitle>Tuteurs virtuels</CardTitle>
                 <CardDescription>
-                  Bien-être collectif
+                  Assistance 24/7
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Évaluez l'impact social de vos solutions IA.
+                  Offrez un support d'apprentissage permanent.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Eye className="h-12 w-12 text-teal-600 mb-4" />
-                <CardTitle>Transparence IA</CardTitle>
+                <Brain className="h-12 w-12 text-blue-600 mb-4" />
+                <CardTitle>Évaluation intelligente</CardTitle>
                 <CardDescription>
-                  Explicabilité totale
+                  Feedback automatisé
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Rendez vos modèles IA compréhensibles.
+                  Évaluez les progrès avec l'IA.
                 </p>
               </CardContent>
             </Card>
@@ -81,4 +81,4 @@ const IAEthiqueResponsable = () => {
   );
 };
 
-export default IAEthiqueResponsable;
+export default IAEducation;

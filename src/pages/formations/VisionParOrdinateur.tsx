@@ -3,24 +3,24 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Shield, Scale, Users, Eye } from "lucide-react";
+import { Eye, Camera, Image, Scan } from "lucide-react";
 
-const IAEthiqueResponsable = () => {
+const VisionParOrdinateur = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-teal-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-indigo-50 to-white">
       <Header />
       
-      <section className="py-20 bg-gradient-to-r from-teal-600 to-green-600">
+      <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600">
         <div className="container mx-auto px-4 text-center">
-          <Shield className="h-16 w-16 text-white mx-auto mb-6" />
+          <Eye className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">
-            IA Éthique & Responsable
+            Formation Vision par Ordinateur
           </h1>
-          <p className="text-xl text-teal-100 mb-8 max-w-3xl mx-auto">
-            Développez une IA respectueuse des valeurs humaines et éthiques
+          <p className="text-xl text-indigo-100 mb-8 max-w-3xl mx-auto">
+            Maîtrisez l'analyse et la reconnaissance d'images avec l'IA
           </p>
-          <Button size="lg" className="bg-white text-teal-600 hover:bg-gray-100">
-            IA responsable
+          <Button size="lg" className="bg-white text-indigo-600 hover:bg-gray-100">
+            Voir avec l'IA
           </Button>
         </div>
       </section>
@@ -30,45 +30,45 @@ const IAEthiqueResponsable = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <Card>
               <CardHeader>
-                <Scale className="h-12 w-12 text-teal-600 mb-4" />
-                <CardTitle>Équité algorithmique</CardTitle>
+                <Camera className="h-12 w-12 text-indigo-600 mb-4" />
+                <CardTitle>Détection d'objets</CardTitle>
                 <CardDescription>
-                  Biais éliminés
+                  Recognition avancée
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Créez des algorithmes équitables pour tous.
+                  Identifiez et localisez des objets dans les images.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Users className="h-12 w-12 text-teal-600 mb-4" />
-                <CardTitle>Impact social</CardTitle>
+                <Image className="h-12 w-12 text-indigo-600 mb-4" />
+                <CardTitle>Classification d'images</CardTitle>
                 <CardDescription>
-                  Bien-être collectif
+                  Catégorisation intelligente
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Évaluez l'impact social de vos solutions IA.
+                  Classifiez automatiquement vos contenus visuels.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Eye className="h-12 w-12 text-teal-600 mb-4" />
-                <CardTitle>Transparence IA</CardTitle>
+                <Scan className="h-12 w-12 text-indigo-600 mb-4" />
+                <CardTitle>Analyse faciale</CardTitle>
                 <CardDescription>
-                  Explicabilité totale
+                  Reconnaissance biométrique
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Rendez vos modèles IA compréhensibles.
+                  Développez des systèmes de reconnaissance faciale.
                 </p>
               </CardContent>
             </Card>
@@ -81,4 +81,4 @@ const IAEthiqueResponsable = () => {
   );
 };
 
-export default IAEthiqueResponsable;
+export default VisionParOrdinateur;

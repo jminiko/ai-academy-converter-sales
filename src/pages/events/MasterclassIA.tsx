@@ -3,24 +3,24 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Shield, Scale, Users, Eye } from "lucide-react";
+import { Star, Clock, Users, Trophy } from "lucide-react";
 
-const IAEthiqueResponsable = () => {
+const MasterclassIA = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-teal-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
       <Header />
       
-      <section className="py-20 bg-gradient-to-r from-teal-600 to-green-600">
+      <section className="py-20 bg-gradient-to-r from-amber-600 to-yellow-600">
         <div className="container mx-auto px-4 text-center">
-          <Shield className="h-16 w-16 text-white mx-auto mb-6" />
+          <Star className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">
-            IA Éthique & Responsable
+            Masterclass IA Avancée
           </h1>
-          <p className="text-xl text-teal-100 mb-8 max-w-3xl mx-auto">
-            Développez une IA respectueuse des valeurs humaines et éthiques
+          <p className="text-xl text-amber-100 mb-8 max-w-3xl mx-auto">
+            Formation d'excellence avec les meilleurs experts mondiaux
           </p>
-          <Button size="lg" className="bg-white text-teal-600 hover:bg-gray-100">
-            IA responsable
+          <Button size="lg" className="bg-white text-amber-600 hover:bg-gray-100">
+            Rejoindre la masterclass
           </Button>
         </div>
       </section>
@@ -30,45 +30,45 @@ const IAEthiqueResponsable = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <Card>
               <CardHeader>
-                <Scale className="h-12 w-12 text-teal-600 mb-4" />
-                <CardTitle>Équité algorithmique</CardTitle>
+                <Clock className="h-12 w-12 text-amber-600 mb-4" />
+                <CardTitle>3 jours intensifs</CardTitle>
                 <CardDescription>
-                  Biais éliminés
+                  Formation immersive
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Créez des algorithmes équitables pour tous.
+                  Approfondissez vos compétences avec les experts.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Users className="h-12 w-12 text-teal-600 mb-4" />
-                <CardTitle>Impact social</CardTitle>
+                <Users className="h-12 w-12 text-amber-600 mb-4" />
+                <CardTitle>Groupe limité</CardTitle>
                 <CardDescription>
-                  Bien-être collectif
+                  Maximum 20 participants
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Évaluez l'impact social de vos solutions IA.
+                  Bénéficiez d'un accompagnement personnalisé.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Eye className="h-12 w-12 text-teal-600 mb-4" />
-                <CardTitle>Transparence IA</CardTitle>
+                <Trophy className="h-12 w-12 text-amber-600 mb-4" />
+                <CardTitle>Certification d'excellence</CardTitle>
                 <CardDescription>
-                  Explicabilité totale
+                  Reconnaissance premium
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Rendez vos modèles IA compréhensibles.
+                  Obtenez un certificat d'expert IA reconnu.
                 </p>
               </CardContent>
             </Card>
@@ -81,4 +81,4 @@ const IAEthiqueResponsable = () => {
   );
 };
 
-export default IAEthiqueResponsable;
+export default MasterclassIA;

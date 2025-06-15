@@ -3,24 +3,24 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Shield, Scale, Users, Eye } from "lucide-react";
+import { Rocket, TrendingUp, Globe, Zap } from "lucide-react";
 
-const IAEthiqueResponsable = () => {
+const RevolutionIA2025 = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-teal-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-red-50 to-white">
       <Header />
       
-      <section className="py-20 bg-gradient-to-r from-teal-600 to-green-600">
+      <section className="py-20 bg-gradient-to-r from-red-600 to-pink-600">
         <div className="container mx-auto px-4 text-center">
-          <Shield className="h-16 w-16 text-white mx-auto mb-6" />
+          <Rocket className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">
-            IA Éthique & Responsable
+            La Révolution IA 2025
           </h1>
-          <p className="text-xl text-teal-100 mb-8 max-w-3xl mx-auto">
-            Développez une IA respectueuse des valeurs humaines et éthiques
+          <p className="text-xl text-red-100 mb-8 max-w-3xl mx-auto">
+            Découvrez les avancées majeures qui transformeront notre monde
           </p>
-          <Button size="lg" className="bg-white text-teal-600 hover:bg-gray-100">
-            IA responsable
+          <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100">
+            Lire l'article
           </Button>
         </div>
       </section>
@@ -30,45 +30,45 @@ const IAEthiqueResponsable = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <Card>
               <CardHeader>
-                <Scale className="h-12 w-12 text-teal-600 mb-4" />
-                <CardTitle>Équité algorithmique</CardTitle>
+                <TrendingUp className="h-12 w-12 text-red-600 mb-4" />
+                <CardTitle>Croissance exponentielle</CardTitle>
                 <CardDescription>
-                  Biais éliminés
+                  Adoption massive
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Créez des algorithmes équitables pour tous.
+                  L'IA générative atteint 1 milliard d'utilisateurs.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Users className="h-12 w-12 text-teal-600 mb-4" />
-                <CardTitle>Impact social</CardTitle>
+                <Globe className="h-12 w-12 text-red-600 mb-4" />
+                <CardTitle>Impact mondial</CardTitle>
                 <CardDescription>
-                  Bien-être collectif
+                  Transformation globale
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Évaluez l'impact social de vos solutions IA.
+                  Tous les secteurs sont touchés par la révolution IA.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Eye className="h-12 w-12 text-teal-600 mb-4" />
-                <CardTitle>Transparence IA</CardTitle>
+                <Zap className="h-12 w-12 text-red-600 mb-4" />
+                <CardTitle>Innovations breakthrough</CardTitle>
                 <CardDescription>
-                  Explicabilité totale
+                  Percées technologiques
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Rendez vos modèles IA compréhensibles.
+                  Des avancées qui redéfinissent les possibilités.
                 </p>
               </CardContent>
             </Card>
@@ -81,4 +81,4 @@ const IAEthiqueResponsable = () => {
   );
 };
 
-export default IAEthiqueResponsable;
+export default RevolutionIA2025;
