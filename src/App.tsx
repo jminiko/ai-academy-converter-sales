@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -146,6 +147,13 @@ import WebinaireMensuel from "./pages/events/WebinaireMensuel";
 import Atelier from "./pages/events/Atelier";
 import EnergyIA from "./pages/industries/EnergyIA";
 import SportIA from "./pages/industries/SportIA";
+import HospitalityIA from "./pages/industries/HospitalityIA";
+import AviationIA from "./pages/industries/AviationIA";
+import GamingIA from "./pages/industries/GamingIA";
+import RealEstateIA from "./pages/industries/RealEstateIA";
+import ConsultingStrategique from "./pages/services/ConsultingStrategique";
+import FormationPersonnalisee from "./pages/services/FormationPersonnalisee";
+import WorkshopAutomatisation from "./pages/events/WorkshopAutomatisation";
 
 const queryClient = new QueryClient();
 
@@ -298,6 +306,13 @@ const App = () => (
           <Route path="/events/atelier" element={<Atelier />} />
           <Route path="/industries/energy" element={<EnergyIA />} />
           <Route path="/industries/sport" element={<SportIA />} />
+          <Route path="/industries/hospitality" element={<HospitalityIA />} />
+          <Route path="/industries/aviation" element={<AviationIA />} />
+          <Route path="/industries/gaming" element={<GamingIA />} />
+          <Route path="/industries/real-estate" element={<RealEstateIA />} />
+          <Route path="/services/consulting-strategique" element={<ConsultingStrategique />} />
+          <Route path="/services/formation-personnalisee" element={<FormationPersonnalisee />} />
+          <Route path="/events/workshop-automatisation" element={<WorkshopAutomatisation />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
