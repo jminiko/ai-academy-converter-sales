@@ -3,24 +3,24 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Gamepad2, Trophy, Target, Zap } from "lucide-react";
+import { Trophy, Activity, Target, BarChart3 } from "lucide-react";
 
-const ReinforcementLearning = () => {
+const SportIA = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-red-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Header />
       
-      <section className="py-20 bg-gradient-to-r from-red-600 to-orange-600">
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-cyan-600">
         <div className="container mx-auto px-4 text-center">
-          <Gamepad2 className="h-16 w-16 text-white mx-auto mb-6" />
+          <Trophy className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">
-            Formation Reinforcement Learning
+            IA dans le Sport
           </h1>
-          <p className="text-xl text-red-100 mb-8 max-w-3xl mx-auto">
-            Maîtrisez l'apprentissage par renforcement et créez des agents intelligents
+          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+            Optimisez les performances sportives et l'analyse tactique avec l'IA
           </p>
-          <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100">
-            Entraîner des agents IA
+          <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+            Performer avec l'IA
           </Button>
         </div>
       </section>
@@ -30,45 +30,45 @@ const ReinforcementLearning = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <Card>
               <CardHeader>
-                <Trophy className="h-12 w-12 text-red-600 mb-4" />
-                <CardTitle>Algorithmes Q-Learning</CardTitle>
+                <Activity className="h-12 w-12 text-blue-600 mb-4" />
+                <CardTitle>Analyse de performance</CardTitle>
                 <CardDescription>
-                  Apprentissage par récompenses
+                  Optimisation des athlètes
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Implémentez des algorithmes d'apprentissage par renforcement.
+                  Analysez en temps réel les performances des sportifs.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Target className="h-12 w-12 text-red-600 mb-4" />
-                <CardTitle>Agents autonomes</CardTitle>
+                <Target className="h-12 w-12 text-blue-600 mb-4" />
+                <CardTitle>Stratégie tactique</CardTitle>
                 <CardDescription>
-                  IA qui apprend par l'action
+                  IA d'analyse de jeu
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Créez des agents qui s'améliorent automatiquement.
+                  Développez des stratégies gagnantes basées sur la data.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Zap className="h-12 w-12 text-red-600 mb-4" />
-                <CardTitle>Applications temps réel</CardTitle>
+                <BarChart3 className="h-12 w-12 text-blue-600 mb-4" />
+                <CardTitle>Prévention blessures</CardTitle>
                 <CardDescription>
-                  Jeux et robotique
+                  Santé des sportifs
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Appliquez le RL dans des environnements dynamiques.
+                  Prévenez les blessures grâce à l'analyse prédictive.
                 </p>
               </CardContent>
             </Card>
@@ -81,4 +81,4 @@ const ReinforcementLearning = () => {
   );
 };
 
-export default ReinforcementLearning;
+export default SportIA;

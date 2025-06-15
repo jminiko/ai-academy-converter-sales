@@ -140,6 +140,12 @@ import LegalIA from "./pages/industries/LegalIA";
 import FormationExecutives from "./pages/formations/FormationExecutives";
 import FormationEthiqueIA from "./pages/formations/FormationEthiqueIA";
 import CertificationMLOps from "./pages/certifications/CertificationMLOps";
+import Ethique from "./pages/formations/Ethique";
+import NoCode from "./pages/formations/NoCode";
+import WebinaireMensuel from "./pages/events/WebinaireMensuel";
+import Atelier from "./pages/events/Atelier";
+import EnergyIA from "./pages/industries/EnergyIA";
+import SportIA from "./pages/industries/SportIA";
 
 const queryClient = new QueryClient();
 
@@ -286,6 +292,12 @@ const App = () => (
           <Route path="/formations/executives" element={<FormationExecutives />} />
           <Route path="/formations/ethique-ia" element={<FormationEthiqueIA />} />
           <Route path="/certifications/mlops" element={<CertificationMLOps />} />
+          <Route path="/formations/ethique" element={<Ethique />} />
+          <Route path="/formations/no-code" element={<NoCode />} />
+          <Route path="/events/webinaire-mensuel" element={<WebinaireMensuel />} />
+          <Route path="/events/atelier" element={<Atelier />} />
+          <Route path="/industries/energy" element={<EnergyIA />} />
+          <Route path="/industries/sport" element={<SportIA />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

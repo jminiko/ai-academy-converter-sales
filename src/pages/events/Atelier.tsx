@@ -3,24 +3,24 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Gamepad2, Trophy, Target, Zap } from "lucide-react";
+import { Wrench, Clock, Users, Award } from "lucide-react";
 
-const ReinforcementLearning = () => {
+const Atelier = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-red-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-indigo-50 to-white">
       <Header />
       
-      <section className="py-20 bg-gradient-to-r from-red-600 to-orange-600">
+      <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600">
         <div className="container mx-auto px-4 text-center">
-          <Gamepad2 className="h-16 w-16 text-white mx-auto mb-6" />
+          <Wrench className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">
-            Formation Reinforcement Learning
+            Ateliers Pratiques IA
           </h1>
-          <p className="text-xl text-red-100 mb-8 max-w-3xl mx-auto">
-            Maîtrisez l'apprentissage par renforcement et créez des agents intelligents
+          <p className="text-xl text-indigo-100 mb-8 max-w-3xl mx-auto">
+            Sessions hands-on pour apprendre en pratiquant
           </p>
-          <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100">
-            Entraîner des agents IA
+          <Button size="lg" className="bg-white text-indigo-600 hover:bg-gray-100">
+            Participer aux ateliers
           </Button>
         </div>
       </section>
@@ -30,45 +30,45 @@ const ReinforcementLearning = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <Card>
               <CardHeader>
-                <Trophy className="h-12 w-12 text-red-600 mb-4" />
-                <CardTitle>Algorithmes Q-Learning</CardTitle>
+                <Clock className="h-12 w-12 text-indigo-600 mb-4" />
+                <CardTitle>3h d'immersion</CardTitle>
                 <CardDescription>
-                  Apprentissage par récompenses
+                  Format intensif
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Implémentez des algorithmes d'apprentissage par renforcement.
+                  Ateliers pratiques de 3h pour une immersion complète.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Target className="h-12 w-12 text-red-600 mb-4" />
-                <CardTitle>Agents autonomes</CardTitle>
+                <Users className="h-12 w-12 text-indigo-600 mb-4" />
+                <CardTitle>Groupes de 8</CardTitle>
                 <CardDescription>
-                  IA qui apprend par l'action
+                  Accompagnement personnalisé
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Créez des agents qui s'améliorent automatiquement.
+                  Petits groupes pour un suivi personnalisé optimal.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Zap className="h-12 w-12 text-red-600 mb-4" />
-                <CardTitle>Applications temps réel</CardTitle>
+                <Award className="h-12 w-12 text-indigo-600 mb-4" />
+                <CardTitle>Certificat de participation</CardTitle>
                 <CardDescription>
-                  Jeux et robotique
+                  Reconnaissance officielle
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Appliquez le RL dans des environnements dynamiques.
+                  Obtenez une attestation de participation reconnue.
                 </p>
               </CardContent>
             </Card>
@@ -81,4 +81,4 @@ const ReinforcementLearning = () => {
   );
 };
 
-export default ReinforcementLearning;
+export default Atelier;
