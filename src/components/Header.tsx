@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
 import { Link } from "react-router-dom";
@@ -26,6 +25,11 @@ export const Header = () => {
               <Link to="/formations/ia-generative" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">IA Générative</Link>
               <Link to="/formations/chatgpt-pro" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">ChatGPT Pro</Link>
               <Link to="/formations/automatisation-ia" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Automatisation IA</Link>
+              <Link to="/formations/prompt-engineering" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Prompt Engineering</Link>
+              <Link to="/formations/openai-api" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">API OpenAI</Link>
+              <Link to="/formations/microsoft-copilot" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Microsoft Copilot</Link>
+              <Link to="/formations/google-bard" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Google Bard</Link>
+              <Link to="/formations/claude-ai" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Claude AI</Link>
             </div>
           </div>
           

@@ -16,6 +16,11 @@ import Testimonials from "./pages/Testimonials";
 import IAGenerative from "./pages/formations/IAGenerative";
 import ChatGPTPro from "./pages/formations/ChatGPTPro";
 import AutomatisationIA from "./pages/formations/AutomatisationIA";
+import PromptEngineering from "./pages/formations/PromptEngineering";
+import OpenAIAPI from "./pages/formations/OpenAIAPI";
+import MicrosoftCopilot from "./pages/formations/MicrosoftCopilot";
+import GoogleBard from "./pages/formations/GoogleBard";
+import ClaudeAI from "./pages/formations/ClaudeAI";
 import Consulting from "./pages/services/Consulting";
 import Implementation from "./pages/services/Implementation";
 import Support from "./pages/services/Support";
@@ -35,6 +40,11 @@ const App = () => (
           <Route path="/formations/ia-generative" element={<IAGenerative />} />
           <Route path="/formations/chatgpt-pro" element={<ChatGPTPro />} />
           <Route path="/formations/automatisation-ia" element={<AutomatisationIA />} />
+          <Route path="/formations/prompt-engineering" element={<PromptEngineering />} />
+          <Route path="/formations/openai-api" element={<OpenAIAPI />} />
+          <Route path="/formations/microsoft-copilot" element={<MicrosoftCopilot />} />
+          <Route path="/formations/google-bard" element={<GoogleBard />} />
+          <Route path="/formations/claude-ai" element={<ClaudeAI />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/consulting" element={<Consulting />} />
           <Route path="/services/implementation" element={<Implementation />} />
