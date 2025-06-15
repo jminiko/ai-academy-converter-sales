@@ -161,6 +161,12 @@ import IAConversationnelle from "./pages/formations/IAConversationnelle";
 import BootcampIA from "./pages/events/BootcampIA";
 import TransformationDigitale from "./pages/services/TransformationDigitale";
 import AssuranceIA from "./pages/industries/AssuranceIA";
+import BlockchainIA from "./pages/formations/BlockchainIA";
+import RobotiqueIA from "./pages/formations/RobotiqueIA";
+import CoderIA from "./pages/outils/CoderIA";
+import PerplexityAI from "./pages/outils/PerplexityAI";
+import Logistique from "./pages/secteurs/Logistique";
+import HackerIA from "./pages/events/HackerIA";
 
 const queryClient = new QueryClient();
 
@@ -193,6 +199,8 @@ const App = () => (
           <Route path="/formations/big-data" element={<BigData />} />
           <Route path="/formations/mlflow-ops" element={<MLFlowOps />} />
           <Route path="/formations/docker" element={<Docker />} />
+          <Route path="/formations/blockchain-ia" element={<BlockchainIA />} />
+          <Route path="/formations/robotique-ia" element={<RobotiqueIA />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/consulting" element={<Consulting />} />
           <Route path="/services/implementation" element={<Implementation />} />
@@ -209,6 +217,7 @@ const App = () => (
           <Route path="/secteurs/immobilier" element={<Immobilier />} />
           <Route path="/secteurs/agriculture" element={<Agriculture />} />
           <Route path="/secteurs/transport" element={<Transport />} />
+          <Route path="/secteurs/logistique" element={<Logistique />} />
           <Route path="/industries/manufacturing" element={<ManufacturingIA />} />
           <Route path="/industries/banking" element={<BankingIA />} />
           <Route path="/outils/chatgpt" element={<ChatGPTOutil />} />
@@ -217,6 +226,8 @@ const App = () => (
           <Route path="/outils/runway-ml" element={<RunwayML />} />
           <Route path="/outils/notion-ai" element={<NotionAI />} />
           <Route path="/outils/jasper-ai" element={<JasperAI />} />
+          <Route path="/outils/coder-ia" element={<CoderIA />} />
+          <Route path="/outils/perplexity-ai" element={<PerplexityAI />} />
           <Route path="/technologies/langchain" element={<LangChain />} />
           <Route path="/technologies/mlops" element={<MLOps />} />
           <Route path="/technologies/huggingface" element={<HuggingFace />} />
@@ -265,6 +276,7 @@ const App = () => (
           <Route path="/events/workshop-chatgpt" element={<WorkshopChatGPT />} />
           <Route path="/events/sommet-ia-2024" element={<SommetIA2024 />} />
           <Route path="/events/hackathon-ia" element={<HackathonIA />} />
+          <Route path="/events/hacker-ia" element={<HackerIA />} />
           <Route path="/certifications/certification-ia" element={<CertificationIA />} />
           <Route path="/certifications/certification-chatgpt" element={<CertificationChatGPT />} />
           <Route path="/certifications/certification-google-ai" element={<CertificationGoogleAI />} />
