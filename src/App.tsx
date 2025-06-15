@@ -31,6 +31,8 @@ import NLP from "./pages/formations/NLP";
 import ReinforcementLearning from "./pages/formations/ReinforcementLearning";
 import DataScience from "./pages/formations/DataScience";
 import BigData from "./pages/formations/BigData";
+import MLFlowOps from "./pages/formations/MLFlowOps";
+import Docker from "./pages/formations/Docker";
 import Consulting from "./pages/services/Consulting";
 import Implementation from "./pages/services/Implementation";
 import Support from "./pages/services/Support";
@@ -47,6 +49,25 @@ import ChatGPTOutil from "./pages/outils/ChatGPTOutil";
 import MidjourneyOutil from "./pages/outils/MidjourneyOutil";
 import StableDiffusion from "./pages/outils/StableDiffusion";
 import RunwayML from "./pages/outils/RunwayML";
+import LangChain from "./pages/technologies/LangChain";
+import MLOps from "./pages/technologies/MLOps";
+import HuggingFace from "./pages/technologies/HuggingFace";
+import TensorFlowJS from "./pages/technologies/TensorFlowJS";
+import OpenCV from "./pages/technologies/OpenCV";
+import Keras from "./pages/technologies/Keras";
+import AgileIA from "./pages/methodes/AgileIA";
+import GuideAvanceIA from "./pages/guides/GuideAvanceIA";
+import IASante from "./pages/specialisations/IASante";
+import IAFinance from "./pages/specialisations/IAFinance";
+import IAEthique from "./pages/specialisations/IAEthique";
+import ChatbotIA from "./pages/solutions/ChatbotIA";
+import AnalyseSentiment from "./pages/solutions/AnalyseSentiment";
+import ReconnaissanceVocale from "./pages/solutions/ReconnaissanceVocale";
+import PersonnalisationIA from "./pages/solutions/PersonnalisationIA";
+import OptimisationIA from "./pages/solutions/OptimisationIA";
+import PredictionIA from "./pages/solutions/PredictionIA";
+import InnovationsIA2024 from "./pages/actualites/InnovationsIA2024";
+import BibliothequeIA from "./pages/ressources/BibliothequeIA";
 import ArticleIA2024 from "./pages/blog/ArticleIA2024";
 import GuidePrompts from "./pages/blog/GuidePrompts";
 import TendancesIA2025 from "./pages/blog/TendancesIA2025";
@@ -120,6 +141,8 @@ const App = () => (
           <Route path="/formations/reinforcement-learning" element={<ReinforcementLearning />} />
           <Route path="/formations/data-science" element={<DataScience />} />
           <Route path="/formations/big-data" element={<BigData />} />
+          <Route path="/formations/mlflow-ops" element={<MLFlowOps />} />
+          <Route path="/formations/docker" element={<Docker />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/consulting" element={<Consulting />} />
           <Route path="/services/implementation" element={<Implementation />} />
@@ -137,6 +160,25 @@ const App = () => (
           <Route path="/outils/midjourney" element={<MidjourneyOutil />} />
           <Route path="/outils/stable-diffusion" element={<StableDiffusion />} />
           <Route path="/outils/runway-ml" element={<RunwayML />} />
+          <Route path="/technologies/langchain" element={<LangChain />} />
+          <Route path="/technologies/mlops" element={<MLOps />} />
+          <Route path="/technologies/huggingface" element={<HuggingFace />} />
+          <Route path="/technologies/tensorflowjs" element={<TensorFlowJS />} />
+          <Route path="/technologies/opencv" element={<OpenCV />} />
+          <Route path="/technologies/keras" element={<Keras />} />
+          <Route path="/methodes/agile-ia" element={<AgileIA />} />
+          <Route path="/guides/guide-avance-ia" element={<GuideAvanceIA />} />
+          <Route path="/specialisations/ia-sante" element={<IASante />} />
+          <Route path="/specialisations/ia-finance" element={<IAFinance />} />
+          <Route path="/specialisations/ia-ethique" element={<IAEthique />} />
+          <Route path="/solutions/chatbot-ia" element={<ChatbotIA />} />
+          <Route path="/solutions/analyse-sentiment" element={<AnalyseSentiment />} />
+          <Route path="/solutions/reconnaissance-vocale" element={<ReconnaissanceVocale />} />
+          <Route path="/solutions/personnalisation-ia" element={<PersonnalisationIA />} />
+          <Route path="/solutions/optimisation-ia" element={<OptimisationIA />} />
+          <Route path="/solutions/prediction-ia" element={<PredictionIA />} />
+          <Route path="/actualites/innovations-ia-2024" element={<InnovationsIA2024 />} />
+          <Route path="/ressources/bibliotheque-ia" element={<BibliothequeIA />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/automatisation" element={<Automatisation />} />
