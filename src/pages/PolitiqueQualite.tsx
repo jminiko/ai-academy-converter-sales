@@ -4,258 +4,282 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Award, Target, Users, TrendingUp, CheckCircle, Star } from "lucide-react";
+import { Shield, Award, Users, Target, CheckCircle, Star, FileText, Calendar } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const PolitiqueQualite = () => {
-  const engagements = [
-    {
-      icon: Target,
-      titre: "Excellence Pédagogique",
-      description: "Formations conçues par des experts, mises à jour en permanence avec les dernières innovations IA",
-      indicateurs: ["98% de satisfaction", "95% de certification", "Contenu mis à jour mensuellement"]
-    },
-    {
-      icon: Users,
-      titre: "Accompagnement Personnalisé",
-      description: "Suivi individualisé de chaque apprenant avec mentoring dédié et support réactif",
-      indicateurs: ["1 mentor par 15 apprenants", "Support < 2h", "Suivi post-formation 6 mois"]
-    },
-    {
-      icon: TrendingUp,
-      titre: "Amélioration Continue",
-      description: "Processus d'amélioration basé sur les retours apprenants et l'évolution technologique",
-      indicateurs: ["Feedback mensuel", "Évolution trimestrielle", "Veille technologique quotidienne"]
-    },
-    {
-      icon: Award,
-      titre: "Certification Reconnue",
-      description: "Certifications officielles reconnues par l'industrie et les organismes de formation",
-      indicateurs: ["Certifié Qualiopi", "Partenaire OpenAI", "ISO 9001:2015"]
-    }
-  ];
-
-  const processus = [
-    {
-      etape: "1",
-      titre: "Analyse des Besoins",
-      description: "Évaluation précise des compétences et objectifs de l'apprenant",
-      details: ["Test de positionnement", "Entretien personnalisé", "Définition du parcours"]
-    },
-    {
-      etape: "2", 
-      titre: "Formation Sur-Mesure",
-      description: "Délivrance de contenus adaptés avec mise en pratique intensive",
-      details: ["Modules interactifs", "Projets concrets", "Évaluation continue"]
-    },
-    {
-      etape: "3",
-      titre: "Certification",
-      description: "Validation des compétences acquises par des experts reconnus",
-      details: ["Examen pratique", "Projet de fin", "Certification officielle"]
-    },
-    {
-      etape: "4",
-      titre: "Suivi Post-Formation",
-      description: "Accompagnement dans la mise en application en entreprise",
-      details: ["Sessions de suivi", "Support technique", "Mise à jour des compétences"]
-    }
-  ];
-
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <Header />
       
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-600">
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-700">
         <div className="container mx-auto px-4 text-center">
-          <Award className="h-16 w-16 text-white mx-auto mb-6" />
+          <Shield className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">
             Politique Qualité
           </h1>
           <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Notre engagement pour l'excellence dans la formation IA. Des standards 
-            élevés, une amélioration continue et la satisfaction client au cœur de nos priorités.
+            Notre engagement pour l'excellence dans la formation IA et l'accompagnement de nos clients
           </p>
-          <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-            Télécharger notre manuel qualité
-          </Button>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Badge variant="secondary" className="bg-white/20 text-white hover:bg-white/30">
+              <Award className="h-4 w-4 mr-2" />
+              ISO 9001:2015
+            </Badge>
+            <Badge variant="secondary" className="bg-white/20 text-white hover:bg-white/30">
+              <Star className="h-4 w-4 mr-2" />
+              Excellence Service
+            </Badge>
+            <Badge variant="secondary" className="bg-white/20 text-white hover:bg-white/30">
+              <CheckCircle className="h-4 w-4 mr-2" />
+              Amélioration Continue
+            </Badge>
+          </div>
         </div>
       </section>
 
       <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Nos Engagements Qualité</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Quatre piliers fondamentaux qui guident notre approche de la formation 
-              et garantissent l'excellence de nos services.
-            </p>
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <Card className="text-center">
+              <CardHeader>
+                <Target className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <CardTitle>Notre Mission</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Démocratiser l'accès à l'intelligence artificielle par des formations 
+                  de qualité et un accompagnement personnalisé.
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="text-center">
+              <CardHeader>
+                <Users className="h-12 w-12 text-green-600 mx-auto mb-4" />
+                <CardTitle>Nos Valeurs</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Excellence, innovation, transparence et respect de nos engagements 
+                  envers chaque client et partenaire.
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="text-center">
+              <CardHeader>
+                <Award className="h-12 w-12 text-purple-600 mx-auto mb-4" />
+                <CardTitle>Notre Vision</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Être le leader français de la formation IA en accompagnant 
+                  la transformation digitale des entreprises.
+                </p>
+              </CardContent>
+            </Card>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            {engagements.map((engagement, index) => (
-              <Card key={index} className="hover:shadow-xl transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center space-x-4">
-                    <div className="p-3 bg-blue-100 rounded-lg">
-                      <engagement.icon className="h-8 w-8 text-blue-600" />
-                    </div>
-                    <CardTitle className="text-xl">{engagement.titre}</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 mb-4">{engagement.description}</p>
-                  <h4 className="font-semibold mb-2">Indicateurs de performance :</h4>
-                  <ul className="space-y-1">
-                    {engagement.indicateurs.map((indicateur, indIndex) => (
-                      <li key={indIndex} className="flex items-center text-sm">
+          <div className="space-y-8">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center">
+                  <Shield className="h-5 w-5 mr-2 text-blue-600" />
+                  Engagement Qualité
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="prose max-w-none">
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Twenty One Talents s'engage à fournir des services de formation et de conseil 
+                  en intelligence artificielle de la plus haute qualité. Cette politique qualité 
+                  définit notre approche systématique pour garantir la satisfaction de nos clients 
+                  et l'amélioration continue de nos prestations.
+                </p>
+                <h3 className="font-semibold mb-3">Nos Engagements :</h3>
+                <ul className="list-disc list-inside space-y-2 text-gray-700">
+                  <li>Respecter et dépasser les attentes de nos clients</li>
+                  <li>Maintenir la conformité avec les standards ISO 9001:2015</li>
+                  <li>Assurer la formation continue de nos équipes</li>
+                  <li>Innover constamment dans nos méthodes pédagogiques</li>
+                  <li>Mesurer et améliorer en permanence nos performances</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Objectifs Qualité</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h3 className="font-semibold mb-3">Satisfaction Client</h3>
+                    <ul className="space-y-2 text-gray-700">
+                      <li className="flex items-center">
                         <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                        {indicateur}
+                        Taux de satisfaction ≥ 95%
                       </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <Card className="mb-16">
-            <CardHeader>
-              <CardTitle className="text-2xl text-center">Notre Processus Qualité</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                {processus.map((etape, index) => (
-                  <div key={index} className="text-center">
-                    <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                      {etape.etape}
-                    </div>
-                    <h3 className="font-semibold text-lg mb-2">{etape.titre}</h3>
-                    <p className="text-gray-600 text-sm mb-4">{etape.description}</p>
-                    <ul className="text-xs text-gray-500 space-y-1">
-                      {etape.details.map((detail, detailIndex) => (
-                        <li key={detailIndex} className="flex items-center justify-center">
-                          <Star className="h-3 w-3 text-blue-500 mr-1" />
-                          {detail}
-                        </li>
-                      ))}
+                      <li className="flex items-center">
+                        <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                        NPS (Net Promoter Score) ≥ 70
+                      </li>
+                      <li className="flex items-center">
+                        <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                        Taux de recommandation ≥ 90%
+                      </li>
                     </ul>
                   </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle>Certifications & Agréments</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <Badge className="bg-green-100 text-green-800">Certifié</Badge>
-                  <span className="font-semibold">Qualiopi</span>
-                  <span className="text-gray-600">- Certification nationale qualité</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Badge className="bg-blue-100 text-blue-800">Partenaire</Badge>
-                  <span className="font-semibold">OpenAI</span>
-                  <span className="text-gray-600">- Formation officielle GPT</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Badge className="bg-purple-100 text-purple-800">Certifié</Badge>
-                  <span className="font-semibold">ISO 9001:2015</span>
-                  <span className="text-gray-600">- Management de la qualité</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Badge className="bg-orange-100 text-orange-800">Membre</Badge>
-                  <span className="font-semibold">CPNFP</span>
-                  <span className="text-gray-600">- Commission Paritaire Formation</span>
+                  <div>
+                    <h3 className="font-semibold mb-3">Performance Opérationnelle</h3>
+                    <ul className="space-y-2 text-gray-700">
+                      <li className="flex items-center">
+                        <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                        Respect des délais à 100%
+                      </li>
+                      <li className="flex items-center">
+                        <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                        Taux d'annulation &lt; 5%
+                      </li>
+                      <li className="flex items-center">
+                        <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                        Résolution réclamations &lt; 48h
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle>Indicateurs de Performance</CardTitle>
+                <CardTitle>Processus Qualité</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex justify-between items-center">
-                  <span>Taux de satisfaction</span>
-                  <div className="flex items-center">
-                    <div className="w-32 bg-gray-200 rounded-full h-2 mr-2">
-                      <div className="bg-green-500 h-2 rounded-full" style={{width: '98%'}}></div>
+              <CardContent>
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="font-semibold mb-3">1. Conception des Formations</h3>
+                    <p className="text-gray-700 mb-2">
+                      Analyse des besoins marché, validation par des experts, tests pilotes
+                    </p>
+                    <div className="bg-blue-50 p-4 rounded-lg">
+                      <p className="text-sm text-blue-800">
+                        Chaque nouvelle formation suit un processus de validation en 5 étapes : 
+                        analyse, conception, révision experte, test pilote, et lancement.
+                      </p>
                     </div>
-                    <span className="font-semibold">98%</span>
                   </div>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span>Taux de certification</span>
-                  <div className="flex items-center">
-                    <div className="w-32 bg-gray-200 rounded-full h-2 mr-2">
-                      <div className="bg-blue-500 h-2 rounded-full" style={{width: '95%'}}></div>
+                  
+                  <div>
+                    <h3 className="font-semibold mb-3">2. Sélection des Formateurs</h3>
+                    <p className="text-gray-700 mb-2">
+                      Critères stricts de sélection, certification interne, évaluation continue
+                    </p>
+                    <div className="bg-green-50 p-4 rounded-lg">
+                      <p className="text-sm text-green-800">
+                        Nos formateurs sont certifiés avec minimum 5 ans d'expérience et 
+                        suivent 40h de formation continue annuelle.
+                      </p>
                     </div>
-                    <span className="font-semibold">95%</span>
                   </div>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span>Retour à l'emploi</span>
-                  <div className="flex items-center">
-                    <div className="w-32 bg-gray-200 rounded-full h-2 mr-2">
-                      <div className="bg-purple-500 h-2 rounded-full" style={{width: '87%'}}></div>
+                  
+                  <div>
+                    <h3 className="font-semibold mb-3">3. Délivrance des Services</h3>
+                    <p className="text-gray-700 mb-2">
+                      Supports actualisés, environnements techniques optimaux, suivi personnalisé
+                    </p>
+                    <div className="bg-purple-50 p-4 rounded-lg">
+                      <p className="text-sm text-purple-800">
+                        Ratio formateur/apprenant de 1:12 maximum pour garantir 
+                        un accompagnement individualisé optimal.
+                      </p>
                     </div>
-                    <span className="font-semibold">87%</span>
-                  </div>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span>Temps de support</span>
-                  <div className="flex items-center">
-                    <span className="font-semibold text-green-600">< 2h</span>
                   </div>
                 </div>
               </CardContent>
             </Card>
-          </div>
-        </div>
-      </section>
 
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-8">Amélioration Continue</h2>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Notre démarche qualité s'appuie sur l'écoute permanente de nos clients et 
-            l'évolution constante de nos pratiques pédagogiques.
-          </p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                📊
+            <Card>
+              <CardHeader>
+                <CardTitle>Amélioration Continue</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h3 className="font-semibold mb-3">Mesure et Analyse</h3>
+                    <ul className="space-y-2 text-gray-700">
+                      <li>• Évaluations à chaud et à froid</li>
+                      <li>• Enquêtes de satisfaction trimestrielles</li>
+                      <li>• Indicateurs de performance (KPI)</li>
+                      <li>• Audits qualité internes et externes</li>
+                      <li>• Revues de direction mensuelles</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-3">Actions d'Amélioration</h3>
+                    <ul className="space-y-2 text-gray-700">
+                      <li>• Plans d'action correctifs</li>
+                      <li>• Mise à jour des contenus</li>
+                      <li>• Formation des équipes</li>
+                      <li>• Investissements technologiques</li>
+                      <li>• Certification des processus</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Certifications et Conformité</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                  <div className="text-center p-4 bg-blue-50 rounded-lg">
+                    <Award className="h-8 w-8 text-blue-600 mx-auto mb-2" />
+                    <h4 className="font-semibold">ISO 9001:2015</h4>
+                    <p className="text-sm text-gray-600">Management Qualité</p>
+                  </div>
+                  <div className="text-center p-4 bg-green-50 rounded-lg">
+                    <Shield className="h-8 w-8 text-green-600 mx-auto mb-2" />
+                    <h4 className="font-semibold">Qualiopi</h4>
+                    <p className="text-sm text-gray-600">Qualité Formation</p>
+                  </div>
+                  <div className="text-center p-4 bg-purple-50 rounded-lg">
+                    <Star className="h-8 w-8 text-purple-600 mx-auto mb-2" />
+                    <h4 className="font-semibold">RGPD</h4>
+                    <p className="text-sm text-gray-600">Protection Données</p>
+                  </div>
+                </div>
+                <p className="text-gray-700">
+                  Nos certifications sont auditées annuellement par des organismes 
+                  indépendants pour garantir le maintien de nos standards de qualité.
+                </p>
+              </CardContent>
+            </Card>
+
+            <div className="bg-gradient-to-r from-blue-600 to-purple-700 text-white p-8 rounded-lg text-center">
+              <h3 className="text-2xl font-bold mb-4">Notre Promesse Qualité</h3>
+              <p className="text-lg mb-6">
+                "Votre satisfaction est notre priorité absolue. Nous nous engageons 
+                à vous accompagner vers l'excellence avec des formations IA de qualité mondiale."
+              </p>
+              <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <Button variant="secondary" asChild>
+                  <Link to="/contact">
+                    <FileText className="h-4 w-4 mr-2" />
+                    Nous contacter
+                  </Link>
+                </Button>
+                <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-blue-600" asChild>
+                  <Link to="/certification-iso">
+                    <Award className="h-4 w-4 mr-2" />
+                    Voir nos certifications
+                  </Link>
+                </Button>
               </div>
-              <h3 className="font-semibold mb-2">Mesure</h3>
-              <p className="text-gray-600 text-sm">Collecte systématique des retours et métriques de performance</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                🔍
-              </div>
-              <h3 className="font-semibold mb-2">Analyse</h3>
-              <p className="text-gray-600 text-sm">Évaluation approfondie des données et identification des axes d'amélioration</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                🚀
-              </div>
-              <h3 className="font-semibold mb-2">Action</h3>
-              <p className="text-gray-600 text-sm">Mise en œuvre des améliorations et suivi de leur efficacité</p>
             </div>
           </div>
-          
-          <Button size="lg" className="bg-blue-600 hover:bg-blue-700" asChild>
-            <Link to="/contact">
-              Participer à notre démarche qualité
-            </Link>
-          </Button>
         </div>
       </section>
 

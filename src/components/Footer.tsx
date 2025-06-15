@@ -48,7 +48,7 @@ export const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail className="h-4 w-4 mr-2" />
-                contact@twentyonetalents.fr
+                contact@twentyonetalents.com
               </li>
               <li className="flex items-center">
                 <MapPin className="h-4 w-4 mr-2" />
@@ -66,7 +66,8 @@ export const Footer = () => {
           <p>&copy; 2024 Twenty One Talents. Tous droits réservés.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/confidentialite" className="hover:text-white text-sm">Politique de confidentialité</Link>
-            <Link to="/faq" className="hover:text-white text-sm">Mentions légales</Link>
+            <Link to="/cgv" className="hover:text-white text-sm">CGV</Link>
+            <Link to="/mentions-legales" className="hover:text-white text-sm">Mentions légales</Link>
           </div>
         </div>
       </div>
