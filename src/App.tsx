@@ -44,6 +44,12 @@ import Newsletter from "./pages/Newsletter";
 import Webinaires from "./pages/Webinaires";
 import Carrieres from "./pages/Carrieres";
 import CGV from "./pages/CGV";
+import LegalMentions from "./pages/LegalMentions";
+import AccessibiliteNumerique from "./pages/AccessibiliteNumerique";
+import PlanSite from "./pages/PlanSite";
+import PolitiqueQualite from "./pages/PolitiqueQualite";
+import CertificationISO from "./pages/CertificationISO";
+import LabIA from "./pages/LabIA";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -93,6 +99,12 @@ const App = () => (
           <Route path="/carrieres" element={<Carrieres />} />
           <Route path="/cgv" element={<CGV />} />
           <Route path="/confidentialite" element={<Confidentialite />} />
+          <Route path="/mentions-legales" element={<LegalMentions />} />
+          <Route path="/accessibilite-numerique" element={<AccessibiliteNumerique />} />
+          <Route path="/plan-site" element={<PlanSite />} />
+          <Route path="/politique-qualite" element={<PolitiqueQualite />} />
+          <Route path="/certification-iso" element={<CertificationISO />} />
+          <Route path="/lab-ia" element={<LabIA />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/testimonials" element={<Testimonials />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
