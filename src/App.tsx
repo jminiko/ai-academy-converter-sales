@@ -38,6 +38,12 @@ import Methodologie from "./pages/Methodologie";
 import Equipe from "./pages/Equipe";
 import Tarifs from "./pages/Tarifs";
 import Projets from "./pages/Projets";
+import Actualites from "./pages/Actualites";
+import LivreBlanc from "./pages/LivreBlanc";
+import Newsletter from "./pages/Newsletter";
+import Webinaires from "./pages/Webinaires";
+import Carrieres from "./pages/Carrieres";
+import CGV from "./pages/CGV";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -80,6 +86,12 @@ const App = () => (
           <Route path="/equipe" element={<Equipe />} />
           <Route path="/tarifs" element={<Tarifs />} />
           <Route path="/projets" element={<Projets />} />
+          <Route path="/actualites" element={<Actualites />} />
+          <Route path="/livre-blanc" element={<LivreBlanc />} />
+          <Route path="/newsletter" element={<Newsletter />} />
+          <Route path="/webinaires" element={<Webinaires />} />
+          <Route path="/carrieres" element={<Carrieres />} />
+          <Route path="/cgv" element={<CGV />} />
           <Route path="/confidentialite" element={<Confidentialite />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/testimonials" element={<Testimonials />} />
