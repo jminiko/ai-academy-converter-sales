@@ -61,6 +61,8 @@ import TensorFlowJS from "./pages/technologies/TensorFlowJS";
 import OpenCV from "./pages/technologies/OpenCV";
 import Keras from "./pages/technologies/Keras";
 import AgileIA from "./pages/methodes/AgileIA";
+import DesignThinkingIA from "./pages/methodes/DesignThinkingIA";
+import LeanStartupIA from "./pages/methodes/LeanStartupIA";
 import GuideAvanceIA from "./pages/guides/GuideAvanceIA";
 import GuideDebutantChatGPT from "./pages/guides/GuideDebutantChatGPT";
 import GuidePromptAdvance from "./pages/guides/GuidePromptAdvance";
@@ -79,6 +81,8 @@ import InnovationsIA2024 from "./pages/actualites/InnovationsIA2024";
 import BibliothequeIA from "./pages/ressources/BibliothequeIA";
 import CasEtudes from "./pages/ressources/CasEtudes";
 import Podcasts from "./pages/ressources/Podcasts";
+import LivresBlancsIA from "./pages/ressources/LivresBlancsIA";
+import OutilsGratuits from "./pages/ressources/OutilsGratuits";
 import ArticleIA2024 from "./pages/blog/ArticleIA2024";
 import GuidePrompts from "./pages/blog/GuidePrompts";
 import TendancesIA2025 from "./pages/blog/TendancesIA2025";
@@ -92,11 +96,16 @@ import Templates from "./pages/ressources/Templates";
 import WebinairesRessource from "./pages/ressources/Webinaires";
 import ConferenceIA2024 from "./pages/events/ConferenceIA2024";
 import WorkshopChatGPT from "./pages/events/WorkshopChatGPT";
+import SommetIA2024 from "./pages/events/SommetIA2024";
+import HackathonIA from "./pages/events/HackathonIA";
 import CertificationIA from "./pages/certifications/CertificationIA";
 import CertificationChatGPT from "./pages/certifications/CertificationChatGPT";
 import CertificationGoogleAI from "./pages/certifications/CertificationGoogleAI";
 import PartenaireOpenAI from "./pages/partenariats/PartenaireOpenAI";
 import PartenaireMicrosoft from "./pages/partenariats/PartenaireMicrosoft";
+import PartenaireGoogle from "./pages/partenariats/PartenaireGoogle";
+import PartenaireAWS from "./pages/partenariats/PartenaireAWS";
+import PartenaireNVIDIA from "./pages/partenariats/PartenaireNVIDIA";
 import DirecteurTechnique from "./pages/equipe/DirecteurTechnique";
 import ChefProduit from "./pages/equipe/ChefProduit";
 import PolitiqueConfidentialiteDetaille from "./pages/legal/PolitiqueConfidentialiteDetaille";
@@ -189,6 +198,8 @@ const App = () => (
           <Route path="/technologies/opencv" element={<OpenCV />} />
           <Route path="/technologies/keras" element={<Keras />} />
           <Route path="/methodes/agile-ia" element={<AgileIA />} />
+          <Route path="/methodes/design-thinking-ia" element={<DesignThinkingIA />} />
+          <Route path="/methodes/lean-startup-ia" element={<LeanStartupIA />} />
           <Route path="/guides/guide-avance-ia" element={<GuideAvanceIA />} />
           <Route path="/guides/guide-debutant-chatgpt" element={<GuideDebutantChatGPT />} />
           <Route path="/guides/guide-prompt-avance" element={<GuidePromptAdvance />} />
@@ -207,6 +218,8 @@ const App = () => (
           <Route path="/ressources/bibliotheque-ia" element={<BibliothequeIA />} />
           <Route path="/ressources/cas-etudes" element={<CasEtudes />} />
           <Route path="/ressources/podcasts" element={<Podcasts />} />
+          <Route path="/ressources/livres-blancs-ia" element={<LivresBlancsIA />} />
+          <Route path="/ressources/outils-gratuits" element={<OutilsGratuits />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/automatisation" element={<Automatisation />} />
@@ -224,11 +237,16 @@ const App = () => (
           <Route path="/ressources/webinaires" element={<WebinairesRessource />} />
           <Route path="/events/conference-ia-2024" element={<ConferenceIA2024 />} />
           <Route path="/events/workshop-chatgpt" element={<WorkshopChatGPT />} />
+          <Route path="/events/sommet-ia-2024" element={<SommetIA2024 />} />
+          <Route path="/events/hackathon-ia" element={<HackathonIA />} />
           <Route path="/certifications/certification-ia" element={<CertificationIA />} />
           <Route path="/certifications/certification-chatgpt" element={<CertificationChatGPT />} />
           <Route path="/certifications/certification-google-ai" element={<CertificationGoogleAI />} />
           <Route path="/partenariats/openai" element={<PartenaireOpenAI />} />
           <Route path="/partenariats/microsoft" element={<PartenaireMicrosoft />} />
+          <Route path="/partenariats/google" element={<PartenaireGoogle />} />
+          <Route path="/partenariats/aws" element={<PartenaireAWS />} />
+          <Route path="/partenariats/nvidia" element={<PartenaireNVIDIA />} />
           <Route path="/equipe/directeur-technique" element={<DirecteurTechnique />} />
           <Route path="/equipe/chef-produit" element={<ChefProduit />} />
           <Route path="/legal/politique-confidentialite-detaille" element={<PolitiqueConfidentialiteDetaille />} />
