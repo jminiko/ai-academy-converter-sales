@@ -1,10 +1,9 @@
-
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Sitemap, BookOpen, Users, Cog, MessageSquare, Award } from "lucide-react";
+import { Map, BookOpen, Users, Cog, MessageSquare, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const PlanSite = () => {
@@ -104,7 +103,7 @@ const PlanSite = () => {
       
       <section className="py-20 bg-gradient-to-r from-green-600 to-emerald-600">
         <div className="container mx-auto px-4 text-center">
-          <Sitemap className="h-16 w-16 text-white mx-auto mb-6" />
+          <Map className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">
             Plan du Site
           </h1>
