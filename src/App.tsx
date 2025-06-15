@@ -212,15 +212,12 @@ import SecurityIA from "./pages/solutions/SecurityIA";
 import ConsultingIA from "./pages/industries/ConsultingIA";
 import RetailAI from "./pages/industries/RetailAI";
 import IAJuridique from "./pages/specialisations/IAJuridique";
-// Nouvelles pages ajoutées
-import QuantumComputing from "./pages/formations/QuantumComputing";
-import VoiceAssistant from "./pages/solutions/VoiceAssistant";
-import Apache from "./pages/technologies/Apache";
-import InsuranceIA from "./pages/industries/InsuranceIA";
-import IAGovernment from "./pages/specialisations/IAGovernment";
-import CodePilot from "./pages/outils/CodePilot";
-import IAMusic from "./pages/formations/IAMusic";
-import DataVisualization from "./pages/solutions/DataVisualization";
+import AutomatisationTests from "./pages/formations/AutomatisationTests";
+import GestionRisques from "./pages/solutions/GestionRisques";
+import FashionIA from "./pages/industries/FashionIA";
+import NvidiaOmniverse from "./pages/outils/NvidiaOmniverse";
+import IACreative from "./pages/formations/IACreative";
+import OptimisationEnergie from "./pages/solutions/OptimisationEnergie";
 
 const queryClient = new QueryClient();
 
@@ -265,6 +262,8 @@ const App = () => (
           <Route path="/formations/react-ia" element={<ReactIA />} />
           <Route path="/formations/quantum-computing" element={<QuantumComputing />} />
           <Route path="/formations/ia-music" element={<IAMusic />} />
+          <Route path="/formations/automatisation-tests" element={<AutomatisationTests />} />
+          <Route path="/formations/ia-creative" element={<IACreative />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/consulting" element={<Consulting />} />
           <Route path="/services/implementation" element={<Implementation />} />
@@ -293,6 +292,7 @@ const App = () => (
           <Route path="/industries/consulting-ia" element={<ConsultingIA />} />
           <Route path="/industries/retail-ai" element={<RetailAI />} />
           <Route path="/industries/insurance-ia" element={<InsuranceIA />} />
+          <Route path="/industries/fashion-ia" element={<FashionIA />} />
           <Route path="/outils/chatgpt" element={<ChatGPTOutil />} />
           <Route path="/outils/midjourney" element={<MidjourneyOutil />} />
           <Route path="/outils/stable-diffusion" element={<StableDiffusion />} />
@@ -306,6 +306,7 @@ const App = () => (
           <Route path="/outils/anthropic-claude" element={<AnthropicClaude />} />
           <Route path="/outils/mistral-ai" element={<MistralAI />} />
           <Route path="/outils/code-pilot" element={<CodePilot />} />
+          <Route path="/outils/nvidia-omniverse" element={<NvidiaOmniverse />} />
           <Route path="/technologies/langchain" element={<LangChain />} />
           <Route path="/technologies/mlops" element={<MLOps />} />
           <Route path="/technologies/huggingface" element={<HuggingFace />} />
@@ -350,6 +351,8 @@ const App = () => (
           <Route path="/solutions/security-ia" element={<SecurityIA />} />
           <Route path="/solutions/voice-assistant" element={<VoiceAssistant />} />
           <Route path="/solutions/data-visualization" element={<DataVisualization />} />
+          <Route path="/solutions/gestion-risques" element={<GestionRisques />} />
+          <Route path="/solutions/optimisation-energie" element={<OptimisationEnergie />} />
           <Route path="/actualites/innovations-ia-2024" element={<InnovationsIA2024 />} />
           <Route path="/actualites/revolution-ia-2025" element={<RevolutionIA2025 />} />
           <Route path="/actualites/tendances-ia-2024" element={<TendancesIA2024 />} />
