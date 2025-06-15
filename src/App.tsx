@@ -8,6 +8,12 @@ import Index from "./pages/Index";
 import Formations from "./pages/Formations";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+import About from "./pages/About";
+import Automatisation from "./pages/Automatisation";
+import Blog from "./pages/Blog";
+import FAQ from "./pages/FAQ";
+import Testimonials from "./pages/Testimonials";
+import IAGenerative from "./pages/formations/IAGenerative";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,8 +27,14 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/formations" element={<Formations />} />
+          <Route path="/formations/ia-generative" element={<IAGenerative />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/automatisation" element={<Automatisation />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/testimonials" element={<Testimonials />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

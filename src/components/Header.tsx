@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
 import { Link } from "react-router-dom";
-import { Brain, Menu } from "lucide-react";
+import { Brain, Menu, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
 export const Header = () => {
@@ -16,25 +16,53 @@ export const Header = () => {
           <span className="text-xl font-bold text-gray-900">Twenty One Talents</span>
         </Link>
         
-        <nav className="hidden md:flex items-center space-x-8">
-          <Link to="/formations" className="text-gray-600 hover:text-blue-600 transition-colors">
-            Formations
-          </Link>
-          <Link to="/services" className="text-gray-600 hover:text-blue-600 transition-colors">
-            Services
-          </Link>
+        <nav className="hidden lg:flex items-center space-x-8">
+          <div className="relative group">
+            <Link to="/formations" className="text-gray-600 hover:text-blue-600 transition-colors flex items-center">
+              Formations <ChevronDown className="ml-1 h-4 w-4" />
+            </Link>
+            <div className="absolute top-full left-0 bg-white border rounded-lg shadow-lg py-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <Link to="/formations" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Toutes les formations</Link>
+              <Link to="/formations/ia-generative" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">IA Générative</Link>
+              <Link to="/formations/chatgpt-pro" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">ChatGPT Pro</Link>
+              <Link to="/formations/automatisation-ia" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Automatisation IA</Link>
+            </div>
+          </div>
+          
+          <div className="relative group">
+            <Link to="/services" className="text-gray-600 hover:text-blue-600 transition-colors flex items-center">
+              Services <ChevronDown className="ml-1 h-4 w-4" />
+            </Link>
+            <div className="absolute top-full left-0 bg-white border rounded-lg shadow-lg py-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <Link to="/services" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Tous les services</Link>
+              <Link to="/services/consulting" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Consulting IA</Link>
+              <Link to="/services/implementation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Implémentation</Link>
+              <Link to="/services/support" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Support & Maintenance</Link>
+            </div>
+          </div>
+          
           <Link to="/automatisation" className="text-gray-600 hover:text-blue-600 transition-colors">
             Automatisation
           </Link>
-          <Link to="/about" className="text-gray-600 hover:text-blue-600 transition-colors">
-            À propos
-          </Link>
+          
+          <div className="relative group">
+            <span className="text-gray-600 hover:text-blue-600 transition-colors flex items-center cursor-pointer">
+              Entreprise <ChevronDown className="ml-1 h-4 w-4" />
+            </span>
+            <div className="absolute top-full left-0 bg-white border rounded-lg shadow-lg py-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <Link to="/about" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">À propos</Link>
+              <Link to="/testimonials" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Témoignages</Link>
+              <Link to="/blog" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Blog</Link>
+              <Link to="/faq" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">FAQ</Link>
+            </div>
+          </div>
+          
           <Link to="/contact" className="text-gray-600 hover:text-blue-600 transition-colors">
             Contact
           </Link>
         </nav>
 
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden lg:flex items-center space-x-4">
           <Button variant="outline" asChild>
             <Link to="/contact">Devis gratuit</Link>
           </Button>
@@ -45,7 +73,7 @@ export const Header = () => {
 
         <Button
           variant="ghost"
-          className="md:hidden"
+          className="lg:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <Menu className="h-6 w-6" />
@@ -53,19 +81,28 @@ export const Header = () => {
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden border-t bg-white">
+        <div className="lg:hidden border-t bg-white">
           <nav className="container mx-auto px-4 py-4 space-y-4">
-            <Link to="/formations" className="block text-gray-600 hover:text-blue-600">
+            <Link to="/formations" className="block text-gray-600 hover:text-blue-600 font-medium">
               Formations
             </Link>
-            <Link to="/services" className="block text-gray-600 hover:text-blue-600">
+            <Link to="/services" className="block text-gray-600 hover:text-blue-600 font-medium">
               Services
             </Link>
-            <Link to="/automatisation" className="block text-gray-600 hover:text-blue-600">
+            <Link to="/automatisation" className="block text-gray-600 hover:text-blue-600 font-medium">
               Automatisation
             </Link>
             <Link to="/about" className="block text-gray-600 hover:text-blue-600">
               À propos
+            </Link>
+            <Link to="/testimonials" className="block text-gray-600 hover:text-blue-600">
+              Témoignages
+            </Link>
+            <Link to="/blog" className="block text-gray-600 hover:text-blue-600">
+              Blog
+            </Link>
+            <Link to="/faq" className="block text-gray-600 hover:text-blue-600">
+              FAQ
             </Link>
             <Link to="/contact" className="block text-gray-600 hover:text-blue-600">
               Contact
