@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -51,6 +52,8 @@ import ChatGPTOutil from "./pages/outils/ChatGPTOutil";
 import MidjourneyOutil from "./pages/outils/MidjourneyOutil";
 import StableDiffusion from "./pages/outils/StableDiffusion";
 import RunwayML from "./pages/outils/RunwayML";
+import NotionAI from "./pages/outils/NotionAI";
+import JasperAI from "./pages/outils/JasperAI";
 import LangChain from "./pages/technologies/LangChain";
 import MLOps from "./pages/technologies/MLOps";
 import HuggingFace from "./pages/technologies/HuggingFace";
@@ -59,6 +62,8 @@ import OpenCV from "./pages/technologies/OpenCV";
 import Keras from "./pages/technologies/Keras";
 import AgileIA from "./pages/methodes/AgileIA";
 import GuideAvanceIA from "./pages/guides/GuideAvanceIA";
+import GuideDebutantChatGPT from "./pages/guides/GuideDebutantChatGPT";
+import GuidePromptAdvance from "./pages/guides/GuidePromptAdvance";
 import IASante from "./pages/specialisations/IASante";
 import IAFinance from "./pages/specialisations/IAFinance";
 import IAEthique from "./pages/specialisations/IAEthique";
@@ -81,6 +86,7 @@ import GuideAutomatisation from "./pages/blog/GuideAutomatisation";
 import CaseStudyBanque from "./pages/CaseStudyBanque";
 import RetailTransformation from "./pages/case-studies/RetailTransformation";
 import SanteDigitale from "./pages/case-studies/SanteDigitale";
+import EcommerceTransformation from "./pages/case-studies/EcommerceTransformation";
 import GuidesIA from "./pages/ressources/GuidesIA";
 import Templates from "./pages/ressources/Templates";
 import WebinairesRessource from "./pages/ressources/Webinaires";
@@ -88,11 +94,14 @@ import ConferenceIA2024 from "./pages/events/ConferenceIA2024";
 import WorkshopChatGPT from "./pages/events/WorkshopChatGPT";
 import CertificationIA from "./pages/certifications/CertificationIA";
 import CertificationChatGPT from "./pages/certifications/CertificationChatGPT";
+import CertificationGoogleAI from "./pages/certifications/CertificationGoogleAI";
 import PartenaireOpenAI from "./pages/partenariats/PartenaireOpenAI";
 import PartenaireMicrosoft from "./pages/partenariats/PartenaireMicrosoft";
 import DirecteurTechnique from "./pages/equipe/DirecteurTechnique";
 import ChefProduit from "./pages/equipe/ChefProduit";
 import PolitiqueConfidentialiteDetaille from "./pages/legal/PolitiqueConfidentialiteDetaille";
+import ManufacturingIA from "./pages/industries/ManufacturingIA";
+import BankingIA from "./pages/industries/BankingIA";
 import Certifications from "./pages/Certifications";
 import Partenaires from "./pages/Partenaires";
 import Evenements from "./pages/Evenements";
@@ -165,10 +174,14 @@ const App = () => (
           <Route path="/secteurs/immobilier" element={<Immobilier />} />
           <Route path="/secteurs/agriculture" element={<Agriculture />} />
           <Route path="/secteurs/transport" element={<Transport />} />
+          <Route path="/industries/manufacturing" element={<ManufacturingIA />} />
+          <Route path="/industries/banking" element={<BankingIA />} />
           <Route path="/outils/chatgpt" element={<ChatGPTOutil />} />
           <Route path="/outils/midjourney" element={<MidjourneyOutil />} />
           <Route path="/outils/stable-diffusion" element={<StableDiffusion />} />
           <Route path="/outils/runway-ml" element={<RunwayML />} />
+          <Route path="/outils/notion-ai" element={<NotionAI />} />
+          <Route path="/outils/jasper-ai" element={<JasperAI />} />
           <Route path="/technologies/langchain" element={<LangChain />} />
           <Route path="/technologies/mlops" element={<MLOps />} />
           <Route path="/technologies/huggingface" element={<HuggingFace />} />
@@ -177,6 +190,8 @@ const App = () => (
           <Route path="/technologies/keras" element={<Keras />} />
           <Route path="/methodes/agile-ia" element={<AgileIA />} />
           <Route path="/guides/guide-avance-ia" element={<GuideAvanceIA />} />
+          <Route path="/guides/guide-debutant-chatgpt" element={<GuideDebutantChatGPT />} />
+          <Route path="/guides/guide-prompt-avance" element={<GuidePromptAdvance />} />
           <Route path="/specialisations/ia-sante" element={<IASante />} />
           <Route path="/specialisations/ia-finance" element={<IAFinance />} />
           <Route path="/specialisations/ia-ethique" element={<IAEthique />} />
@@ -203,6 +218,7 @@ const App = () => (
           <Route path="/case-studies/banque-transformation" element={<CaseStudyBanque />} />
           <Route path="/case-studies/retail-transformation" element={<RetailTransformation />} />
           <Route path="/case-studies/sante-digitale" element={<SanteDigitale />} />
+          <Route path="/case-studies/ecommerce-transformation" element={<EcommerceTransformation />} />
           <Route path="/ressources/guides-ia" element={<GuidesIA />} />
           <Route path="/ressources/templates" element={<Templates />} />
           <Route path="/ressources/webinaires" element={<WebinairesRessource />} />
@@ -210,6 +226,7 @@ const App = () => (
           <Route path="/events/workshop-chatgpt" element={<WorkshopChatGPT />} />
           <Route path="/certifications/certification-ia" element={<CertificationIA />} />
           <Route path="/certifications/certification-chatgpt" element={<CertificationChatGPT />} />
+          <Route path="/certifications/certification-google-ai" element={<CertificationGoogleAI />} />
           <Route path="/partenariats/openai" element={<PartenaireOpenAI />} />
           <Route path="/partenariats/microsoft" element={<PartenaireMicrosoft />} />
           <Route path="/equipe/directeur-technique" element={<DirecteurTechnique />} />
