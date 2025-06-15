@@ -14,6 +14,11 @@ import Blog from "./pages/Blog";
 import FAQ from "./pages/FAQ";
 import Testimonials from "./pages/Testimonials";
 import IAGenerative from "./pages/formations/IAGenerative";
+import ChatGPTPro from "./pages/formations/ChatGPTPro";
+import AutomatisationIA from "./pages/formations/AutomatisationIA";
+import Consulting from "./pages/services/Consulting";
+import Implementation from "./pages/services/Implementation";
+import Support from "./pages/services/Support";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,7 +33,12 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/formations" element={<Formations />} />
           <Route path="/formations/ia-generative" element={<IAGenerative />} />
+          <Route path="/formations/chatgpt-pro" element={<ChatGPTPro />} />
+          <Route path="/formations/automatisation-ia" element={<AutomatisationIA />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/consulting" element={<Consulting />} />
+          <Route path="/services/implementation" element={<Implementation />} />
+          <Route path="/services/support" element={<Support />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/automatisation" element={<Automatisation />} />
