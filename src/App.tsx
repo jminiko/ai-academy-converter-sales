@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -196,6 +197,12 @@ import StrategieIA from "./pages/services/StrategieIA";
 import TendancesIA2024 from "./pages/actualites/TendancesIA2024";
 import CertificationAWS from "./pages/certifications/CertificationAWS";
 import SymposiumIA from "./pages/events/SymposiumIA";
+import AutomatisationRobotique from "./pages/formations/AutomatisationRobotique";
+import Kubernetes from "./pages/technologies/Kubernetes";
+import RecommandationIA from "./pages/solutions/RecommandationIA";
+import LogistiqueIA from "./pages/industries/LogistiqueIA";
+import IAEntreprise from "./pages/specialisations/IAEntreprise";
+import MistralAI from "./pages/outils/MistralAI";
 
 const queryClient = new QueryClient();
 
@@ -234,6 +241,7 @@ const App = () => (
           <Route path="/formations/vision-par-ordinateur" element={<VisionParOrdinateur />} />
           <Route path="/formations/automl-platforms" element={<AutoMLPlatforms />} />
           <Route path="/formations/neural-networks" element={<NeuralNetworks />} />
+          <Route path="/formations/automatisation-robotique" element={<AutomatisationRobotique />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/consulting" element={<Consulting />} />
           <Route path="/services/implementation" element={<Implementation />} />
@@ -258,6 +266,7 @@ const App = () => (
           <Route path="/industries/manufacturing" element={<ManufacturingIA />} />
           <Route path="/industries/banking" element={<BankingIA />} />
           <Route path="/industries/telecommunications" element={<TelecommunicationsIA />} />
+          <Route path="/industries/logistique-ia" element={<LogistiqueIA />} />
           <Route path="/outils/chatgpt" element={<ChatGPTOutil />} />
           <Route path="/outils/midjourney" element={<MidjourneyOutil />} />
           <Route path="/outils/stable-diffusion" element={<StableDiffusion />} />
@@ -269,6 +278,7 @@ const App = () => (
           <Route path="/outils/microsoft-copilot-360" element={<MicrosoftCopilot360 />} />
           <Route path="/outils/gemini-ia" element={<GeminiIA />} />
           <Route path="/outils/anthropic-claude" element={<AnthropicClaude />} />
+          <Route path="/outils/mistral-ai" element={<MistralAI />} />
           <Route path="/technologies/langchain" element={<LangChain />} />
           <Route path="/technologies/mlops" element={<MLOps />} />
           <Route path="/technologies/huggingface" element={<HuggingFace />} />
@@ -278,6 +288,7 @@ const App = () => (
           <Route path="/technologies/edge-ai" element={<EdgeAI />} />
           <Route path="/technologies/tensorboard" element={<TensorBoard />} />
           <Route path="/technologies/nvidia" element={<NVIDIA />} />
+          <Route path="/technologies/kubernetes" element={<Kubernetes />} />
           <Route path="/methodes/agile-ia" element={<AgileIA />} />
           <Route path="/methodes/design-thinking-ia" element={<DesignThinkingIA />} />
           <Route path="/methodes/lean-startup-ia" element={<LeanStartupIA />} />
@@ -292,6 +303,7 @@ const App = () => (
           <Route path="/specialisations/ia-quantique" element={<IAQuantique />} />
           <Route path="/specialisations/ia-education" element={<IAEducation />} />
           <Route path="/specialisations/ia-automobile" element={<IAAutomobile />} />
+          <Route path="/specialisations/ia-entreprise" element={<IAEntreprise />} />
           <Route path="/solutions/chatbot-ia" element={<ChatbotIA />} />
           <Route path="/solutions/analyse-sentiment" element={<AnalyseSentiment />} />
           <Route path="/solutions/reconnaissance-vocale" element={<ReconnaissanceVocale />} />
@@ -301,6 +313,7 @@ const App = () => (
           <Route path="/solutions/assistant-virtuel-ia" element={<AssistantVirtuelIA />} />
           <Route path="/solutions/traitement-documents" element={<TraitementDocuments />} />
           <Route path="/solutions/detection-fraude" element={<DetectionFraude />} />
+          <Route path="/solutions/recommandation-ia" element={<RecommandationIA />} />
           <Route path="/actualites/innovations-ia-2024" element={<InnovationsIA2024 />} />
           <Route path="/actualites/revolution-ia-2025" element={<RevolutionIA2025 />} />
           <Route path="/actualites/tendances-ia-2024" element={<TendancesIA2024 />} />
