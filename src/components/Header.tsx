@@ -33,6 +33,7 @@ export const Header = () => {
               <Link to="/formations/claude-ai" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Claude AI</Link>
               <div className="border-t my-2"></div>
               <Link to="/certifications" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Certifications</Link>
+              <Link to="/methodologie" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Méthodologie</Link>
             </div>
           </div>
           
@@ -45,6 +46,8 @@ export const Header = () => {
               <Link to="/services/consulting" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Consulting IA</Link>
               <Link to="/services/implementation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Implémentation</Link>
               <Link to="/services/support" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Support & Maintenance</Link>
+              <div className="border-t my-2"></div>
+              <Link to="/secteurs-business" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Secteurs d'activité</Link>
             </div>
           </div>
           
@@ -59,6 +62,7 @@ export const Header = () => {
             <div className="absolute top-full left-0 bg-white border rounded-lg shadow-lg py-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
               <Link to="/blog" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Blog</Link>
               <Link to="/ressources-gratuites" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Ressources Gratuites</Link>
+              <Link to="/outils-ia" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Outils IA</Link>
               <Link to="/evenements" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Événements</Link>
               <Link to="/case-studies/banque-transformation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Études de Cas</Link>
             </div>
@@ -108,14 +112,23 @@ export const Header = () => {
             <Link to="/certifications" className="block text-gray-600 hover:text-blue-600">
               Certifications
             </Link>
+            <Link to="/methodologie" className="block text-gray-600 hover:text-blue-600">
+              Méthodologie
+            </Link>
             <Link to="/services" className="block text-gray-600 hover:text-blue-600 font-medium">
               Services
+            </Link>
+            <Link to="/secteurs-business" className="block text-gray-600 hover:text-blue-600">
+              Secteurs Business
             </Link>
             <Link to="/automatisation" className="block text-gray-600 hover:text-blue-600 font-medium">
               Automatisation
             </Link>
             <Link to="/ressources-gratuites" className="block text-gray-600 hover:text-blue-600">
               Ressources Gratuites
+            </Link>
+            <Link to="/outils-ia" className="block text-gray-600 hover:text-blue-600">
+              Outils IA
             </Link>
             <Link to="/evenements" className="block text-gray-600 hover:text-blue-600">
               Événements

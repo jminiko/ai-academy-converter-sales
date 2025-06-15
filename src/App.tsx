@@ -32,6 +32,9 @@ import Partenaires from "./pages/Partenaires";
 import Evenements from "./pages/Evenements";
 import RessourcesGratuites from "./pages/RessourcesGratuites";
 import Confidentialite from "./pages/Confidentialite";
+import SecteursBusiness from "./pages/SecteursBusiness";
+import OutilsIA from "./pages/OutilsIA";
+import Methodologie from "./pages/Methodologie";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -68,6 +71,9 @@ const App = () => (
           <Route path="/partenaires" element={<Partenaires />} />
           <Route path="/evenements" element={<Evenements />} />
           <Route path="/ressources-gratuites" element={<RessourcesGratuites />} />
+          <Route path="/secteurs-business" element={<SecteursBusiness />} />
+          <Route path="/outils-ia" element={<OutilsIA />} />
+          <Route path="/methodologie" element={<Methodologie />} />
           <Route path="/confidentialite" element={<Confidentialite />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/testimonials" element={<Testimonials />} />
