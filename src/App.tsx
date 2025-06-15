@@ -154,6 +154,13 @@ import RealEstateIA from "./pages/industries/RealEstateIA";
 import ConsultingStrategique from "./pages/services/ConsultingStrategique";
 import FormationPersonnalisee from "./pages/services/FormationPersonnalisee";
 import WorkshopAutomatisation from "./pages/events/WorkshopAutomatisation";
+import EcommerceIA from "./pages/industries/EcommerceIA";
+import StartupIA from "./pages/industries/StartupIA";
+import PharmaIA from "./pages/industries/PharmaIA";
+import IAConversationnelle from "./pages/formations/IAConversationnelle";
+import BootcampIA from "./pages/events/BootcampIA";
+import TransformationDigitale from "./pages/services/TransformationDigitale";
+import AssuranceIA from "./pages/industries/AssuranceIA";
 
 const queryClient = new QueryClient();
 
@@ -313,6 +320,13 @@ const App = () => (
           <Route path="/services/consulting-strategique" element={<ConsultingStrategique />} />
           <Route path="/services/formation-personnalisee" element={<FormationPersonnalisee />} />
           <Route path="/events/workshop-automatisation" element={<WorkshopAutomatisation />} />
+          <Route path="/industries/ecommerce" element={<EcommerceIA />} />
+          <Route path="/industries/startup" element={<StartupIA />} />
+          <Route path="/industries/pharma" element={<PharmaIA />} />
+          <Route path="/formations/ia-conversationnelle" element={<IAConversationnelle />} />
+          <Route path="/events/bootcamp-ia" element={<BootcampIA />} />
+          <Route path="/services/transformation-digitale" element={<TransformationDigitale />} />
+          <Route path="/industries/assurance" element={<AssuranceIA />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
