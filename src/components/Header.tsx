@@ -48,6 +48,7 @@ export const Header = () => {
               <Link to="/services/support" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Support & Maintenance</Link>
               <div className="border-t my-2"></div>
               <Link to="/secteurs-business" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Secteurs d'activité</Link>
+              <Link to="/projets" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Nos projets</Link>
             </div>
           </div>
           
@@ -74,11 +75,16 @@ export const Header = () => {
             </span>
             <div className="absolute top-full left-0 bg-white border rounded-lg shadow-lg py-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
               <Link to="/about" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">À propos</Link>
+              <Link to="/equipe" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Notre équipe</Link>
               <Link to="/partenaires" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Partenaires</Link>
               <Link to="/testimonials" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Témoignages</Link>
               <Link to="/faq" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">FAQ</Link>
             </div>
           </div>
+
+          <Link to="/tarifs" className="text-gray-600 hover:text-blue-600 transition-colors">
+            Tarifs
+          </Link>
           
           <Link to="/contact" className="text-gray-600 hover:text-blue-600 transition-colors">
             Contact
@@ -121,6 +127,9 @@ export const Header = () => {
             <Link to="/secteurs-business" className="block text-gray-600 hover:text-blue-600">
               Secteurs Business
             </Link>
+            <Link to="/projets" className="block text-gray-600 hover:text-blue-600">
+              Nos Projets
+            </Link>
             <Link to="/automatisation" className="block text-gray-600 hover:text-blue-600 font-medium">
               Automatisation
             </Link>
@@ -136,6 +145,9 @@ export const Header = () => {
             <Link to="/about" className="block text-gray-600 hover:text-blue-600">
               À propos
             </Link>
+            <Link to="/equipe" className="block text-gray-600 hover:text-blue-600">
+              Notre Équipe
+            </Link>
             <Link to="/partenaires" className="block text-gray-600 hover:text-blue-600">
               Partenaires
             </Link>
@@ -144,6 +156,9 @@ export const Header = () => {
             </Link>
             <Link to="/blog" className="block text-gray-600 hover:text-blue-600">
               Blog
+            </Link>
+            <Link to="/tarifs" className="block text-gray-600 hover:text-blue-600">
+              Tarifs
             </Link>
             <Link to="/faq" className="block text-gray-600 hover:text-blue-600">
               FAQ
