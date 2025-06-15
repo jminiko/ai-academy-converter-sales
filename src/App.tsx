@@ -21,12 +21,51 @@ import OpenAIAPI from "./pages/formations/OpenAIAPI";
 import MicrosoftCopilot from "./pages/formations/MicrosoftCopilot";
 import GoogleBard from "./pages/formations/GoogleBard";
 import ClaudeAI from "./pages/formations/ClaudeAI";
+import PythonIA from "./pages/formations/PythonIA";
+import TensorFlow from "./pages/formations/TensorFlow";
+import PyTorch from "./pages/formations/PyTorch";
+import MachineLearning from "./pages/formations/MachineLearning";
+import DeepLearning from "./pages/formations/DeepLearning";
+import ComputerVision from "./pages/formations/ComputerVision";
+import NLP from "./pages/formations/NLP";
+import ReinforcementLearning from "./pages/formations/ReinforcementLearning";
+import DataScience from "./pages/formations/DataScience";
+import BigData from "./pages/formations/BigData";
 import Consulting from "./pages/services/Consulting";
 import Implementation from "./pages/services/Implementation";
 import Support from "./pages/services/Support";
+import ConseilStrategique from "./pages/services/ConseilStrategique";
+import AuditIA from "./pages/services/AuditIA";
+import DeveloppementIA from "./pages/services/DeveloppementIA";
+import MaintenanceIA from "./pages/services/MaintenanceIA";
+import Sante from "./pages/secteurs/Sante";
+import Finance from "./pages/secteurs/Finance";
+import Education from "./pages/secteurs/Education";
+import Automobile from "./pages/secteurs/Automobile";
+import Retail from "./pages/secteurs/Retail";
+import ChatGPTOutil from "./pages/outils/ChatGPTOutil";
+import MidjourneyOutil from "./pages/outils/MidjourneyOutil";
+import StableDiffusion from "./pages/outils/StableDiffusion";
+import RunwayML from "./pages/outils/RunwayML";
 import ArticleIA2024 from "./pages/blog/ArticleIA2024";
 import GuidePrompts from "./pages/blog/GuidePrompts";
+import TendancesIA2025 from "./pages/blog/TendancesIA2025";
+import GuideAutomatisation from "./pages/blog/GuideAutomatisation";
 import CaseStudyBanque from "./pages/CaseStudyBanque";
+import RetailTransformation from "./pages/case-studies/RetailTransformation";
+import SanteDigitale from "./pages/case-studies/SanteDigitale";
+import GuidesIA from "./pages/ressources/GuidesIA";
+import Templates from "./pages/ressources/Templates";
+import WebinairesRessource from "./pages/ressources/Webinaires";
+import ConferenceIA2024 from "./pages/events/ConferenceIA2024";
+import WorkshopChatGPT from "./pages/events/WorkshopChatGPT";
+import CertificationIA from "./pages/certifications/CertificationIA";
+import CertificationChatGPT from "./pages/certifications/CertificationChatGPT";
+import PartenaireOpenAI from "./pages/partenariats/PartenaireOpenAI";
+import PartenaireMicrosoft from "./pages/partenariats/PartenaireMicrosoft";
+import DirecteurTechnique from "./pages/equipe/DirecteurTechnique";
+import ChefProduit from "./pages/equipe/ChefProduit";
+import PolitiqueConfidentialiteDetaille from "./pages/legal/PolitiqueConfidentialiteDetaille";
 import Certifications from "./pages/Certifications";
 import Partenaires from "./pages/Partenaires";
 import Evenements from "./pages/Evenements";
@@ -71,17 +110,56 @@ const App = () => (
           <Route path="/formations/microsoft-copilot" element={<MicrosoftCopilot />} />
           <Route path="/formations/google-bard" element={<GoogleBard />} />
           <Route path="/formations/claude-ai" element={<ClaudeAI />} />
+          <Route path="/formations/python-ia" element={<PythonIA />} />
+          <Route path="/formations/tensorflow" element={<TensorFlow />} />
+          <Route path="/formations/pytorch" element={<PyTorch />} />
+          <Route path="/formations/machine-learning" element={<MachineLearning />} />
+          <Route path="/formations/deep-learning" element={<DeepLearning />} />
+          <Route path="/formations/computer-vision" element={<ComputerVision />} />
+          <Route path="/formations/nlp" element={<NLP />} />
+          <Route path="/formations/reinforcement-learning" element={<ReinforcementLearning />} />
+          <Route path="/formations/data-science" element={<DataScience />} />
+          <Route path="/formations/big-data" element={<BigData />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/consulting" element={<Consulting />} />
           <Route path="/services/implementation" element={<Implementation />} />
           <Route path="/services/support" element={<Support />} />
+          <Route path="/services/conseil-strategique" element={<ConseilStrategique />} />
+          <Route path="/services/audit-ia" element={<AuditIA />} />
+          <Route path="/services/developpement-ia" element={<DeveloppementIA />} />
+          <Route path="/services/maintenance-ia" element={<MaintenanceIA />} />
+          <Route path="/secteurs/sante" element={<Sante />} />
+          <Route path="/secteurs/finance" element={<Finance />} />
+          <Route path="/secteurs/education" element={<Education />} />
+          <Route path="/secteurs/automobile" element={<Automobile />} />
+          <Route path="/secteurs/retail" element={<Retail />} />
+          <Route path="/outils/chatgpt" element={<ChatGPTOutil />} />
+          <Route path="/outils/midjourney" element={<MidjourneyOutil />} />
+          <Route path="/outils/stable-diffusion" element={<StableDiffusion />} />
+          <Route path="/outils/runway-ml" element={<RunwayML />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/automatisation" element={<Automatisation />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/tendances-ia-2024" element={<ArticleIA2024 />} />
           <Route path="/blog/guide-prompt-engineering" element={<GuidePrompts />} />
+          <Route path="/blog/tendances-ia-2025" element={<TendancesIA2025 />} />
+          <Route path="/blog/guide-automatisation" element={<GuideAutomatisation />} />
           <Route path="/case-studies/banque-transformation" element={<CaseStudyBanque />} />
+          <Route path="/case-studies/retail-transformation" element={<RetailTransformation />} />
+          <Route path="/case-studies/sante-digitale" element={<SanteDigitale />} />
+          <Route path="/ressources/guides-ia" element={<GuidesIA />} />
+          <Route path="/ressources/templates" element={<Templates />} />
+          <Route path="/ressources/webinaires" element={<WebinairesRessource />} />
+          <Route path="/events/conference-ia-2024" element={<ConferenceIA2024 />} />
+          <Route path="/events/workshop-chatgpt" element={<WorkshopChatGPT />} />
+          <Route path="/certifications/certification-ia" element={<CertificationIA />} />
+          <Route path="/certifications/certification-chatgpt" element={<CertificationChatGPT />} />
+          <Route path="/partenariats/openai" element={<PartenaireOpenAI />} />
+          <Route path="/partenariats/microsoft" element={<PartenaireMicrosoft />} />
+          <Route path="/equipe/directeur-technique" element={<DirecteurTechnique />} />
+          <Route path="/equipe/chef-produit" element={<ChefProduit />} />
+          <Route path="/legal/politique-confidentialite-detaille" element={<PolitiqueConfidentialiteDetaille />} />
           <Route path="/certifications" element={<Certifications />} />
           <Route path="/partenaires" element={<Partenaires />} />
           <Route path="/evenements" element={<Evenements />} />
