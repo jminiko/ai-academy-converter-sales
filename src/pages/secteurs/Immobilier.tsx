@@ -3,24 +3,24 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Sparkles, TrendingUp, Calendar, AlertTriangle } from "lucide-react";
+import { Home, TrendingUp, MapPin, Calculator } from "lucide-react";
 
-const PredictionIA = () => {
+const Immobilier = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
       <Header />
       
-      <section className="py-20 bg-gradient-to-r from-purple-600 to-indigo-600">
+      <section className="py-20 bg-gradient-to-r from-amber-600 to-orange-600">
         <div className="container mx-auto px-4 text-center">
-          <Sparkles className="h-16 w-16 text-white mx-auto mb-6" />
+          <Home className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">
-            Prédictions & Analyses Prédictives
+            IA pour l'Immobilier
           </h1>
-          <p className="text-xl text-purple-100 mb-8 max-w-3xl mx-auto">
-            Anticipez l'avenir avec nos modèles prédictifs avancés
+          <p className="text-xl text-amber-100 mb-8 max-w-3xl mx-auto">
+            Révolutionnez le secteur immobilier avec l'intelligence artificielle
           </p>
-          <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100">
-            Prédire l'avenir
+          <Button size="lg" className="bg-white text-amber-600 hover:bg-gray-100">
+            Découvrir nos solutions
           </Button>
         </div>
       </section>
@@ -30,45 +30,45 @@ const PredictionIA = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <Card>
               <CardHeader>
-                <TrendingUp className="h-12 w-12 text-purple-600 mb-4" />
-                <CardTitle>Tendances du marché</CardTitle>
+                <Calculator className="h-12 w-12 text-amber-600 mb-4" />
+                <CardTitle>Évaluation automatique</CardTitle>
+                <CardDescription>
+                  Estimation précise des biens
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Algorithmes d'évaluation automatique basés sur l'analyse de marché.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <TrendingUp className="h-12 w-12 text-amber-600 mb-4" />
+                <CardTitle>Prédiction des prix</CardTitle>
                 <CardDescription>
                   Anticipez les évolutions du marché
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Modèles prédictifs pour forecaster les tendances commerciales.
+                  Modèles prédictifs pour anticiper les fluctuations immobilières.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Calendar className="h-12 w-12 text-purple-600 mb-4" />
-                <CardTitle>Planification</CardTitle>
+                <MapPin className="h-12 w-12 text-amber-600 mb-4" />
+                <CardTitle>Géolocalisation intelligente</CardTitle>
                 <CardDescription>
-                  Optimisez votre planification
+                  Analyse des zones et quartiers
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Prévisions de demande et planification des ressources optimisée.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <AlertTriangle className="h-12 w-12 text-purple-600 mb-4" />
-                <CardTitle>Détection précoce</CardTitle>
-                <CardDescription>
-                  Alertes et maintenance prédictive
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Identifiez les problèmes avant qu'ils ne surviennent.
+                  Analyse géospatiale pour identifier les opportunités d'investissement.
                 </p>
               </CardContent>
             </Card>
@@ -81,4 +81,4 @@ const PredictionIA = () => {
   );
 };
 
-export default PredictionIA;
+export default Immobilier;

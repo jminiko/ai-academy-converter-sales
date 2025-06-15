@@ -3,24 +3,24 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Sparkles, TrendingUp, Calendar, AlertTriangle } from "lucide-react";
+import { Truck, Route, Fuel, Shield } from "lucide-react";
 
-const PredictionIA = () => {
+const Transport = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Header />
       
-      <section className="py-20 bg-gradient-to-r from-purple-600 to-indigo-600">
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-cyan-600">
         <div className="container mx-auto px-4 text-center">
-          <Sparkles className="h-16 w-16 text-white mx-auto mb-6" />
+          <Truck className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">
-            Prédictions & Analyses Prédictives
+            IA pour le Transport
           </h1>
-          <p className="text-xl text-purple-100 mb-8 max-w-3xl mx-auto">
-            Anticipez l'avenir avec nos modèles prédictifs avancés
+          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+            Transformez la mobilité avec l'intelligence artificielle
           </p>
-          <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100">
-            Prédire l'avenir
+          <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+            Optimiser le transport
           </Button>
         </div>
       </section>
@@ -30,45 +30,45 @@ const PredictionIA = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <Card>
               <CardHeader>
-                <TrendingUp className="h-12 w-12 text-purple-600 mb-4" />
-                <CardTitle>Tendances du marché</CardTitle>
+                <Route className="h-12 w-12 text-blue-600 mb-4" />
+                <CardTitle>Optimisation des routes</CardTitle>
                 <CardDescription>
-                  Anticipez les évolutions du marché
+                  Algorithmes de routage intelligent
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Modèles prédictifs pour forecaster les tendances commerciales.
+                  Optimisation des itinéraires en temps réel pour réduire les coûts.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Calendar className="h-12 w-12 text-purple-600 mb-4" />
-                <CardTitle>Planification</CardTitle>
+                <Fuel className="h-12 w-12 text-blue-600 mb-4" />
+                <CardTitle>Gestion de flotte</CardTitle>
                 <CardDescription>
-                  Optimisez votre planification
+                  Monitoring et maintenance prédictive
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Prévisions de demande et planification des ressources optimisée.
+                  Surveillance intelligente des véhicules et maintenance préventive.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <AlertTriangle className="h-12 w-12 text-purple-600 mb-4" />
-                <CardTitle>Détection précoce</CardTitle>
+                <Shield className="h-12 w-12 text-blue-600 mb-4" />
+                <CardTitle>Sécurité routière</CardTitle>
                 <CardDescription>
-                  Alertes et maintenance prédictive
+                  Prévention des accidents
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Identifiez les problèmes avant qu'ils ne surviennent.
+                  Systèmes d'alerte et de prévention des risques routiers.
                 </p>
               </CardContent>
             </Card>
@@ -81,4 +81,4 @@ const PredictionIA = () => {
   );
 };
 
-export default PredictionIA;
+export default Transport;

@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -45,6 +44,9 @@ import Finance from "./pages/secteurs/Finance";
 import Education from "./pages/secteurs/Education";
 import Automobile from "./pages/secteurs/Automobile";
 import Retail from "./pages/secteurs/Retail";
+import Immobilier from "./pages/secteurs/Immobilier";
+import Agriculture from "./pages/secteurs/Agriculture";
+import Transport from "./pages/secteurs/Transport";
 import ChatGPTOutil from "./pages/outils/ChatGPTOutil";
 import MidjourneyOutil from "./pages/outils/MidjourneyOutil";
 import StableDiffusion from "./pages/outils/StableDiffusion";
@@ -60,6 +62,8 @@ import GuideAvanceIA from "./pages/guides/GuideAvanceIA";
 import IASante from "./pages/specialisations/IASante";
 import IAFinance from "./pages/specialisations/IAFinance";
 import IAEthique from "./pages/specialisations/IAEthique";
+import IAMarketing from "./pages/specialisations/IAMarketing";
+import IACybersecurite from "./pages/specialisations/IACybersecurite";
 import ChatbotIA from "./pages/solutions/ChatbotIA";
 import AnalyseSentiment from "./pages/solutions/AnalyseSentiment";
 import ReconnaissanceVocale from "./pages/solutions/ReconnaissanceVocale";
@@ -68,6 +72,8 @@ import OptimisationIA from "./pages/solutions/OptimisationIA";
 import PredictionIA from "./pages/solutions/PredictionIA";
 import InnovationsIA2024 from "./pages/actualites/InnovationsIA2024";
 import BibliothequeIA from "./pages/ressources/BibliothequeIA";
+import CasEtudes from "./pages/ressources/CasEtudes";
+import Podcasts from "./pages/ressources/Podcasts";
 import ArticleIA2024 from "./pages/blog/ArticleIA2024";
 import GuidePrompts from "./pages/blog/GuidePrompts";
 import TendancesIA2025 from "./pages/blog/TendancesIA2025";
@@ -156,6 +162,9 @@ const App = () => (
           <Route path="/secteurs/education" element={<Education />} />
           <Route path="/secteurs/automobile" element={<Automobile />} />
           <Route path="/secteurs/retail" element={<Retail />} />
+          <Route path="/secteurs/immobilier" element={<Immobilier />} />
+          <Route path="/secteurs/agriculture" element={<Agriculture />} />
+          <Route path="/secteurs/transport" element={<Transport />} />
           <Route path="/outils/chatgpt" element={<ChatGPTOutil />} />
           <Route path="/outils/midjourney" element={<MidjourneyOutil />} />
           <Route path="/outils/stable-diffusion" element={<StableDiffusion />} />
@@ -171,6 +180,8 @@ const App = () => (
           <Route path="/specialisations/ia-sante" element={<IASante />} />
           <Route path="/specialisations/ia-finance" element={<IAFinance />} />
           <Route path="/specialisations/ia-ethique" element={<IAEthique />} />
+          <Route path="/specialisations/ia-marketing" element={<IAMarketing />} />
+          <Route path="/specialisations/ia-cybersecurite" element={<IACybersecurite />} />
           <Route path="/solutions/chatbot-ia" element={<ChatbotIA />} />
           <Route path="/solutions/analyse-sentiment" element={<AnalyseSentiment />} />
           <Route path="/solutions/reconnaissance-vocale" element={<ReconnaissanceVocale />} />
@@ -179,6 +190,8 @@ const App = () => (
           <Route path="/solutions/prediction-ia" element={<PredictionIA />} />
           <Route path="/actualites/innovations-ia-2024" element={<InnovationsIA2024 />} />
           <Route path="/ressources/bibliotheque-ia" element={<BibliothequeIA />} />
+          <Route path="/ressources/cas-etudes" element={<CasEtudes />} />
+          <Route path="/ressources/podcasts" element={<Podcasts />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/automatisation" element={<Automatisation />} />

@@ -3,24 +3,24 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Sparkles, TrendingUp, Calendar, AlertTriangle } from "lucide-react";
+import { Target, Users, TrendingUp, MessageSquare } from "lucide-react";
 
-const PredictionIA = () => {
+const IAMarketing = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-pink-50 to-white">
       <Header />
       
-      <section className="py-20 bg-gradient-to-r from-purple-600 to-indigo-600">
+      <section className="py-20 bg-gradient-to-r from-pink-600 to-rose-600">
         <div className="container mx-auto px-4 text-center">
-          <Sparkles className="h-16 w-16 text-white mx-auto mb-6" />
+          <Target className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">
-            Prédictions & Analyses Prédictives
+            IA Marketing & Publicité
           </h1>
-          <p className="text-xl text-purple-100 mb-8 max-w-3xl mx-auto">
-            Anticipez l'avenir avec nos modèles prédictifs avancés
+          <p className="text-xl text-pink-100 mb-8 max-w-3xl mx-auto">
+            Révolutionnez vos campagnes marketing avec l'intelligence artificielle
           </p>
-          <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100">
-            Prédire l'avenir
+          <Button size="lg" className="bg-white text-pink-600 hover:bg-gray-100">
+            Transformer le marketing
           </Button>
         </div>
       </section>
@@ -30,45 +30,45 @@ const PredictionIA = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <Card>
               <CardHeader>
-                <TrendingUp className="h-12 w-12 text-purple-600 mb-4" />
-                <CardTitle>Tendances du marché</CardTitle>
+                <Users className="h-12 w-12 text-pink-600 mb-4" />
+                <CardTitle>Segmentation client</CardTitle>
                 <CardDescription>
-                  Anticipez les évolutions du marché
+                  Ciblage précis des audiences
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Modèles prédictifs pour forecaster les tendances commerciales.
+                  Algorithmes de segmentation avancée pour personnaliser les campagnes.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Calendar className="h-12 w-12 text-purple-600 mb-4" />
-                <CardTitle>Planification</CardTitle>
+                <MessageSquare className="h-12 w-12 text-pink-600 mb-4" />
+                <CardTitle>Génération de contenu</CardTitle>
                 <CardDescription>
-                  Optimisez votre planification
+                  Création automatisée de contenus
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Prévisions de demande et planification des ressources optimisée.
+                  IA générative pour créer du contenu marketing personnalisé.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <AlertTriangle className="h-12 w-12 text-purple-600 mb-4" />
-                <CardTitle>Détection précoce</CardTitle>
+                <TrendingUp className="h-12 w-12 text-pink-600 mb-4" />
+                <CardTitle>Optimisation des conversions</CardTitle>
                 <CardDescription>
-                  Alertes et maintenance prédictive
+                  Amélioration du ROI marketing
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Identifiez les problèmes avant qu'ils ne surviennent.
+                  Optimisation automatique des campagnes pour maximiser les conversions.
                 </p>
               </CardContent>
             </Card>
@@ -81,4 +81,4 @@ const PredictionIA = () => {
   );
 };
 
-export default PredictionIA;
+export default IAMarketing;
