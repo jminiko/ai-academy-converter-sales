@@ -24,6 +24,14 @@ import ClaudeAI from "./pages/formations/ClaudeAI";
 import Consulting from "./pages/services/Consulting";
 import Implementation from "./pages/services/Implementation";
 import Support from "./pages/services/Support";
+import ArticleIA2024 from "./pages/blog/ArticleIA2024";
+import GuidePrompts from "./pages/blog/GuidePrompts";
+import CaseStudyBanque from "./pages/CaseStudyBanque";
+import Certifications from "./pages/Certifications";
+import Partenaires from "./pages/Partenaires";
+import Evenements from "./pages/Evenements";
+import RessourcesGratuites from "./pages/RessourcesGratuites";
+import Confidentialite from "./pages/Confidentialite";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -53,6 +61,14 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/automatisation" element={<Automatisation />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/tendances-ia-2024" element={<ArticleIA2024 />} />
+          <Route path="/blog/guide-prompt-engineering" element={<GuidePrompts />} />
+          <Route path="/case-studies/banque-transformation" element={<CaseStudyBanque />} />
+          <Route path="/certifications" element={<Certifications />} />
+          <Route path="/partenaires" element={<Partenaires />} />
+          <Route path="/evenements" element={<Evenements />} />
+          <Route path="/ressources-gratuites" element={<RessourcesGratuites />} />
+          <Route path="/confidentialite" element={<Confidentialite />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/testimonials" element={<Testimonials />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

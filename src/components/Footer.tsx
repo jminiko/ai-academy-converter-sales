@@ -22,9 +22,10 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Formations</h3>
             <ul className="space-y-2 text-gray-400">
               <li><Link to="/formations/ia-generative" className="hover:text-white">IA Générative</Link></li>
-              <li><Link to="/formations/chatgpt" className="hover:text-white">ChatGPT Pro</Link></li>
-              <li><Link to="/formations/automatisation" className="hover:text-white">Automatisation</Link></li>
+              <li><Link to="/formations/chatgpt-pro" className="hover:text-white">ChatGPT Pro</Link></li>
+              <li><Link to="/formations/automatisation-ia" className="hover:text-white">Automatisation</Link></li>
               <li><Link to="/formations/prompt-engineering" className="hover:text-white">Prompt Engineering</Link></li>
+              <li><Link to="/certifications" className="hover:text-white">Certifications</Link></li>
             </ul>
           </div>
           
@@ -34,7 +35,7 @@ export const Footer = () => {
               <li><Link to="/services/consulting" className="hover:text-white">Consulting IA</Link></li>
               <li><Link to="/services/implementation" className="hover:text-white">Implémentation</Link></li>
               <li><Link to="/services/support" className="hover:text-white">Support</Link></li>
-              <li><Link to="/services/audit" className="hover:text-white">Audit IA</Link></li>
+              <li><Link to="/partenaires" className="hover:text-white">Partenaires</Link></li>
             </ul>
           </div>
           
@@ -61,8 +62,12 @@ export const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-center text-gray-400">
           <p>&copy; 2024 Twenty One Talents. Tous droits réservés.</p>
+          <div className="flex space-x-6 mt-4 md:mt-0">
+            <Link to="/confidentialite" className="hover:text-white text-sm">Politique de confidentialité</Link>
+            <Link to="/faq" className="hover:text-white text-sm">Mentions légales</Link>
+          </div>
         </div>
       </div>
     </footer>

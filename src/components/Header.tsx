@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
 import { Link } from "react-router-dom";
@@ -30,6 +31,8 @@ export const Header = () => {
               <Link to="/formations/microsoft-copilot" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Microsoft Copilot</Link>
               <Link to="/formations/google-bard" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Google Bard</Link>
               <Link to="/formations/claude-ai" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Claude AI</Link>
+              <div className="border-t my-2"></div>
+              <Link to="/certifications" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Certifications</Link>
             </div>
           </div>
           
@@ -48,6 +51,18 @@ export const Header = () => {
           <Link to="/automatisation" className="text-gray-600 hover:text-blue-600 transition-colors">
             Automatisation
           </Link>
+
+          <div className="relative group">
+            <span className="text-gray-600 hover:text-blue-600 transition-colors flex items-center cursor-pointer">
+              Ressources <ChevronDown className="ml-1 h-4 w-4" />
+            </span>
+            <div className="absolute top-full left-0 bg-white border rounded-lg shadow-lg py-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <Link to="/blog" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Blog</Link>
+              <Link to="/ressources-gratuites" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Ressources Gratuites</Link>
+              <Link to="/evenements" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Événements</Link>
+              <Link to="/case-studies/banque-transformation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Études de Cas</Link>
+            </div>
+          </div>
           
           <div className="relative group">
             <span className="text-gray-600 hover:text-blue-600 transition-colors flex items-center cursor-pointer">
@@ -55,8 +70,8 @@ export const Header = () => {
             </span>
             <div className="absolute top-full left-0 bg-white border rounded-lg shadow-lg py-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
               <Link to="/about" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">À propos</Link>
+              <Link to="/partenaires" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Partenaires</Link>
               <Link to="/testimonials" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Témoignages</Link>
-              <Link to="/blog" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Blog</Link>
               <Link to="/faq" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">FAQ</Link>
             </div>
           </div>
@@ -90,14 +105,26 @@ export const Header = () => {
             <Link to="/formations" className="block text-gray-600 hover:text-blue-600 font-medium">
               Formations
             </Link>
+            <Link to="/certifications" className="block text-gray-600 hover:text-blue-600">
+              Certifications
+            </Link>
             <Link to="/services" className="block text-gray-600 hover:text-blue-600 font-medium">
               Services
             </Link>
             <Link to="/automatisation" className="block text-gray-600 hover:text-blue-600 font-medium">
               Automatisation
             </Link>
+            <Link to="/ressources-gratuites" className="block text-gray-600 hover:text-blue-600">
+              Ressources Gratuites
+            </Link>
+            <Link to="/evenements" className="block text-gray-600 hover:text-blue-600">
+              Événements
+            </Link>
             <Link to="/about" className="block text-gray-600 hover:text-blue-600">
               À propos
+            </Link>
+            <Link to="/partenaires" className="block text-gray-600 hover:text-blue-600">
+              Partenaires
             </Link>
             <Link to="/testimonials" className="block text-gray-600 hover:text-blue-600">
               Témoignages
