@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -237,6 +238,14 @@ import CohereAI from "./pages/outils/CohereAI";
 import IARetail from "./pages/specialisations/IARetail";
 import ConferenceML2024 from "./pages/events/ConferenceML2024";
 import CertificationPython from "./pages/certifications/CertificationPython";
+import DataEngineering from "./pages/formations/DataEngineering";
+import MLSecurite from "./pages/formations/MLSecurite";
+import MongoDB from "./pages/technologies/MongoDB";
+import Redis from "./pages/technologies/Redis";
+import ChemieIA from "./pages/industries/ChemieIA";
+import MetallurgieIA from "./pages/industries/MetallurgieIA";
+import MonitoringIA from "./pages/solutions/MonitoringIA";
+import HuggingFaceSpaces from "./pages/outils/HuggingFaceSpaces";
 
 const queryClient = new QueryClient();
 
@@ -283,6 +292,8 @@ const App = () => (
           <Route path="/formations/ia-music" element={<IAMusic />} />
           <Route path="/formations/automatisation-tests" element={<AutomatisationTests />} />
           <Route path="/formations/ia-creative" element={<IACreative />} />
+          <Route path="/formations/data-engineering" element={<DataEngineering />} />
+          <Route path="/formations/ml-securite" element={<MLSecurite />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/consulting" element={<Consulting />} />
           <Route path="/services/implementation" element={<Implementation />} />
@@ -312,6 +323,8 @@ const App = () => (
           <Route path="/industries/retail-ai" element={<RetailAI />} />
           <Route path="/industries/insurance-ia" element={<InsuranceIA />} />
           <Route path="/industries/fashion-ia" element={<FashionIA />} />
+          <Route path="/industries/chemie-ia" element={<ChemieIA />} />
+          <Route path="/industries/metallurgie-ia" element={<MetallurgieIA />} />
           <Route path="/outils/chatgpt" element={<ChatGPTOutil />} />
           <Route path="/outils/midjourney" element={<MidjourneyOutil />} />
           <Route path="/outils/stable-diffusion" element={<StableDiffusion />} />
@@ -326,6 +339,8 @@ const App = () => (
           <Route path="/outils/mistral-ai" element={<MistralAI />} />
           <Route path="/outils/code-pilot" element={<CodePilot />} />
           <Route path="/outils/nvidia-omniverse" element={<NvidiaOmniverse />} />
+          <Route path="/outils/cohere-ai" element={<CohereAI />} />
+          <Route path="/outils/huggingface-spaces" element={<HuggingFaceSpaces />} />
           <Route path="/technologies/langchain" element={<LangChain />} />
           <Route path="/technologies/mlops" element={<MLOps />} />
           <Route path="/technologies/huggingface" element={<HuggingFace />} />
@@ -339,6 +354,9 @@ const App = () => (
           <Route path="/technologies/firebase" element={<Firebase />} />
           <Route path="/technologies/supabase" element={<Supabase />} />
           <Route path="/technologies/apache" element={<Apache />} />
+          <Route path="/technologies/postgresql" element={<PostgreSQL />} />
+          <Route path="/technologies/mongodb" element={<MongoDB />} />
+          <Route path="/technologies/redis" element={<Redis />} />
           <Route path="/methodes/agile-ia" element={<AgileIA />} />
           <Route path="/methodes/design-thinking-ia" element={<DesignThinkingIA />} />
           <Route path="/methodes/lean-startup-ia" element={<LeanStartupIA />} />
@@ -356,6 +374,7 @@ const App = () => (
           <Route path="/specialisations/ia-entreprise" element={<IAEntreprise />} />
           <Route path="/specialisations/ia-juridique" element={<IAJuridique />} />
           <Route path="/specialisations/ia-government" element={<IAGovernment />} />
+          <Route path="/specialisations/ia-retail" element={<IARetail />} />
           <Route path="/solutions/chatbot-ia" element={<ChatbotIA />} />
           <Route path="/solutions/analyse-sentiment" element={<AnalyseSentiment />} />
           <Route path="/solutions/reconnaissance-vocale" element={<ReconnaissanceVocale />} />
@@ -372,6 +391,8 @@ const App = () => (
           <Route path="/solutions/data-visualization" element={<DataVisualization />} />
           <Route path="/solutions/gestion-risques" element={<GestionRisques />} />
           <Route path="/solutions/optimisation-energie" element={<OptimisationEnergie />} />
+          <Route path="/solutions/predictive-analytics" element={<PredictiveAnalytics />} />
+          <Route path="/solutions/monitoring-ia" element={<MonitoringIA />} />
           <Route path="/actualites/innovations-ia-2024" element={<InnovationsIA2024 />} />
           <Route path="/actualites/revolution-ia-2025" element={<RevolutionIA2025 />} />
           <Route path="/actualites/tendances-ia-2024" element={<TendancesIA2024 />} />
@@ -405,11 +426,13 @@ const App = () => (
           <Route path="/events/sommet-tech-ia-2024" element={<SommetTechIA2024 />} />
           <Route path="/events/masterclass-ia" element={<MasterclassIA />} />
           <Route path="/events/symposium-ia" element={<SymposiumIA />} />
+          <Route path="/events/conference-ml-2024" element={<ConferenceML2024 />} />
           <Route path="/certifications/certification-ia" element={<CertificationIA />} />
           <Route path="/certifications/certification-chatgpt" element={<CertificationChatGPT />} />
           <Route path="/certifications/certification-google-ai" element={<CertificationGoogleAI />} />
           <Route path="/certifications/certification-data-science" element={<CertificationDataScience />} />
           <Route path="/certifications/certification-aws" element={<CertificationAWS />} />
+          <Route path="/certifications/certification-python" element={<CertificationPython />} />
           <Route path="/partenariats/openai" element={<PartenaireOpenAI />} />
           <Route path="/partenariats/microsoft" element={<PartenaireMicrosoft />} />
           <Route path="/partenariats/google" element={<PartenaireGoogle />} />
@@ -469,21 +492,8 @@ const App = () => (
           <Route path="/events/bootcamp-ia" element={<BootcampIA />} />
           <Route path="/services/transformation-digitale" element={<TransformationDigitale />} />
           <Route path="/industries/assurance" element={<AssuranceIA />} />
-          <Route path="/formations/automatisation-tests" element={<AutomatisationTests />} />
-          <Route path="/services/gestion-risques" element={<GestionRisques />} />
-          <Route path="/industries/fashion" element={<FashionIA />} />
-          <Route path="/outils/nvidia-omniverse" element={<NvidiaOmniverse />} />
-          <Route path="/formations/ia-creative" element={<IACreative />} />
-          <Route path="/solutions/optimisation-energie" element={<OptimisationEnergie />} />
-          <Route path="*" element={<NotFound />} />
           <Route path="/formations/game-development-ai" element={<GameDevelopmentAI />} />
-          <Route path="/technologies/postgresql" element={<PostgreSQL />} />
-          <Route path="/industries/insurance-ia" element={<InsuranceIA />} />
-          <Route path="/solutions/predictive-analytics" element={<PredictiveAnalytics />} />
-          <Route path="/outils/cohere-ai" element={<CohereAI />} />
-          <Route path="/specialisations/ia-retail" element={<IARetail />} />
-          <Route path="/events/conference-ml-2024" element={<ConferenceML2024 />} />
-          <Route path="/certifications/certification-python" element={<CertificationPython />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
