@@ -67,7 +67,9 @@ import GuideDebutantChatGPT from "./pages/guides/GuideDebutantChatGPT";
 import GuidePromptAdvance from "./pages/guides/GuidePromptAdvance";
 import IASante from "./pages/specialisations/IASante";
 import IAFinance from "./pages/specialisations/IAFinance";
-import IAEthique from "./pages/specialisations/IAEthique";
+import IAEthics from "./pages/formations/IAEthics";
+import RealtimeAI from "./pages/formations/RealtimeAI";
+import IAEmbedded from "./pages/formations/IAEmbedded";
 import IAMarketing from "./pages/specialisations/IAMarketing";
 import IACybersecurite from "./pages/specialisations/IACybersecurite";
 import ChatbotIA from "./pages/solutions/ChatbotIA";
@@ -169,7 +171,7 @@ import HackerIA from "./pages/events/HackerIA";
 import AutoMLNoCode from "./pages/formations/AutoMLNoCode";
 import IAQuantique from "./pages/specialisations/IAQuantique";
 import TelecommunicationsIA from "./pages/industries/TelecommunicationsIA";
-import IAEthiqueResponsable from "./pages/services/IA-Ethique-Responsable";
+import IAEthicsResponsable from "./pages/services/IA-Ethique-Responsable";
 import MicrosoftCopilot360 from "./pages/outils/MicrosoftCopilot360";
 import CertificationDataScience from "./pages/certifications/CertificationDataScience";
 import SommetTechIA2024 from "./pages/events/SommetTechIA2024";
@@ -218,6 +220,8 @@ import FashionIA from "./pages/industries/FashionIA";
 import NvidiaOmniverse from "./pages/outils/NvidiaOmniverse";
 import IACreative from "./pages/formations/IACreative";
 import OptimisationEnergie from "./pages/solutions/OptimisationEnergie";
+import FoodTechIA from "./pages/industries/FoodTechIA";
+import RetailTechIA from "./pages/industries/RetailTechIA";
 
 const queryClient = new QueryClient();
 
@@ -291,7 +295,7 @@ const App = () => (
           <Route path="/industries/logistique-ia" element={<LogistiqueIA />} />
           <Route path="/industries/consulting-ia" element={<ConsultingIA />} />
           <Route path="/industries/retail-ai" element={<RetailAI />} />
-          <Route path="/industries/insurance-ia" element={<InsuranceIA />} />
+          <Route path="/industries/insurance-ia" element={<AssuranceIA />} />
           <Route path="/industries/fashion-ia" element={<FashionIA />} />
           <Route path="/outils/chatgpt" element={<ChatGPTOutil />} />
           <Route path="/outils/midjourney" element={<MidjourneyOutil />} />
@@ -328,7 +332,7 @@ const App = () => (
           <Route path="/guides/guide-prompt-avance" element={<GuidePromptAdvance />} />
           <Route path="/specialisations/ia-sante" element={<IASante />} />
           <Route path="/specialisations/ia-finance" element={<IAFinance />} />
-          <Route path="/specialisations/ia-ethique" element={<IAEthique />} />
+          <Route path="/specialisations/ia-ethique" element={<IAEthics />} />
           <Route path="/specialisations/ia-marketing" element={<IAMarketing />} />
           <Route path="/specialisations/ia-cybersecurite" element={<IACybersecurite />} />
           <Route path="/specialisations/ia-quantique" element={<IAQuantique />} />
@@ -450,7 +454,12 @@ const App = () => (
           <Route path="/events/bootcamp-ia" element={<BootcampIA />} />
           <Route path="/services/transformation-digitale" element={<TransformationDigitale />} />
           <Route path="/industries/assurance" element={<AssuranceIA />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/formations/automatisation-tests" element={<AutomatisationTests />} />
+          <Route path="/services/gestion-risques" element={<GestionRisques />} />
+          <Route path="/industries/fashion" element={<FashionIA />} />
+          <Route path="/outils/nvidia-omniverse" element={<NvidiaOmniverse />} />
+          <Route path="/formations/ia-creative" element={<IACreative />} />
+          <Route path="/solutions/optimisation-energie" element={<OptimisationEnergie />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

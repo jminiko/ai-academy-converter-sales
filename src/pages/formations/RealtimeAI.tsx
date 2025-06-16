@@ -3,24 +3,24 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Server, Database, Workflow, Zap } from "lucide-react";
+import { Zap, Clock, Activity, Radio } from "lucide-react";
 
-const Apache = () => {
+const RealtimeAI = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-white">
       <Header />
       
-      <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600">
+      <section className="py-20 bg-gradient-to-r from-cyan-600 to-blue-600">
         <div className="container mx-auto px-4 text-center">
-          <Server className="h-16 w-16 text-white mx-auto mb-6" />
+          <Zap className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">
-            Apache Ecosystem
+            IA Temps Réel
           </h1>
-          <p className="text-xl text-orange-100 mb-8 max-w-3xl mx-auto">
-            Maîtrisez l'écosystème Apache pour le Big Data et l'IA
+          <p className="text-xl text-cyan-100 mb-8 max-w-3xl mx-auto">
+            Développez des systèmes IA ultra-rapides et réactifs
           </p>
-          <Button size="lg" className="bg-white text-orange-600 hover:bg-gray-100">
-            Explorer Apache
+          <Button size="lg" className="bg-white text-cyan-600 hover:bg-gray-100">
+            Accélérer l'IA
           </Button>
         </div>
       </section>
@@ -30,45 +30,45 @@ const Apache = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <Card>
               <CardHeader>
-                <Database className="h-12 w-12 text-orange-600 mb-4" />
-                <CardTitle>Apache Spark</CardTitle>
+                <Clock className="h-12 w-12 text-cyan-600 mb-4" />
+                <CardTitle>Latence ultra-faible</CardTitle>
                 <CardDescription>
-                  Big Data processing
+                  Millisecond response
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Traitement distribué de données massives.
+                  Réponses en temps réel garanties.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Workflow className="h-12 w-12 text-orange-600 mb-4" />
-                <CardTitle>Apache Kafka</CardTitle>
+                <Activity className="h-12 w-12 text-cyan-600 mb-4" />
+                <CardTitle>Streaming ML</CardTitle>
                 <CardDescription>
-                  Streaming de données
+                  Machine Learning continu
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Plateforme de streaming en temps réel.
+                  Apprentissage sur flux de données.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Zap className="h-12 w-12 text-orange-600 mb-4" />
-                <CardTitle>Apache Airflow</CardTitle>
+                <Radio className="h-12 w-12 text-cyan-600 mb-4" />
+                <CardTitle>Edge Computing</CardTitle>
                 <CardDescription>
-                  Orchestration de workflows
+                  IA distribuée
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Automatisez vos pipelines de données.
+                  Calculs IA à la périphérie du réseau.
                 </p>
               </CardContent>
             </Card>
@@ -81,4 +81,4 @@ const Apache = () => {
   );
 };
 
-export default Apache;
+export default RealtimeAI;

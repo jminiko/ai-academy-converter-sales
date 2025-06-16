@@ -3,23 +3,23 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Code, Zap, GitBranch, Bug } from "lucide-react";
+import { Code, Zap, Users, CheckCircle } from "lucide-react";
 
 const CodePilot = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-emerald-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
       <Header />
       
-      <section className="py-20 bg-gradient-to-r from-emerald-600 to-teal-600">
+      <section className="py-20 bg-gradient-to-r from-slate-600 to-gray-600">
         <div className="container mx-auto px-4 text-center">
           <Code className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">
-            CodePilot IA
+            Code Pilot IA
           </h1>
-          <p className="text-xl text-emerald-100 mb-8 max-w-3xl mx-auto">
-            Votre assistant de programmation intelligent
+          <p className="text-xl text-slate-100 mb-8 max-w-3xl mx-auto">
+            Assistant de programmation intelligent pour développeurs
           </p>
-          <Button size="lg" className="bg-white text-emerald-600 hover:bg-gray-100">
+          <Button size="lg" className="bg-white text-slate-600 hover:bg-gray-100">
             Coder avec l'IA
           </Button>
         </div>
@@ -30,45 +30,45 @@ const CodePilot = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <Card>
               <CardHeader>
-                <Zap className="h-12 w-12 text-emerald-600 mb-4" />
-                <CardTitle>Génération de code</CardTitle>
+                <Zap className="h-12 w-12 text-slate-600 mb-4" />
+                <CardTitle>Auto-complétion</CardTitle>
                 <CardDescription>
-                  Code automatique
+                  Code intelligent
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Générez du code de qualité instantanément.
+                  Suggestions de code en temps réel.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <GitBranch className="h-12 w-12 text-emerald-600 mb-4" />
-                <CardTitle>Refactoring intelligent</CardTitle>
+                <Users className="h-12 w-12 text-slate-600 mb-4" />
+                <CardTitle>Collaboration</CardTitle>
                 <CardDescription>
-                  Optimisation continue
+                  Équipe augmentée
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Améliorez votre code automatiquement.
+                  Travaillez en équipe avec l'IA.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Bug className="h-12 w-12 text-emerald-600 mb-4" />
-                <CardTitle>Détection de bugs</CardTitle>
+                <CheckCircle className="h-12 w-12 text-slate-600 mb-4" />
+                <CardTitle>Debug automatique</CardTitle>
                 <CardDescription>
-                  Qualité assurée
+                  Correction intelligente
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Trouvez et corrigez les erreurs rapidement.
+                  Détectez et corrigez les erreurs.
                 </p>
               </CardContent>
             </Card>
