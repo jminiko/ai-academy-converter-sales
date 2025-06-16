@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -246,6 +245,12 @@ import ChemieIA from "./pages/industries/ChemieIA";
 import MetallurgieIA from "./pages/industries/MetallurgieIA";
 import MonitoringIA from "./pages/solutions/MonitoringIA";
 import HuggingFaceSpaces from "./pages/outils/HuggingFaceSpaces";
+import TextileIA from "./pages/industries/TextileIA";
+import ElasticSearch from "./pages/technologies/ElasticSearch";
+import PlaygroundAI from "./pages/outils/PlaygroundAI";
+import AutomatisationMarketing from "./pages/formations/AutomatisationMarketing";
+import IALogistique from "./pages/specialisations/IALogistique";
+import AutomatisationComptable from "./pages/solutions/AutomatisationComptable";
 
 const queryClient = new QueryClient();
 
