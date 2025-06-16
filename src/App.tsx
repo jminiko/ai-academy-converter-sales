@@ -229,6 +229,14 @@ import QuantumComputing from "./pages/formations/QuantumComputing";
 import IAGovernment from "./pages/specialisations/IAGovernment";
 import VoiceAssistant from "./pages/solutions/VoiceAssistant";
 import DataVisualization from "./pages/solutions/DataVisualization";
+import GameDevelopmentAI from "./pages/formations/GameDevelopmentAI";
+import PostgreSQL from "./pages/technologies/PostgreSQL";
+import InsuranceIA from "./pages/industries/InsuranceIA";
+import PredictiveAnalytics from "./pages/solutions/PredictiveAnalytics";
+import CohereAI from "./pages/outils/CohereAI";
+import IARetail from "./pages/specialisations/IARetail";
+import ConferenceML2024 from "./pages/events/ConferenceML2024";
+import CertificationPython from "./pages/certifications/CertificationPython";
 
 const queryClient = new QueryClient();
 
@@ -302,7 +310,7 @@ const App = () => (
           <Route path="/industries/logistique-ia" element={<LogistiqueIA />} />
           <Route path="/industries/consulting-ia" element={<ConsultingIA />} />
           <Route path="/industries/retail-ai" element={<RetailAI />} />
-          <Route path="/industries/insurance-ia" element={<AssuranceIA />} />
+          <Route path="/industries/insurance-ia" element={<InsuranceIA />} />
           <Route path="/industries/fashion-ia" element={<FashionIA />} />
           <Route path="/outils/chatgpt" element={<ChatGPTOutil />} />
           <Route path="/outils/midjourney" element={<MidjourneyOutil />} />
@@ -468,6 +476,14 @@ const App = () => (
           <Route path="/formations/ia-creative" element={<IACreative />} />
           <Route path="/solutions/optimisation-energie" element={<OptimisationEnergie />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/formations/game-development-ai" element={<GameDevelopmentAI />} />
+          <Route path="/technologies/postgresql" element={<PostgreSQL />} />
+          <Route path="/industries/insurance-ia" element={<InsuranceIA />} />
+          <Route path="/solutions/predictive-analytics" element={<PredictiveAnalytics />} />
+          <Route path="/outils/cohere-ai" element={<CohereAI />} />
+          <Route path="/specialisations/ia-retail" element={<IARetail />} />
+          <Route path="/events/conference-ml-2024" element={<ConferenceML2024 />} />
+          <Route path="/certifications/certification-python" element={<CertificationPython />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

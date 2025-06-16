@@ -3,24 +3,24 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Shield, TrendingUp, Users, CheckCircle } from "lucide-react";
+import { TrendingUp, BarChart, Zap, Target } from "lucide-react";
 
-const InsuranceIA = () => {
+const PredictiveAnalytics = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-emerald-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-indigo-50 to-white">
       <Header />
       
-      <section className="py-20 bg-gradient-to-r from-emerald-600 to-teal-600">
+      <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600">
         <div className="container mx-auto px-4 text-center">
-          <Shield className="h-16 w-16 text-white mx-auto mb-6" />
+          <TrendingUp className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">
-            IA pour l'Assurance
+            Analytique Prédictive
           </h1>
-          <p className="text-xl text-emerald-100 mb-8 max-w-3xl mx-auto">
-            Révolutionnez le secteur de l'assurance avec l'intelligence artificielle
+          <p className="text-xl text-indigo-100 mb-8 max-w-3xl mx-auto">
+            Anticipez l'avenir avec nos solutions d'analytique prédictive
           </p>
-          <Button size="lg" className="bg-white text-emerald-600 hover:bg-gray-100">
-            Assurer l'avenir
+          <Button size="lg" className="bg-white text-indigo-600 hover:bg-gray-100">
+            Prédire l'avenir
           </Button>
         </div>
       </section>
@@ -30,45 +30,45 @@ const InsuranceIA = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <Card>
               <CardHeader>
-                <TrendingUp className="h-12 w-12 text-emerald-600 mb-4" />
-                <CardTitle>Évaluation des risques</CardTitle>
+                <BarChart className="h-12 w-12 text-indigo-600 mb-4" />
+                <CardTitle>Modèles prédictifs</CardTitle>
                 <CardDescription>
-                  Analyse prédictive
+                  Algorithmes avancés
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Évaluez les risques avec précision.
+                  Développez des modèles précis.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Users className="h-12 w-12 text-emerald-600 mb-4" />
-                <CardTitle>Service client IA</CardTitle>
+                <Zap className="h-12 w-12 text-indigo-600 mb-4" />
+                <CardTitle>Temps réel</CardTitle>
                 <CardDescription>
-                  Support automatisé
+                  Prédictions instantanées
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Améliorez l'expérience client.
+                  Obtenez des insights en temps réel.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CheckCircle className="h-12 w-12 text-emerald-600 mb-4" />
-                <CardTitle>Traitement automatique</CardTitle>
+                <Target className="h-12 w-12 text-indigo-600 mb-4" />
+                <CardTitle>Précision optimale</CardTitle>
                 <CardDescription>
-                  Sinistres intelligents
+                  Résultats fiables
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Automatisez le traitement des sinistres.
+                  Maximisez la précision des prédictions.
                 </p>
               </CardContent>
             </Card>
@@ -81,4 +81,4 @@ const InsuranceIA = () => {
   );
 };
 
-export default InsuranceIA;
+export default PredictiveAnalytics;

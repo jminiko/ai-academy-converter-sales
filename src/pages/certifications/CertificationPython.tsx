@@ -3,24 +3,24 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Shield, TrendingUp, Users, CheckCircle } from "lucide-react";
+import { Code, Award, CheckCircle, Users } from "lucide-react";
 
-const InsuranceIA = () => {
+const CertificationPython = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-emerald-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
       <Header />
       
-      <section className="py-20 bg-gradient-to-r from-emerald-600 to-teal-600">
+      <section className="py-20 bg-gradient-to-r from-green-600 to-emerald-600">
         <div className="container mx-auto px-4 text-center">
-          <Shield className="h-16 w-16 text-white mx-auto mb-6" />
+          <Code className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">
-            IA pour l'Assurance
+            Certification Python IA
           </h1>
-          <p className="text-xl text-emerald-100 mb-8 max-w-3xl mx-auto">
-            Révolutionnez le secteur de l'assurance avec l'intelligence artificielle
+          <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
+            Validez vos compétences en Python pour l'intelligence artificielle
           </p>
-          <Button size="lg" className="bg-white text-emerald-600 hover:bg-gray-100">
-            Assurer l'avenir
+          <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
+            Commencer la certification
           </Button>
         </div>
       </section>
@@ -30,45 +30,45 @@ const InsuranceIA = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <Card>
               <CardHeader>
-                <TrendingUp className="h-12 w-12 text-emerald-600 mb-4" />
-                <CardTitle>Évaluation des risques</CardTitle>
+                <Award className="h-12 w-12 text-green-600 mb-4" />
+                <CardTitle>Certification officielle</CardTitle>
                 <CardDescription>
-                  Analyse prédictive
+                  Reconnaissance mondiale
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Évaluez les risques avec précision.
+                  Obtenez une certification reconnue.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Users className="h-12 w-12 text-emerald-600 mb-4" />
-                <CardTitle>Service client IA</CardTitle>
+                <CheckCircle className="h-12 w-12 text-green-600 mb-4" />
+                <CardTitle>Projets pratiques</CardTitle>
                 <CardDescription>
-                  Support automatisé
+                  Expérience réelle
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Améliorez l'expérience client.
+                  Travaillez sur des projets concrets.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CheckCircle className="h-12 w-12 text-emerald-600 mb-4" />
-                <CardTitle>Traitement automatique</CardTitle>
+                <Users className="h-12 w-12 text-green-600 mb-4" />
+                <CardTitle>Communauté</CardTitle>
                 <CardDescription>
-                  Sinistres intelligents
+                  Support continu
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Automatisez le traitement des sinistres.
+                  Rejoignez notre communauté Python.
                 </p>
               </CardContent>
             </Card>
@@ -81,4 +81,4 @@ const InsuranceIA = () => {
   );
 };
 
-export default InsuranceIA;
+export default CertificationPython;
