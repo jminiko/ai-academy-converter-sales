@@ -3,7 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Building2, Shield, Users, FileText } from "lucide-react";
+import { Building, Shield, Users, FileText } from "lucide-react";
 
 const IAGovernment = () => {
   return (
@@ -12,15 +12,15 @@ const IAGovernment = () => {
       
       <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-600">
         <div className="container mx-auto px-4 text-center">
-          <Building2 className="h-16 w-16 text-white mx-auto mb-6" />
+          <Building className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">
-            IA pour le Secteur Public
+            IA pour le Gouvernement
           </h1>
           <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Modernisez l'administration publique avec l'intelligence artificielle
+            Solutions IA pour améliorer les services publics et la gouvernance
           </p>
           <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-            Moderniser l'administration
+            Moderniser les services
           </Button>
         </div>
       </section>
@@ -38,7 +38,7 @@ const IAGovernment = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Renforcez la sécurité avec l'IA prédictive.
+                  Renforcez la sécurité avec l'IA.
                 </p>
               </CardContent>
             </Card>
@@ -48,12 +48,12 @@ const IAGovernment = () => {
                 <Users className="h-12 w-12 text-blue-600 mb-4" />
                 <CardTitle>Services citoyens</CardTitle>
                 <CardDescription>
-                  Expérience utilisateur
+                  Amélioration continue
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Améliorez l'accès aux services publics.
+                  Optimisez l'expérience citoyenne.
                 </p>
               </CardContent>
             </Card>
@@ -61,14 +61,14 @@ const IAGovernment = () => {
             <Card>
               <CardHeader>
                 <FileText className="h-12 w-12 text-blue-600 mb-4" />
-                <CardTitle>Automatisation administrative</CardTitle>
+                <CardTitle>Processus administratifs</CardTitle>
                 <CardDescription>
-                  Efficacité gouvernementale
+                  Automatisation publique
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Automatisez les processus administratifs.
+                  Simplifiez les démarches administratives.
                 </p>
               </CardContent>
             </Card>

@@ -222,6 +222,13 @@ import IACreative from "./pages/formations/IACreative";
 import OptimisationEnergie from "./pages/solutions/OptimisationEnergie";
 import FoodTechIA from "./pages/industries/FoodTechIA";
 import RetailTechIA from "./pages/industries/RetailTechIA";
+import CodePilot from "./pages/outils/CodePilot";
+import Apache from "./pages/technologies/Apache";
+import IAMusic from "./pages/formations/IAMusic";
+import QuantumComputing from "./pages/formations/QuantumComputing";
+import IAGovernment from "./pages/specialisations/IAGovernment";
+import VoiceAssistant from "./pages/solutions/VoiceAssistant";
+import DataVisualization from "./pages/solutions/DataVisualization";
 
 const queryClient = new QueryClient();
 
@@ -276,7 +283,7 @@ const App = () => (
           <Route path="/services/audit-ia" element={<AuditIA />} />
           <Route path="/services/developpement-ia" element={<DeveloppementIA />} />
           <Route path="/services/maintenance-ia" element={<MaintenanceIA />} />
-          <Route path="/services/ia-ethique-responsable" element={<IAEthiqueResponsable />} />
+          <Route path="/services/ia-ethique-responsable" element={<IAEthicsResponsable />} />
           <Route path="/services/conseil-transition" element={<ConseilTransition />} />
           <Route path="/services/strategie-ia" element={<StrategieIA />} />
           <Route path="/secteurs/sante" element={<Sante />} />
