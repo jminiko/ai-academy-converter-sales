@@ -1,4 +1,3 @@
-
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -225,7 +224,7 @@ const ROIFormations = () => {
             <p className="text-lg text-gray-600">Évolution du retour sur investissement dans le temps</p>
           </div>
 
-          <div class="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <div className="space-y-6">
               {roiPhases.map((phase, index) => (
                 <Card key={index} className="relative overflow-hidden">
