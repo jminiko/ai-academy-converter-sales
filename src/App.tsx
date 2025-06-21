@@ -251,6 +251,9 @@ import PlaygroundAI from "./pages/outils/PlaygroundAI";
 import AutomatisationMarketing from "./pages/formations/AutomatisationMarketing";
 import IALogistique from "./pages/specialisations/IALogistique";
 import AutomatisationComptable from "./pages/solutions/AutomatisationComptable";
+import ROIFormations from "./pages/ROIFormations";
+import AvantagesAutomatisation from "./pages/AvantagesAutomatisation";
+import ROIEtudesCas from "./pages/ROIEtudesCas";
 
 const queryClient = new QueryClient();
 
