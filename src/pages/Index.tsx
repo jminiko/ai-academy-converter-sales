@@ -18,18 +18,18 @@ const Index = () => {
       
       <Hero />
       
-      {/* Nouvelle section ROI Calculator intégrée */}
+      {/* Nouvelle section Simulateur ROI intégrée */}
       <section className="py-20 bg-gradient-to-r from-green-50 to-blue-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge className="mb-4 bg-green-100 text-green-800">
-              💰 Calculateur ROI Gratuit
+              🎯 Nouveau : Simulateur ROI Interactif
             </Badge>
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Découvrez Votre Potentiel d'Économies
+              Calculez Votre ROI Automatisation
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              Calculez en 2 minutes exactement combien vous pouvez économiser avec l'IA
+              Découvrez en 2 minutes exactement combien vous pouvez économiser avec l'IA
             </p>
           </div>
           
@@ -54,6 +54,9 @@ const Index = () => {
             
             <div className="text-center">
               <Button size="lg" className="bg-green-600 hover:bg-green-700 mr-4" asChild>
+                <Link to="/simulateur-roi">🎯 Simulateur ROI Interactif</Link>
+              </Button>
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 mr-4" asChild>
                 <Link to="/calculateur-roi">Calculer mon ROI gratuit</Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
