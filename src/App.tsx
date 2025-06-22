@@ -1,94 +1,69 @@
 
-import { Toaster } from "@/components/ui/sonner";
+import { Toaster } from "@/components/ui/toaster";
+import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Index from "./pages/Index";
 
-// Route components existantes
-import { MainRoutes } from "@/routes/MainRoutes";
-import { FormationRoutes } from "@/routes/FormationRoutes";
-import { OutilsRoutes } from "@/routes/OutilsRoutes";
-import { SolutionsRoutes } from "@/routes/SolutionsRoutes";
-import { GuidesRoutes } from "@/routes/GuidesRoutes";
+// Import des routes modulaires existantes
+import { FormationsRoutes } from "./routes/FormationsRoutes";
+import { GuidesRoutes } from "./routes/GuidesRoutes";
+import { SolutionsRoutes } from "./routes/SolutionsRoutes";
+import { OutilsRoutes } from "./routes/OutilsRoutes";
+import { ApplicationsRoutes } from "./routes/ApplicationsRoutes";
+import { SecteurRoutes } from "./routes/SecteurRoutes";
+import { TechnologiesRoutes } from "./routes/TechnologiesRoutes";
+import { TendancesRoutes } from "./routes/TendancesRoutes";
+import { WebinairesRoutes } from "./routes/WebinairesRoutes";
+import { CasEtudesRoutes } from "./routes/CasEtudesRoutes";
+import { CertificationsAvanceesRoutes } from "./routes/CertificationsAvanceesRoutes";
+import { FormationsAvanceesRoutes } from "./routes/FormationsAvanceesRoutes";
+import { SolutionsAvanceesRoutes } from "./routes/SolutionsAvanceesRoutes";
+import { OutilsAvancesRoutes } from "./routes/OutilsAvancesRoutes";
+import { GuidesAvancesRoutes } from "./routes/GuidesAvancesRoutes";
+import { ReglementationRoutes } from "./routes/ReglementationRoutes";
+import { MethodesRoutes } from "./routes/MethodesRoutes";
 
-// Nouvelles routes spécialisées
-import { SecteurRoutes } from "@/routes/SecteurRoutes";
-import { OutilsAvancesRoutes } from "@/routes/OutilsAvancesRoutes";
-import { SolutionsAvanceesRoutes } from "@/routes/SolutionsAvanceesRoutes";
-import { GuidesAvancesRoutes } from "@/routes/GuidesAvancesRoutes";
-import { FormationsAvanceesRoutes } from "@/routes/FormationsAvanceesRoutes";
-import { CasEtudesRoutes } from "@/routes/CasEtudesRoutes";
-import { TechnologiesRoutes } from "@/routes/TechnologiesRoutes";
-import { WebinairesRoutes } from "@/routes/WebinairesRoutes";
-import { CertificationsAvanceesRoutes } from "@/routes/CertificationsAvanceesRoutes";
-import { ApplicationsRoutes } from "@/routes/ApplicationsRoutes";
-import { MethodesRoutes } from "@/routes/MethodesRoutes";
-import { TendancesRoutes } from "@/routes/TendancesRoutes";
-import { ReglementationRoutes } from "@/routes/ReglementationRoutes";
-import { ServicesRoutes } from "@/routes/ServicesRoutes";
+// Nouvelles routes
+import { SecteurHotellerieRoutes } from "./routes/SecteurHotellerieRoutes";
 
 const queryClient = new QueryClient();
 
-function App() {
-  return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <BrowserRouter>
-          <Routes>
-            {/* Main routes */}
-            <MainRoutes />
-            
-            {/* Formation routes */}
-            <FormationRoutes />
-            <FormationsAvanceesRoutes />
-            
-            {/* Outils routes */}
-            <OutilsRoutes />
-            <OutilsAvancesRoutes />
-            
-            {/* Solutions routes */}
-            <SolutionsRoutes />
-            <SolutionsAvanceesRoutes />
-            
-            {/* Guides routes */}
-            <GuidesRoutes />
-            <GuidesAvancesRoutes />
-            
-            {/* Services routes */}
-            <ServicesRoutes />
-            
-            {/* Secteurs routes */}
-            <SecteurRoutes />
-            
-            {/* Applications routes */}
-            <ApplicationsRoutes />
-            
-            {/* Méthodes routes */}
-            <MethodesRoutes />
-            
-            {/* Tendances routes */}
-            <TendancesRoutes />
-            
-            {/* Réglementation routes */}
-            <ReglementationRoutes />
-            
-            {/* Cas d'études routes */}
-            <CasEtudesRoutes />
-            
-            {/* Technologies routes */}
-            <TechnologiesRoutes />
-            
-            {/* Webinaires routes */}
-            <WebinairesRoutes />
-            
-            {/* Certifications avancées routes */}
-            <CertificationsAvanceesRoutes />
-          </Routes>
-        </BrowserRouter>
-      </TooltipProvider>
-    </QueryClientProvider>
-  );
-}
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          
+          {/* Routes modulaires existantes */}
+          <FormationsRoutes />
+          <GuidesRoutes />
+          <SolutionsRoutes />
+          <OutilsRoutes />
+          <ApplicationsRoutes />
+          <SecteurRoutes />
+          <TechnologiesRoutes />
+          <TendancesRoutes />
+          <WebinairesRoutes />
+          <CasEtudesRoutes />
+          <CertificationsAvanceesRoutes />
+          <FormationsAvanceesRoutes />
+          <SolutionsAvanceesRoutes />
+          <OutilsAvancesRoutes />
+          <GuidesAvancesRoutes />
+          <ReglementationRoutes />
+          <MethodesRoutes />
+          
+          {/* Nouvelles routes sectorielles */}
+          <SecteurHotellerieRoutes />
+        </Routes>
+      </BrowserRouter>
+    </TooltipProvider>
+  </QueryClientProvider>
+);
 
 export default App;

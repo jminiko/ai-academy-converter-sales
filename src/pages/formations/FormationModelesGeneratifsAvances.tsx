@@ -3,7 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Sparkles, Palette2, Music2, Video } from "lucide-react";
+import { Sparkles, Palette, Music2, Video } from "lucide-react";
 
 const FormationModelesGeneratifsAvances = () => {
   return (
@@ -30,7 +30,7 @@ const FormationModelesGeneratifsAvances = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card>
               <CardHeader>
-                <Palette2 className="h-12 w-12 text-rose-600 mb-4" />
+                <Palette className="h-12 w-12 text-rose-600 mb-4" />
                 <CardTitle>Génération d'images</CardTitle>
                 <CardDescription>GANs et Diffusion</CardDescription>
               </CardHeader>
