@@ -28,7 +28,8 @@ import FormationRoutes from "./FormationRoutes";
 import NouvelleSectionsRoutes from "./NouvelleSectionsRoutes";
 import SolutionsSpecialisees from "./SolutionsSpecialisees";
 import OutilsSpecialisesRoutes from "./OutilsSpecialisesRoutes";
-import MetiersRoutes from "./MetiersRoutes";
+import MetiersRoutes from "./Metiers
+
 import ConceptsRoutes from "./ConceptsRoutes";
 import TypesIARoutes from "./TypesIARoutes";
 import RoutesMassives from "./RoutesMassives";
@@ -46,14 +47,22 @@ import SolutionIAVente from "@/pages/solutions/SolutionIAVente";
 import SolutionIAMarketing from "@/pages/solutions/SolutionIAMarketing";
 import OutilAnalyseDonnees from "@/pages/outils/OutilAnalyseDonnees";
 import OutilGenerationTexte from "@/pages/outils/OutilGenerationTexte";
+import OutilGPT4 from "@/pages/outils/OutilGPT4";
 import IAArchitecte from "@/pages/metiers/IAArchitecte";
 import IAJournaliste from "@/pages/metiers/IAJournaliste";
+import IAMedecin from "@/pages/metiers/IAMedecin";
+import IAAvocat from "@/pages/metiers/IAAvocat";
 import ReseauxNeurones from "@/pages/concepts/ReseauxNeurones";
 import ApprentissageAutomatique from "@/pages/concepts/ApprentissageAutomatique";
 import IASymbolique from "@/pages/types-ia/IASymbolique";
 import IAConnexionniste from "@/pages/types-ia/IAConnexionniste";
 import SanteCardiologie from "@/pages/secteurs-specialises/SanteCardiologie";
+import SanteRadiologie from "@/pages/secteurs-specialises/SanteRadiologie";
+import SanteOncologie from "@/pages/secteurs-specialises/SanteOncologie";
 import IADebutant from "@/pages/formations-niveau/IADebutant";
+import IAIntermediaire from "@/pages/formations-niveau/IAIntermediaire";
+import IAExpert from "@/pages/formations-niveau/IAExpert";
+import IAExecutive from "@/pages/formations-niveau/IAExecutive";
 import FormationIAFinance from "@/pages/FormationIAFinance";
 import Stats500Pages from "@/pages/Stats500Pages";
 
@@ -110,14 +119,22 @@ const AllRoutes = () => {
       <Route path="/solution-ia-marketing" element={<SolutionIAMarketing />} />
       <Route path="/outil-analyse-donnees" element={<OutilAnalyseDonnees />} />
       <Route path="/outil-generation-texte" element={<OutilGenerationTexte />} />
+      <Route path="/outilgpt4" element={<OutilGPT4 />} />
       <Route path="/ia-architecte" element={<IAArchitecte />} />
       <Route path="/ia-journaliste" element={<IAJournaliste />} />
+      <Route path="/ia-medecin" element={<IAMedecin />} />
+      <Route path="/ia-avocat" element={<IAAvocat />} />
       <Route path="/reseaux-neurones" element={<ReseauxNeurones />} />
       <Route path="/apprentissage-automatique" element={<ApprentissageAutomatique />} />
       <Route path="/ia-symbolique" element={<IASymbolique />} />
       <Route path="/ia-connexionniste" element={<IAConnexionniste />} />
       <Route path="/sante-cardiologie" element={<SanteCardiologie />} />
+      <Route path="/sante-radiologie" element={<SanteRadiologie />} />
+      <Route path="/sante-oncologie" element={<SanteOncologie />} />
       <Route path="/ia-debutant" element={<IADebutant />} />
+      <Route path="/ia-intermediaire" element={<IAIntermediaire />} />
+      <Route path="/ia-expert" element={<IAExpert />} />
+      <Route path="/ia-executive" element={<IAExecutive />} />
       <Route path="/formationiafinance" element={<FormationIAFinance />} />
     </>
   );
