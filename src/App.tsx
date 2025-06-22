@@ -254,15 +254,16 @@ import AutomatisationComptable from "./pages/solutions/AutomatisationComptable";
 import ROIFormations from "./pages/ROIFormations";
 import AvantagesAutomatisation from "./pages/AvantagesAutomatisation";
 import ROIEtudesCas from "./pages/ROIEtudesCas";
+import TemoignagesClients from "./pages/TemoignagesClients";
+import DemoInteractive from "./pages/DemoInteractive";
+import CalculateurROIPage from "./pages/CalculateurROIPage";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
+function App() {
+  return (
+    <BrowserRouter>
+      <div className="min-h-screen">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/formations" element={<Formations />} />
@@ -502,10 +503,13 @@ const App = () => (
           <Route path="/industries/assurance" element={<AssuranceIA />} />
           <Route path="/formations/game-development-ai" element={<GameDevelopmentAI />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/temoignages-clients" element={<TemoignagesClients />} />
+          <Route path="/demo-interactive" element={<DemoInteractive />} />
+          <Route path="/calculateur-roi" element={<CalculateurROIPage />} />
         </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+      </div>
+    </BrowserRouter>
+  );
+}
 
 export default App;
