@@ -3,7 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Volume2, Mic, Headphones, Waveform } from "lucide-react";
+import { Volume2, Mic, Headphones, AudioWaveform } from "lucide-react";
 
 const OutilElevenLabs = () => {
   return (
@@ -39,7 +39,7 @@ const OutilElevenLabs = () => {
               <p className="text-gray-600">Audio professionnel</p>
             </Card>
             <Card className="p-6 text-center">
-              <Waveform className="h-12 w-12 text-indigo-600 mx-auto mb-4" />
+              <AudioWaveform className="h-12 w-12 text-indigo-600 mx-auto mb-4" />
               <h3 className="text-xl font-bold mb-2">Modulation</h3>
               <p className="text-gray-600">Contrôle expression</p>
             </Card>
