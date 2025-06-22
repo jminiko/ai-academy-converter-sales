@@ -24,7 +24,6 @@ import FormationIAAssurance from "@/pages/formations/FormationIAAssurance";
 const FormationsRoutes = () => {
   return (
     <>
-      {/* Formations IA principales */}
       <Route path="/formation-ia-explicable" element={<FormationIAExplicable />} />
       <Route path="/formation-deep-learning-avance" element={<DeepLearningAvance />} />
       <Route path="/formation-transformers-avances" element={<FormationTransformersAvances />} />
@@ -39,8 +38,6 @@ const FormationsRoutes = () => {
       <Route path="/formation-ia-energie" element={<FormationIAEnergie />} />
       <Route path="/formation-mlops-production" element={<FormationMLOpsProduction />} />
       <Route path="/formation-optimisation-ia" element={<FormationOptimisationIA />} />
-      
-      {/* Nouvelles formations sectorielles */}
       <Route path="/formation-ia-banque" element={<FormationIABanque />} />
       <Route path="/formation-ia-assurance" element={<FormationIAAssurance />} />
     </>
