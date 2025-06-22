@@ -1,7 +1,12 @@
+
 import { Route } from "react-router-dom";
 
-export const MethodesRoutes = () => (
-  <>
-    {/* Routes pour méthodes - à implémenter */}
-  </>
-);
+const MethodesRoutes = () => {
+  return (
+    <>
+      {/* Routes pour méthodes - à implémenter */}
+    </>
+  );
+};
+
+export default MethodesRoutes;

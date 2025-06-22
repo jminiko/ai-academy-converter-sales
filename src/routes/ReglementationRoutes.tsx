@@ -1,7 +1,12 @@
+
 import { Route } from "react-router-dom";
 
-export const ReglementationRoutes = () => (
-  <>
-    {/* Routes pour réglementation - à implémenter */}
-  </>
-);
+const ReglementationRoutes = () => {
+  return (
+    <>
+      {/* Routes pour réglementation - à implémenter */}
+    </>
+  );
+};
+
+export default ReglementationRoutes;

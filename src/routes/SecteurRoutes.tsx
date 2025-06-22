@@ -10,16 +10,20 @@ import Maritime from "@/pages/secteurs/Maritime";
 import BTP from "@/pages/secteurs/BTP";
 import SecteurBanqueAssurance from "@/pages/secteurs/SecteurBanqueAssurance";
 
-export const SecteurRoutes = () => (
-  <>
-    <Route path="/sante" element={<Sante />} />
-    <Route path="/finance" element={<Finance />} />
-    <Route path="/education" element={<Education />} />
-    <Route path="/automobile" element={<Automobile />} />
-    <Route path="/retail" element={<Retail />} />
-    <Route path="/defense" element={<Defense />} />
-    <Route path="/maritime" element={<Maritime />} />
-    <Route path="/btp" element={<BTP />} />
-    <Route path="/secteur-banque-assurance" element={<SecteurBanqueAssurance />} />
-  </>
-);
+const SecteurRoutes = () => {
+  return (
+    <>
+      <Route path="/sante" element={<Sante />} />
+      <Route path="/finance" element={<Finance />} />
+      <Route path="/education" element={<Education />} />
+      <Route path="/automobile" element={<Automobile />} />
+      <Route path="/retail" element={<Retail />} />
+      <Route path="/defense" element={<Defense />} />
+      <Route path="/maritime" element={<Maritime />} />
+      <Route path="/btp" element={<BTP />} />
+      <Route path="/secteur-banque-assurance" element={<SecteurBanqueAssurance />} />
+    </>
+  );
+};
+
+export default SecteurRoutes;
