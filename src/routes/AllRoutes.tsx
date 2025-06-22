@@ -1,3 +1,4 @@
+
 import { Route } from "react-router-dom";
 
 // Import de toutes les routes existantes
@@ -14,7 +15,7 @@ import SecteursRoutes from "./SecteursRoutes";
 import TechnologiesRoutes from "./TechnologiesRoutes";
 import SolutionsRoutes from "./SolutionsRoutes";
 import SolutionsAvanceesRoutes from "./SolutionsAvanceesRoutes";
-import MainRoutes from "./MainRoutes"; // Fixed: default import instead of named import
+import { MainRoutes } from "./MainRoutes"; // Fixed: using named import
 import { ServicesRoutes } from "./ServicesRoutes";
 import WebinairesRoutes from "./WebinairesRoutes";
 import CasEtudesRoutes from "./CasEtudesRoutes";
