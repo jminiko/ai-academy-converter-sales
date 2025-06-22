@@ -18,27 +18,27 @@ import Certifications from "./pages/Certifications";
 import AITrainingFinance from "./pages/en/AITrainingFinance";
 import ContactEN from "./pages/en/ContactEN";
 
-// Import des routes modulaires existantes
-import { FormationsRoutes } from "./routes/FormationsRoutes";
-import { GuidesRoutes } from "./routes/GuidesRoutes";
-import { SolutionsRoutes } from "./routes/SolutionsRoutes";
-import { OutilsRoutes } from "./routes/OutilsRoutes";
-import { ApplicationsRoutes } from "./routes/ApplicationsRoutes";
-import { SecteurRoutes } from "./routes/SecteurRoutes";
-import { TechnologiesRoutes } from "./routes/TechnologiesRoutes";
-import { TendancesRoutes } from "./routes/TendancesRoutes";
-import { WebinairesRoutes } from "./routes/WebinairesRoutes";
-import { CasEtudesRoutes } from "./routes/CasEtudesRoutes";
-import { CertificationsAvanceesRoutes } from "./routes/CertificationsAvanceesRoutes";
-import { FormationsAvanceesRoutes } from "./routes/FormationsAvanceesRoutes";
-import { SolutionsAvanceesRoutes } from "./routes/SolutionsAvanceesRoutes";
-import { OutilsAvancesRoutes } from "./routes/OutilsAvancesRoutes";
-import { GuidesAvancesRoutes } from "./routes/GuidesAvancesRoutes";
-import { ReglementationRoutes } from "./routes/ReglementationRoutes";
-import { MethodesRoutes } from "./routes/MethodesRoutes";
+// Import des routes modulaires existantes - using default imports
+import FormationsRoutes from "./routes/FormationsRoutes";
+import GuidesRoutes from "./routes/GuidesRoutes";
+import SolutionsRoutes from "./routes/SolutionsRoutes";
+import OutilsRoutes from "./routes/OutilsRoutes";
+import ApplicationsRoutes from "./routes/ApplicationsRoutes";
+import SecteurRoutes from "./routes/SecteurRoutes";
+import TechnologiesRoutes from "./routes/TechnologiesRoutes";
+import TendancesRoutes from "./routes/TendancesRoutes";
+import WebinairesRoutes from "./routes/WebinairesRoutes";
+import CasEtudesRoutes from "./routes/CasEtudesRoutes";
+import CertificationsAvanceesRoutes from "./routes/CertificationsAvanceesRoutes";
+import FormationsAvanceesRoutes from "./routes/FormationsAvanceesRoutes";
+import SolutionsAvanceesRoutes from "./routes/SolutionsAvanceesRoutes";
+import OutilsAvancesRoutes from "./routes/OutilsAvancesRoutes";
+import GuidesAvancesRoutes from "./routes/GuidesAvancesRoutes";
+import ReglementationRoutes from "./routes/ReglementationRoutes";
+import MethodesRoutes from "./routes/MethodesRoutes";
 
 // Nouvelles routes
-import { SecteurHotellerieRoutes } from "./routes/SecteurHotellerieRoutes";
+import SecteurHotellerieRoutes from "./routes/SecteurHotellerieRoutes";
 
 // Route spéciale pour FormationIAFinance
 import FormationIAFinance from "./pages/formations/FormationIAFinance";
