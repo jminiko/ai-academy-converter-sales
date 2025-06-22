@@ -31,8 +31,18 @@ const NLP = () => {
             <Card>
               <CardHeader>
                 <Globe className="h-12 w-12 text-green-600 mb-4" />
+                <CardTitle>Traduction automatique</CardTitle>
+                <CardDescription>Modèles multilingues</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">Maîtrisez les techniques de traduction.</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <BookOpen className="h-12 w-12 text-green-600 mb-4" />
                 <CardTitle>Analyse de sentiment</CardTitle>
-                <CardDescription>Compréhension émotionnelle</CardDescription>
+                <CardDescription>Classification émotionnelle</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">Analysez les émotions dans le texte.</p>
@@ -40,22 +50,12 @@ const NLP = () => {
             </Card>
             <Card>
               <CardHeader>
-                <BookOpen className="h-12 w-12 text-green-600 mb-4" />
-                <CardTitle>Traduction automatique</CardTitle>
-                <CardDescription>Systèmes multilingues</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">Créez des systèmes de traduction.</p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
                 <Mic className="h-12 w-12 text-green-600 mb-4" />
-                <CardTitle>Speech-to-Text</CardTitle>
-                <CardDescription>Reconnaissance vocale</CardDescription>
+                <CardTitle>Reconnaissance vocale</CardTitle>
+                <CardDescription>Speech-to-text</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">Développez la reconnaissance vocale.</p>
+                <p className="text-gray-600">Convertissez la parole en texte.</p>
               </CardContent>
             </Card>
           </div>
