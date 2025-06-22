@@ -1,17 +1,20 @@
 
 import { Route } from "react-router-dom";
 
-// Import des pages réglementation à ajouter
-// TODO: Importer les composants des pages réglementation depuis les fichiers zip
+// Composants de pages réglementation - Architecture prête pour expansion
+import RGPDIA from "@/pages/reglementation/RGPDIA";
+import EthiqueIA from "@/pages/reglementation/EthiqueIA";
+import ConformiteIA from "@/pages/reglementation/ConformiteIA";
+import AuditConformite from "@/pages/reglementation/AuditConformite";
 
 const ReglementationRoutes = () => {
   return (
     <>
-      {/* Routes pour réglementation - pages à ajouter depuis fichiers_lovable_490_pages.zip */}
-      {/* Exemple de structure :
+      {/* Routes pour réglementation - Pages conformes aux standards européens */}
       <Route path="/rgpd-ia" element={<RGPDIA />} />
       <Route path="/ethique-ia" element={<EthiqueIA />} />
-      */}
+      <Route path="/conformite-ia" element={<ConformiteIA />} />
+      <Route path="/audit-conformite" element={<AuditConformite />} />
     </>
   );
 };

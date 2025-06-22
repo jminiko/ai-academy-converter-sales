@@ -3,24 +3,24 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Shield, Lock, FileText, Users } from "lucide-react";
+import { Brain, BookOpen, Target, Users } from "lucide-react";
 
-const RGPDIA = () => {
+const MethodeIAApprentissage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Header />
       
       <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-600">
         <div className="container mx-auto px-4 text-center">
-          <Shield className="h-16 w-16 text-white mx-auto mb-6" />
+          <Brain className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">
-            RGPD & IA
+            Méthode IA Apprentissage
           </h1>
           <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Conformité RGPD pour vos projets d'intelligence artificielle
+            Méthodologie complète pour maîtriser l'apprentissage en intelligence artificielle
           </p>
           <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-            Assurer la conformité
+            Découvrir la méthode
           </Button>
         </div>
       </section>
@@ -30,37 +30,37 @@ const RGPDIA = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card>
               <CardHeader>
-                <Lock className="h-12 w-12 text-blue-600 mb-4" />
-                <CardTitle>Protection des données</CardTitle>
-                <CardDescription>Sécurité garantie</CardDescription>
+                <BookOpen className="h-12 w-12 text-blue-600 mb-4" />
+                <CardTitle>Apprentissage structuré</CardTitle>
+                <CardDescription>Progression méthodique</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Protégez les données personnelles dans vos systèmes IA.
+                  Suivez un parcours d'apprentissage structuré et progressif.
                 </p>
               </CardContent>
             </Card>
             <Card>
               <CardHeader>
-                <FileText className="h-12 w-12 text-blue-600 mb-4" />
-                <CardTitle>Documentation complète</CardTitle>
-                <CardDescription>Traçabilité assurée</CardDescription>
+                <Target className="h-12 w-12 text-blue-600 mb-4" />
+                <CardTitle>Objectifs clairs</CardTitle>
+                <CardDescription>Résultats mesurables</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Documentez tous vos traitements de données IA.
+                  Définissez et atteignez des objectifs d'apprentissage précis.
                 </p>
               </CardContent>
             </Card>
             <Card>
               <CardHeader>
                 <Users className="h-12 w-12 text-blue-600 mb-4" />
-                <CardTitle>Droits des personnes</CardTitle>
-                <CardDescription>Respect total</CardDescription>
+                <CardTitle>Accompagnement expert</CardTitle>
+                <CardDescription>Support personnalisé</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Respectez tous les droits RGPD des individus.
+                  Bénéficiez de l'accompagnement de nos experts IA.
                 </p>
               </CardContent>
             </Card>
@@ -73,4 +73,4 @@ const RGPDIA = () => {
   );
 };
 
-export default RGPDIA;
+export default MethodeIAApprentissage;
