@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { Phone, Mail, MapPin, CheckCircle, Send, MessageCircle, Calendar, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, CheckCircle, Send, MessageCircle, Calendar } from "lucide-react";
 import { useState } from "react";
 
 const ContactEN = () => {
@@ -106,7 +106,7 @@ const ContactEN = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
               <CheckCircle className="h-6 w-6 text-green-300 mx-auto mb-2" />
-              <p className="text-white text-sm font-medium">Response < 2h</p>
+              <p className="text-white text-sm font-medium">Response &lt; 2h</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
               <Phone className="h-6 w-6 text-blue-300 mx-auto mb-2" />
