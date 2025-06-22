@@ -240,7 +240,7 @@ const AvantagesAutomatisation = () => {
                     <div className="flex items-center">
                       <benefice.icon className={`h-12 w-12 text-${benefice.couleur}-600 mr-4`} />
                       <div>
-                        <CardTitle className="text-2xl">{benefice.titre}</Car
+                        <CardTitle className="text-2xl">{benefice.titre}</CardTitle>
                         <div className="text-4xl font-bold text-green-600">{benefice.economieEuros}</div>
                       </div>
                     </div>
