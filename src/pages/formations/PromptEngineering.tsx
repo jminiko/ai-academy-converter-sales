@@ -2,77 +2,117 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, Clock, Users, Star, ArrowRight, Target, Zap, Brain } from "lucide-react";
+import { Code, Clock, Users, Star, ArrowRight, CheckCircle, Target, Lightbulb } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const PromptEngineering = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-indigo-50 to-white">
       <Header />
       
-      <section className="container mx-auto px-4 py-16">
-        <div className="max-w-4xl mx-auto text-center">
-          <Badge className="mb-4 bg-purple-100 text-purple-800">
-            🎯 Formation Prompt Engineering
-          </Badge>
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            Maîtrisez l'Art du Prompt Engineering
+      <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600">
+        <div className="container mx-auto px-4 text-center">
+          <Code className="h-16 w-16 text-white mx-auto mb-6" />
+          <h1 className="text-5xl font-bold text-white mb-6">
+            Formation Prompt Engineering
           </h1>
-          <p className="text-xl text-gray-600 mb-8">
-            Devenez expert en conception de prompts pour maximiser les performances 
-            de l'IA générative. Formation pratique avec cas d'usage réels.
+          <p className="text-xl text-indigo-100 mb-8 max-w-3xl mx-auto">
+            Maîtrisez l'art de communiquer avec l'IA pour des résultats optimaux
           </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="bg-purple-600 hover:bg-purple-700" asChild>
-              <Link to="/contact">S'inscrire maintenant</Link>
-            </Button>
-            <Button size="lg" variant="outline" asChild>
-              <Link to="/contact">Programme détaillé</Link>
-            </Button>
-          </div>
+          <Button size="lg" className="bg-white text-indigo-600 hover:bg-gray-100">
+            Devenir expert en prompts
+          </Button>
+        </div>
+      </section>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div className="text-center">
-              <Clock className="h-8 w-8 text-purple-600 mx-auto mb-2" />
-              <div className="text-2xl font-bold text-purple-600">12h</div>
-              <p className="text-gray-600">Formation complète</p>
-            </div>
-            <div className="text-center">
-              <Users className="h-8 w-8 text-purple-600 mx-auto mb-2" />
-              <div className="text-2xl font-bold text-purple-600">8</div>
-              <p className="text-gray-600">Participants max</p>
-            </div>
-            <div className="text-center">
-              <Star className="h-8 w-8 text-purple-600 mx-auto mb-2" />
-              <div className="text-2xl font-bold text-purple-600">4.8/5</div>
-              <p className="text-gray-600">Note moyenne</p>
-            </div>
-            <div className="text-center">
-              <Target className="h-8 w-8 text-purple-600 mx-auto mb-2" />
-              <div className="text-2xl font-bold text-purple-600">92%</div>
-              <p className="text-gray-600">Taux de réussite</p>
-            </div>
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            <Card className="text-center p-6">
+              <Target className="h-12 w-12 text-indigo-600 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">500%</h3>
+              <p className="text-gray-600">amélioration des résultats</p>
+            </Card>
+            <Card className="text-center p-6">
+              <Lightbulb className="h-12 w-12 text-indigo-600 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">50+</h3>
+              <p className="text-gray-600">techniques avancées</p>
+            </Card>
+            <Card className="text-center p-6">
+              <Users className="h-12 w-12 text-indigo-600 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">1000+</h3>
+              <p className="text-gray-600">prompts créés</p>
+            </Card>
+            <Card className="text-center p-6">
+              <Clock className="h-12 w-12 text-indigo-600 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">2 jours</h3>
+              <p className="text-gray-600">formation intensive</p>
+            </Card>
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-purple-600">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">
-            Prêt à Devenir Expert en Prompts ?
-          </h2>
-          <p className="text-xl text-purple-100 mb-8">
-            Rejoignez notre formation et transformez votre approche de l'IA
-          </p>
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Programme de formation</h2>
           
-          <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100" asChild>
-            <Link to="/contact">
-              Réserver ma place <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </Button>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <div className="flex items-start">
+                <CheckCircle className="h-6 w-6 text-green-500 mr-4 mt-1" />
+                <div>
+                  <h3 className="text-lg font-semibold mb-2">Fondamentaux du prompting</h3>
+                  <p className="text-gray-600">Structure, syntaxe et principes de base pour des prompts efficaces.</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start">
+                <CheckCircle className="h-6 w-6 text-green-500 mr-4 mt-1" />
+                <div>
+                  <h3 className="text-lg font-semibold mb-2">Techniques avancées</h3>
+                  <p className="text-gray-600">Chain-of-thought, Few-shot learning, Role-playing et context engineering.</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start">
+                <CheckCircle className="h-6 w-6 text-green-500 mr-4 mt-1" />
+                <div>
+                  <h3 className="text-lg font-semibold mb-2">Optimisation des résultats</h3>
+                  <p className="text-gray-600">Techniques pour améliorer la précision et la pertinence des réponses IA.</p>
+                </div>
+              </div>
+            </div>
+            
+            <Card className="p-8">
+              <h3 className="text-2xl font-bold mb-6 text-center">Formation Premium</h3>
+              <div className="text-center mb-6">
+                <div className="text-4xl font-bold text-indigo-600 mb-2">1 490€</div>
+                <p className="text-gray-500 line-through">1 890€</p>
+                <Badge className="bg-green-100 text-green-800">Économisez 400€</Badge>
+              </div>
+              
+              <div className="space-y-4 mb-6">
+                <div className="flex items-center">
+                  <Clock className="h-5 w-5 text-gray-500 mr-3" />
+                  <span>14h de formation</span>
+                </div>
+                <div className="flex items-center">
+                  <Users className="h-5 w-5 text-gray-500 mr-3" />
+                  <span>Max 6 participants</span>
+                </div>
+                <div className="flex items-center">
+                  <Star className="h-5 w-5 text-yellow-400 fill-current mr-3" />
+                  <span>Certification incluse</span>
+                </div>
+              </div>
+              
+              <Button className="w-full" size="lg" asChild>
+                <Link to="/contact">S'inscrire maintenant</Link>
+              </Button>
+            </Card>
+          </div>
         </div>
       </section>
 

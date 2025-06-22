@@ -48,9 +48,15 @@ import NotFound from "./pages/NotFound";
 import FormationChatGPTEntreprise from "./pages/formations/FormationChatGPTEntreprise";
 import FormationAutomatisationProcessus from "./pages/formations/FormationAutomatisationProcessus";
 import PromptEngineering from "./pages/formations/PromptEngineering";
+import FormationIAMarketing from "./pages/formations/FormationIAMarketing";
+import FormationRPAZapier from "./pages/formations/FormationRPAZapier";
+import FormationIAComptabilite from "./pages/formations/FormationIAComptabilite";
 
 // Existing solution pages
 import SolutionAutomatisationFacturation from "./pages/solutions/SolutionAutomatisationFacturation";
+
+// Existing guide pages
+import GuideDebutantIA2024 from "./pages/guides/GuideDebutantIA2024";
 
 const queryClient = new QueryClient();
 
@@ -102,13 +108,19 @@ function App() {
             <Route path="/politique-qualite" element={<PolitiqueQualite />} />
             <Route path="/plan-site" element={<PlanSite />} />
             
-            {/* Existing specialized formation routes */}
+            {/* Specialized formation routes */}
             <Route path="/formation-chatgpt-entreprise" element={<FormationChatGPTEntreprise />} />
             <Route path="/formation-automatisation-processus" element={<FormationAutomatisationProcessus />} />
             <Route path="/formation-prompt-engineering" element={<PromptEngineering />} />
+            <Route path="/formation-ia-marketing" element={<FormationIAMarketing />} />
+            <Route path="/formation-rpa-zapier" element={<FormationRPAZapier />} />
+            <Route path="/formation-ia-comptabilite" element={<FormationIAComptabilite />} />
 
-            {/* Existing solution routes */}
+            {/* Solution routes */}
             <Route path="/solution-automatisation-facturation" element={<SolutionAutomatisationFacturation />} />
+            
+            {/* Guide routes */}
+            <Route path="/guide-debutant-ia-2024" element={<GuideDebutantIA2024 />} />
             
             <Route path="*" element={<NotFound />} />
           </Routes>
