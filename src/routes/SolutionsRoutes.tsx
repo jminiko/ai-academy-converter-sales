@@ -1,19 +1,15 @@
+
 import { Route } from "react-router-dom";
-
-// Solutions Métier
-import SolutionGestionTalents from "@/pages/solutions/SolutionGestionTalents";
-import SolutionServiceClient from "@/pages/solutions/SolutionServiceClient";
-import SolutionGestionStocks from "@/pages/solutions/SolutionGestionStocks";
-
-// Existing solution pages
-import SolutionAutomatisationFacturation from "@/pages/solutions/SolutionAutomatisationFacturation";
+import DeveloppementIA from "@/pages/services/DeveloppementIA";
+import ConseilStrategique from "@/pages/services/ConseilStrategique";
+import AuditIA from "@/pages/services/AuditIA";
+import MaintenanceIA from "@/pages/services/MaintenanceIA";
 
 export const SolutionsRoutes = () => (
   <>
-    {/* Solutions Métier */}
-    <Route path="/solution-automatisation-facturation" element={<SolutionAutomatisationFacturation />} />
-    <Route path="/solution-gestion-talents" element={<SolutionGestionTalents />} />
-    <Route path="/solution-service-client" element={<SolutionServiceClient />} />
-    <Route path="/solution-gestion-stocks" element={<SolutionGestionStocks />} />
+    <Route path="/developpement-ia" element={<DeveloppementIA />} />
+    <Route path="/conseil-strategique" element={<ConseilStrategique />} />
+    <Route path="/audit-ia" element={<AuditIA />} />
+    <Route path="/maintenance-ia" element={<MaintenanceIA />} />
   </>
 );

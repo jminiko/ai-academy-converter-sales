@@ -1,13 +1,13 @@
 
 import { Route } from "react-router-dom";
-
-// Technologies spécialisées
-import TensorFlowLite from "@/pages/technologies/TensorFlowLite";
-import PyTorchMobile from "@/pages/technologies/PyTorchMobile";
+import TensorFlow from "@/pages/formations/TensorFlow";
+import PyTorch from "@/pages/formations/PyTorch";
+import PythonIA from "@/pages/formations/PythonIA";
 
 export const TechnologiesRoutes = () => (
   <>
-    <Route path="/technologie-tensorflow-lite" element={<TensorFlowLite />} />
-    <Route path="/technologie-pytorch-mobile" element={<PyTorchMobile />} />
+    <Route path="/tensorflow" element={<TensorFlow />} />
+    <Route path="/pytorch" element={<PyTorch />} />
+    <Route path="/python-ia" element={<PythonIA />} />
   </>
 );

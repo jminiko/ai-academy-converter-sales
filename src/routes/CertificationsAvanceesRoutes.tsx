@@ -1,13 +1,9 @@
 
 import { Route } from "react-router-dom";
-
-// Certifications avancées
-import CertificationIAEthique from "@/pages/certifications/CertificationIAEthique";
-import CertificationRobotique from "@/pages/certifications/CertificationRobotique";
+import CertificationIA10 from "@/pages/certifications-avancees/CertificationIA10";
 
 export const CertificationsAvanceesRoutes = () => (
   <>
-    <Route path="/certification-ia-ethique" element={<CertificationIAEthique />} />
-    <Route path="/certification-robotique" element={<CertificationRobotique />} />
+    <Route path="/certificationia10" element={<CertificationIA10 />} />
   </>
 );

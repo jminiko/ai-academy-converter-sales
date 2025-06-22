@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import SitemapPage from "./pages/Sitemap";
 
 // Import des routes modulaires existantes
 import { FormationsRoutes } from "./routes/FormationsRoutes";
@@ -28,6 +29,9 @@ import { MethodesRoutes } from "./routes/MethodesRoutes";
 // Nouvelles routes
 import { SecteurHotellerieRoutes } from "./routes/SecteurHotellerieRoutes";
 
+// Route spéciale pour FormationIAFinance
+import FormationIAFinance from "./pages/formations/FormationIAFinance";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -38,6 +42,10 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/sitemap" element={<SitemapPage />} />
+          
+          {/* Route spéciale */}
+          <Route path="/formationiafinance" element={<FormationIAFinance />} />
           
           {/* Routes modulaires existantes */}
           <FormationsRoutes />
