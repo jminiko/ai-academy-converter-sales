@@ -50,7 +50,7 @@ const FormationIAFinance = () => {
             </Card>
           </div>
         </div>
-      </Section>
+      </section>
 
       <Footer />
     </div>
