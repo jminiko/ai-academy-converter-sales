@@ -3,24 +3,24 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Building, Shield, TrendingUp, Users } from "lucide-react";
+import { Cog, Server, GitBranch, Monitor } from "lucide-react";
 
-const SecteurBanqueAssurance = () => {
+const FormationMLOpsProduction = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
       <Header />
       
       <section className="py-20 bg-gradient-to-r from-slate-600 to-gray-600">
         <div className="container mx-auto px-4 text-center">
-          <Building className="h-16 w-16 text-white mx-auto mb-6" />
+          <Cog className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">
-            IA pour Banque & Assurance
+            Formation MLOps Production
           </h1>
           <p className="text-xl text-slate-100 mb-8 max-w-3xl mx-auto">
-            Solutions IA spécialisées pour les services financiers et l'assurance
+            Déployez et maintenez vos modèles IA en production avec MLOps
           </p>
           <Button size="lg" className="bg-white text-slate-600 hover:bg-gray-100">
-            Moderniser la finance
+            Industrialiser l'IA
           </Button>
         </div>
       </section>
@@ -29,24 +29,24 @@ const SecteurBanqueAssurance = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="p-6 text-center">
-              <Shield className="h-12 w-12 text-slate-600 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Détection fraude</h3>
-              <p className="text-gray-600">Sécurité renforcée</p>
+              <Server className="h-12 w-12 text-slate-600 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">CI/CD ML</h3>
+              <p className="text-gray-600">Pipelines automatisés</p>
             </Card>
             <Card className="p-6 text-center">
-              <TrendingUp className="h-12 w-12 text-slate-600 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Analyse risque</h3>
-              <p className="text-gray-600">Évaluation précise</p>
+              <GitBranch className="h-12 w-12 text-slate-600 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">Versioning</h3>
+              <p className="text-gray-600">Gestion des modèles</p>
             </Card>
             <Card className="p-6 text-center">
-              <Users className="h-12 w-12 text-slate-600 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Expérience client</h3>
-              <p className="text-gray-600">Service personnalisé</p>
+              <Monitor className="h-12 w-12 text-slate-600 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">Monitoring</h3>
+              <p className="text-gray-600">Surveillance en temps réel</p>
             </Card>
             <Card className="p-6 text-center">
-              <Building className="h-12 w-12 text-slate-600 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Conformité</h3>
-              <p className="text-gray-600">Respect réglementaire</p>
+              <Cog className="h-12 w-12 text-slate-600 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">Orchestration</h3>
+              <p className="text-gray-600">Workflows automatisés</p>
             </Card>
           </div>
         </div>
@@ -57,4 +57,4 @@ const SecteurBanqueAssurance = () => {
   );
 };
 
-export default SecteurBanqueAssurance;
+export default FormationMLOpsProduction;
