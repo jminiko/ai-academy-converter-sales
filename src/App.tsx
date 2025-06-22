@@ -1,16 +1,16 @@
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import AllRoutes from "./routes/AllRoutes";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Index />} />
         {AllRoutes()}
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
