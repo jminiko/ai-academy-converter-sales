@@ -2,24 +2,22 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { MapPin, Calendar, Compass, Star } from "lucide-react";
+import { Card } from "@/components/ui/card";
+import { Plane, MapPin, Camera, Users } from "lucide-react";
 
 const TourismIA = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-sky-50 to-white">
       <Header />
       
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-cyan-600">
+      <section className="py-20 bg-gradient-to-r from-sky-600 to-blue-600">
         <div className="container mx-auto px-4 text-center">
-          <Compass className="h-16 w-16 text-white mx-auto mb-6" />
-          <h1 className="text-5xl font-bold text-white mb-6">
-            IA pour le Tourisme
-          </h1>
-          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Personnalisez l'expérience voyage avec l'intelligence artificielle
+          <Plane className="h-16 w-16 text-white mx-auto mb-6" />
+          <h1 className="text-5xl font-bold text-white mb-6">IA dans le Tourisme</h1>
+          <p className="text-xl text-sky-100 mb-8 max-w-3xl mx-auto">
+            Révolutionner l'expérience voyage avec l'IA
           </p>
-          <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+          <Button size="lg" className="bg-white text-sky-600 hover:bg-gray-100">
             Explorer les solutions
           </Button>
         </div>
@@ -27,50 +25,26 @@ const TourismIA = () => {
 
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <Card>
-              <CardHeader>
-                <MapPin className="h-12 w-12 text-blue-600 mb-4" />
-                <CardTitle>Recommandations intelligentes</CardTitle>
-                <CardDescription>
-                  Itinéraires personnalisés
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Créez des itinéraires sur mesure basés sur les préférences.
-                </p>
-              </CardContent>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card className="p-6 text-center">
+              <MapPin className="h-12 w-12 text-sky-600 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">Recommandations</h3>
+              <p className="text-gray-600">Suggestions personnalisées</p>
             </Card>
-
-            <Card>
-              <CardHeader>
-                <Calendar className="h-12 w-12 text-blue-600 mb-4" />
-                <CardTitle>Optimisation tarifaire</CardTitle>
-                <CardDescription>
-                  Pricing dynamique
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Ajustez les prix en temps réel selon la demande.
-                </p>
-              </CardContent>
+            <Card className="p-6 text-center">
+              <Camera className="h-12 w-12 text-sky-600 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">Reconnaissance</h3>
+              <p className="text-gray-600">Identification visuelle</p>
             </Card>
-
-            <Card>
-              <CardHeader>
-                <Star className="h-12 w-12 text-blue-600 mb-4" />
-                <CardTitle>Assistant voyage IA</CardTitle>
-                <CardDescription>
-                  Support 24/7 intelligent
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Chatbot multilingue pour assistance voyage.
-                </p>
-              </CardContent>
+            <Card className="p-6 text-center">
+              <Users className="h-12 w-12 text-sky-600 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">Service client</h3>
+              <p className="text-gray-600">Assistance 24/7</p>
+            </Card>
+            <Card className="p-6 text-center">
+              <Plane className="h-12 w-12 text-sky-600 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">Optimisation</h3>
+              <p className="text-gray-600">Gestion des réservations</p>
             </Card>
           </div>
         </div>
