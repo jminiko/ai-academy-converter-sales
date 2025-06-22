@@ -3,7 +3,7 @@ import { Route } from "react-router-dom";
 
 // Certifications avancées
 import CertificationIAEthique from "@/pages/certifications/CertificationIAEthique";
-import CertificationRobotique from "@/pages/certifications/CertificationRobot";
+import CertificationRobotique from "@/pages/certifications/CertificationRobotique";
 
 export const CertificationsAvanceesRoutes = () => (
   <>
