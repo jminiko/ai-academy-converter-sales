@@ -7,6 +7,17 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import SitemapPage from "./pages/Sitemap";
 
+// Nouvelles pages principales
+import Inscription from "./pages/Inscription";
+import Merci from "./pages/Merci";
+import Contact from "./pages/Contact";
+import Formations from "./pages/Formations";
+import Certifications from "./pages/Certifications";
+
+// Pages en anglais
+import AITrainingFinance from "./pages/en/AITrainingFinance";
+import ContactEN from "./pages/en/ContactEN";
+
 // Import des routes modulaires existantes
 import { FormationsRoutes } from "./routes/FormationsRoutes";
 import { GuidesRoutes } from "./routes/GuidesRoutes";
@@ -43,6 +54,17 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/sitemap" element={<SitemapPage />} />
+          
+          {/* Nouvelles pages principales */}
+          <Route path="/inscription" element={<Inscription />} />
+          <Route path="/merci" element={<Merci />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/formations" element={<Formations />} />
+          <Route path="/certifications" element={<Certifications />} />
+          
+          {/* Pages en anglais */}
+          <Route path="/en/ai-training-finance" element={<AITrainingFinance />} />
+          <Route path="/en/contact" element={<ContactEN />} />
           
           {/* Route spéciale */}
           <Route path="/formationiafinance" element={<FormationIAFinance />} />

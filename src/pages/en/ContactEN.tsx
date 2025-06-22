@@ -7,10 +7,10 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { Phone, Mail, MapPin, Clock, CheckCircle, Send, MessageCircle, Calendar } from "lucide-react";
+import { Phone, Mail, MapPin, CheckCircle, Send, MessageCircle, Calendar, Clock } from "lucide-react";
 import { useState } from "react";
 
-const Contact = () => {
+const ContactEN = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
@@ -25,24 +25,24 @@ const Contact = () => {
   const validateForm = () => {
     if (!formData.name.trim()) {
       toast({
-        title: "Erreur de validation",
-        description: "Le nom est obligatoire",
+        title: "Validation Error",
+        description: "Name is required",
         variant: "destructive"
       });
       return false;
     }
     if (!formData.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       toast({
-        title: "Erreur de validation", 
-        description: "Veuillez saisir un email valide",
+        title: "Validation Error", 
+        description: "Please enter a valid email address",
         variant: "destructive"
       });
       return false;
     }
     if (!formData.message.trim()) {
       toast({
-        title: "Erreur de validation",
-        description: "Le message est obligatoire",
+        title: "Validation Error",
+        description: "Message is required",
         variant: "destructive"
       });
       return false;
@@ -60,11 +60,11 @@ const Contact = () => {
     // Simulation d'envoi
     setTimeout(() => {
       toast({
-        title: "Message envoyé avec succès !",
-        description: "Nous vous répondrons sous 2h maximum.",
+        title: "Message sent successfully!",
+        description: "We'll respond within 2 hours maximum.",
       });
       
-      // Reset du formulaire
+      // Reset form
       setFormData({
         name: "",
         email: "",
@@ -89,36 +89,36 @@ const Contact = () => {
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Header />
       
-      {/* Hero Section Amélioré */}
+      {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="container mx-auto px-4 text-center">
           <div className="inline-flex items-center bg-white/20 rounded-full px-4 py-2 mb-6">
             <MessageCircle className="h-5 w-5 text-white mr-2" />
-            <span className="text-white font-medium">Contact Expert</span>
+            <span className="text-white font-medium">Expert Contact</span>
           </div>
           <h1 className="text-5xl font-bold text-white mb-6">
-            Contactez nos Experts IA
+            Contact Our AI Experts
           </h1>
           <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Consultation gratuite • Devis personnalisé sous 24h • Accompagnement dédié
+            Free consultation • Personalized quote within 24h • Dedicated support
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
               <CheckCircle className="h-6 w-6 text-green-300 mx-auto mb-2" />
-              <p className="text-white text-sm font-medium">Réponse < 2h</p>
+              <p className="text-white text-sm font-medium">Response < 2h</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
               <Phone className="h-6 w-6 text-blue-300 mx-auto mb-2" />
-              <p className="text-white text-sm font-medium">Appel gratuit</p>
+              <p className="text-white text-sm font-medium">Free call</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
               <Calendar className="h-6 w-6 text-purple-300 mx-auto mb-2" />
-              <p className="text-white text-sm font-medium">RDV sous 24h</p>
+              <p className="text-white text-sm font-medium">Meeting in 24h</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
               <CheckCircle className="h-6 w-6 text-yellow-300 mx-auto mb-2" />
-              <p className="text-white text-sm font-medium">Devis gratuit</p>
+              <p className="text-white text-sm font-medium">Free quote</p>
             </div>
           </div>
         </div>
@@ -127,18 +127,18 @@ const Contact = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Formulaire de Contact Amélioré */}
+            {/* Contact Form */}
             <div className="lg:col-span-2">
               <Card className="shadow-2xl border-0">
                 <CardHeader className="text-center pb-6">
-                  <CardTitle className="text-3xl font-bold text-gray-900">Demande de Consultation</CardTitle>
-                  <p className="text-gray-600">Remplissez ce formulaire et recevez une réponse sous 2h</p>
+                  <CardTitle className="text-3xl font-bold text-gray-900">Consultation Request</CardTitle>
+                  <p className="text-gray-600">Fill out this form and receive a response within 2 hours</p>
                 </CardHeader>
                 <CardContent className="p-8">
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
-                        <Label htmlFor="name" className="text-sm font-medium text-gray-700">Nom complet *</Label>
+                        <Label htmlFor="name" className="text-sm font-medium text-gray-700">Full Name *</Label>
                         <Input
                           id="name"
                           name="name"
@@ -146,11 +146,11 @@ const Contact = () => {
                           onChange={handleChange}
                           required
                           className="mt-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                          placeholder="Votre nom complet"
+                          placeholder="Your full name"
                         />
                       </div>
                       <div>
-                        <Label htmlFor="email" className="text-sm font-medium text-gray-700">Email professionnel *</Label>
+                        <Label htmlFor="email" className="text-sm font-medium text-gray-700">Professional Email *</Label>
                         <Input
                           id="email"
                           name="email"
@@ -159,14 +159,14 @@ const Contact = () => {
                           onChange={handleChange}
                           required
                           className="mt-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                          placeholder="votre.email@entreprise.com"
+                          placeholder="your.email@company.com"
                         />
                       </div>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
-                        <Label htmlFor="company" className="text-sm font-medium text-gray-700">Entreprise *</Label>
+                        <Label htmlFor="company" className="text-sm font-medium text-gray-700">Company *</Label>
                         <Input
                           id="company"
                           name="company"
@@ -174,24 +174,24 @@ const Contact = () => {
                           onChange={handleChange}
                           required
                           className="mt-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                          placeholder="Nom de votre entreprise"
+                          placeholder="Your company name"
                         />
                       </div>
                       <div>
-                        <Label htmlFor="phone" className="text-sm font-medium text-gray-700">Téléphone</Label>
+                        <Label htmlFor="phone" className="text-sm font-medium text-gray-700">Phone</Label>
                         <Input
                           id="phone"
                           name="phone"
                           value={formData.phone}
                           onChange={handleChange}
                           className="mt-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                          placeholder="+33 1 23 45 67 89"
+                          placeholder="+1 234 567 8900"
                         />
                       </div>
                     </div>
 
                     <div>
-                      <Label htmlFor="service" className="text-sm font-medium text-gray-700">Service souhaité *</Label>
+                      <Label htmlFor="service" className="text-sm font-medium text-gray-700">Desired Service *</Label>
                       <select
                         id="service"
                         name="service"
@@ -200,18 +200,18 @@ const Contact = () => {
                         required
                         className="mt-2 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       >
-                        <option value="">Sélectionnez un service</option>
-                        <option value="formation-ia">Formation IA Générative</option>
-                        <option value="consulting">Consulting & Audit IA</option>
-                        <option value="implementation">Implémentation IA</option>
-                        <option value="automatisation">Automatisation Processus</option>
+                        <option value="">Select a service</option>
+                        <option value="ai-training">AI Training</option>
+                        <option value="consulting">Consulting & AI Audit</option>
+                        <option value="implementation">AI Implementation</option>
+                        <option value="automation">Process Automation</option>
                         <option value="support">Support & Maintenance</option>
-                        <option value="autre">Autre besoin</option>
+                        <option value="other">Other need</option>
                       </select>
                     </div>
 
                     <div>
-                      <Label htmlFor="message" className="text-sm font-medium text-gray-700">Décrivez votre projet *</Label>
+                      <Label htmlFor="message" className="text-sm font-medium text-gray-700">Describe Your Project *</Label>
                       <Textarea
                         id="message"
                         name="message"
@@ -220,7 +220,7 @@ const Contact = () => {
                         required
                         rows={5}
                         className="mt-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                        placeholder="Décrivez vos besoins, vos objectifs et votre contexte. Plus vous êtes précis, mieux nous pourrons vous aider..."
+                        placeholder="Describe your needs, objectives and context. The more specific you are, the better we can help you..."
                       />
                     </div>
 
@@ -233,12 +233,12 @@ const Contact = () => {
                       {isSubmitting ? (
                         <>
                           <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
-                          Envoi en cours...
+                          Sending...
                         </>
                       ) : (
                         <>
                           <Send className="mr-2 h-5 w-5" />
-                          Envoyer ma demande
+                          Send My Request
                         </>
                       )}
                     </Button>
@@ -247,13 +247,13 @@ const Contact = () => {
               </Card>
             </div>
 
-            {/* Informations de Contact Améliorées */}
+            {/* Contact Information */}
             <div className="space-y-6">
               <Card className="shadow-lg">
                 <CardHeader>
                   <CardTitle className="flex items-center">
                     <Phone className="h-5 w-5 text-blue-600 mr-2" />
-                    Contact Direct
+                    Direct Contact
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
@@ -261,17 +261,17 @@ const Contact = () => {
                     <Phone className="h-5 w-5 text-blue-600 mr-3 mt-1" />
                     <div>
                       <p className="font-medium text-gray-900">+33 1 23 45 67 89</p>
-                      <p className="text-sm text-gray-600">Lun-Ven 9h-18h</p>
-                      <p className="text-xs text-blue-600">Appel gratuit</p>
+                      <p className="text-sm text-gray-600">Mon-Fri 9am-6pm</p>
+                      <p className="text-xs text-blue-600">Free call</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start p-4 bg-green-50 rounded-lg">
                     <Mail className="h-5 w-5 text-green-600 mr-3 mt-1" />
                     <div>
-                      <p className="font-medium text-gray-900">contact@twentyonetalents.fr</p>
-                      <p className="text-sm text-gray-600">Réponse sous 2h</p>
-                      <p className="text-xs text-green-600">24h/24</p>
+                      <p className="font-medium text-gray-900">contact@twentyonetalents.com</p>
+                      <p className="text-sm text-gray-600">Response within 2h</p>
+                      <p className="text-xs text-green-600">24/7</p>
                     </div>
                   </div>
                   
@@ -279,8 +279,8 @@ const Contact = () => {
                     <MapPin className="h-5 w-5 text-purple-600 mr-3 mt-1" />
                     <div>
                       <p className="font-medium text-gray-900">Paris, France</p>
-                      <p className="text-sm text-gray-600">Interventions nationales</p>
-                      <p className="text-xs text-purple-600">Déplacement gratuit</p>
+                      <p className="text-sm text-gray-600">International services</p>
+                      <p className="text-xs text-purple-600">Free travel</p>
                     </div>
                   </div>
                 </CardContent>
@@ -290,30 +290,30 @@ const Contact = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-600 mr-2" />
-                    Pourquoi Nous Choisir ?
+                    Why Choose Us?
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                      <span className="text-sm"><strong>1000+</strong> entreprises accompagnées</span>
+                      <span className="text-sm"><strong>1000+</strong> companies supported</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                      <span className="text-sm"><strong>98%</strong> de satisfaction client</span>
+                      <span className="text-sm"><strong>98%</strong> client satisfaction</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                      <span className="text-sm">ROI moyen de <strong>300%</strong></span>
+                      <span className="text-sm">Average ROI of <strong>300%</strong></span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                      <span className="text-sm">Support <strong>24/7</strong> inclus</span>
+                      <span className="text-sm"><strong>24/7</strong> support included</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                      <span className="text-sm">Formateurs <strong>certifiés</strong></span>
+                      <span className="text-sm"><strong>Certified</strong> trainers</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -323,13 +323,13 @@ const Contact = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold mb-2 flex items-center">
                     <span className="text-2xl mr-2">🚀</span>
-                    Offre Spéciale
+                    Special Offer
                   </h3>
                   <p className="text-sm text-blue-100 mb-4">
-                    Première consultation gratuite + audit IA offert pour toute formation réservée ce mois-ci
+                    First consultation free + AI audit offered for any training booked this month
                   </p>
                   <Button variant="outline" className="w-full bg-white text-blue-600 hover:bg-gray-100">
-                    En profiter maintenant
+                    Take advantage now
                   </Button>
                 </CardContent>
               </Card>
@@ -343,4 +343,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactEN;
