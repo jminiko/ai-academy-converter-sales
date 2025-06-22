@@ -51,7 +51,7 @@ const EdgeAI = () => {
             <Card>
               <CardHeader>
                 <Zap className="h-12 w-12 text-teal-600 mb-4" />
-                <CardTitle>Latence ultra-faible</Cardtitle>
+                <CardTitle>Latence ultra-faible</CardTitle>
                 <CardDescription>Réponse instantanée</CardDescription>
               </CardHeader>
               <CardContent>
