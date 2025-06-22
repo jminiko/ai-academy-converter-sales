@@ -67,77 +67,75 @@ import FormationIAFinance from "@/pages/FormationIAFinance";
 import Stats500Pages from "@/pages/Stats500Pages";
 
 const AllRoutes = () => {
-  return (
-    <>
-      {/* Routes existantes */}
-      {MainRoutes()}
-      {FormationsRoutes()}
-      {FormationsAvanceesRoutes()}
-      {FormationRoutes()}
-      {GuidesRoutes()}
-      {GuidesAvancesRoutes()}
-      {MethodesRoutes()}
-      {ReglementationRoutes()}
-      {OutilsRoutes()}
-      {OutilsAvancesRoutes()}
-      {OutilsSpecialisesRoutes()}
-      {ConseilsRoutes()}
-      {IndustriesRoutes()}
-      {SecteursRoutes()}
-      {SecteurHotellerieRoutes()}
-      {TechnologiesRoutes()}
-      {SolutionsRoutes()}
-      {SolutionsAvanceesRoutes()}
-      {SolutionsSpecialisees()}
-      {ServicesRoutes()}
-      {WebinairesRoutes()}
-      {CasEtudesRoutes()}
-      {ApplicationsRoutes()}
-      {CertificationsAvanceesRoutes()}
-      {TendancesRoutes()}
-      {NouvelleSectionsRoutes()}
-      {MetiersRoutes()}
-      {ConceptsRoutes()}
-      {TypesIARoutes()}
-      {RoutesMassives()}
+  return [
+    // Routes existantes
+    ...MainRoutes(),
+    ...FormationsRoutes(),
+    ...FormationsAvanceesRoutes(),
+    ...FormationRoutes(),
+    ...GuidesRoutes(),
+    ...GuidesAvancesRoutes(),
+    ...MethodesRoutes(),
+    ...ReglementationRoutes(),
+    ...OutilsRoutes(),
+    ...OutilsAvancesRoutes(),
+    ...OutilsSpecialisesRoutes(),
+    ...ConseilsRoutes(),
+    ...IndustriesRoutes(),
+    ...SecteursRoutes(),
+    ...SecteurHotellerieRoutes(),
+    ...TechnologiesRoutes(),
+    ...SolutionsRoutes(),
+    ...SolutionsAvanceesRoutes(),
+    ...SolutionsSpecialisees(),
+    ...ServicesRoutes(),
+    ...WebinairesRoutes(),
+    ...CasEtudesRoutes(),
+    ...ApplicationsRoutes(),
+    ...CertificationsAvanceesRoutes(),
+    ...TendancesRoutes(),
+    ...NouvelleSectionsRoutes(),
+    ...MetiersRoutes(),
+    ...ConceptsRoutes(),
+    ...TypesIARoutes(),
+    ...RoutesMassives(),
 
-      {/* NOUVEAU: Routes complètes pour les 500 pages */}
-      {RoutesComplete500()}
+    // NOUVEAU: Routes complètes pour les 500 pages
+    ...RoutesComplete500(),
 
-      {/* Page de statistiques */}
-      <Route path="/stats-500-pages" element={<Stats500Pages />} />
+    // Page de statistiques
+    <Route key="stats-500" path="/stats-500-pages" element={<Stats500Pages />} />,
 
-      {/* Nouvelles routes directes */}
-      <Route path="/formation-ia-business" element={<FormationIABusiness />} />
-      <Route path="/formation-ia-leadership" element={<FormationIALeadership />} />
-      <Route path="/formation-ia-gestion" element={<FormationIAGestion />} />
-      <Route path="/tourism-ia" element={<TourismIA />} />
-      <Route path="/sport-ia" element={<SportIA />} />
-      <Route path="/blockchain-ai" element={<BlockchainAI />} />
-      <Route path="/iot-ai" element={<IoTAI />} />
-      <Route path="/solution-ia-vente" element={<SolutionIAVente />} />
-      <Route path="/solution-ia-marketing" element={<SolutionIAMarketing />} />
-      <Route path="/outil-analyse-donnees" element={<OutilAnalyseDonnees />} />
-      <Route path="/outil-generation-texte" element={<OutilGenerationTexte />} />
-      <Route path="/outilgpt4" element={<OutilGPT4 />} />
-      <Route path="/ia-architecte" element={<IAArchitecte />} />
-      <Route path="/ia-journaliste" element={<IAJournaliste />} />
-      <Route path="/ia-medecin" element={<IAMedecin />} />
-      <Route path="/ia-avocat" element={<IAAvocat />} />
-      <Route path="/reseaux-neurones" element={<ReseauxNeurones />} />
-      <Route path="/apprentissage-automatique" element={<ApprentissageAutomatique />} />
-      <Route path="/ia-symbolique" element={<IASymbolique />} />
-      <Route path="/ia-connexionniste" element={<IAConnexionniste />} />
-      <Route path="/sante-cardiologie" element={<SanteCardiologie />} />
-      <Route path="/sante-radiologie" element={<SanteRadiologie />} />
-      <Route path="/sante-oncologie" element={<SanteOncologie />} />
-      <Route path="/ia-debutant" element={<IADebutant />} />
-      <Route path="/ia-intermediaire" element={<IAIntermediaire />} />
-      <Route path="/ia-expert" element={<IAExpert />} />
-      <Route path="/ia-executive" element={<IAExecutive />} />
-      <Route path="/formationiafinance" element={<FormationIAFinance />} />
-    </>
-  );
+    // Nouvelles routes directes
+    <Route key="formation-ia-business" path="/formation-ia-business" element={<FormationIABusiness />} />,
+    <Route key="formation-ia-leadership" path="/formation-ia-leadership" element={<FormationIALeadership />} />,
+    <Route key="formation-ia-gestion" path="/formation-ia-gestion" element={<FormationIAGestion />} />,
+    <Route key="tourism-ia" path="/tourism-ia" element={<TourismIA />} />,
+    <Route key="sport-ia" path="/sport-ia" element={<SportIA />} />,
+    <Route key="blockchain-ai" path="/blockchain-ai" element={<BlockchainAI />} />,
+    <Route key="iot-ai" path="/iot-ai" element={<IoTAI />} />,
+    <Route key="solution-ia-vente" path="/solution-ia-vente" element={<SolutionIAVente />} />,
+    <Route key="solution-ia-marketing" path="/solution-ia-marketing" element={<SolutionIAMarketing />} />,
+    <Route key="outil-analyse-donnees" path="/outil-analyse-donnees" element={<OutilAnalyseDonnees />} />,
+    <Route key="outil-generation-texte" path="/outil-generation-texte" element={<OutilGenerationTexte />} />,
+    <Route key="outilgpt4" path="/outilgpt4" element={<OutilGPT4 />} />,
+    <Route key="ia-architecte" path="/ia-architecte" element={<IAArchitecte />} />,
+    <Route key="ia-journaliste" path="/ia-journaliste" element={<IAJournaliste />} />,
+    <Route key="ia-medecin" path="/ia-medecin" element={<IAMedecin />} />,
+    <Route key="ia-avocat" path="/ia-avocat" element={<IAAvocat />} />,
+    <Route key="reseaux-neurones" path="/reseaux-neurones" element={<ReseauxNeurones />} />,
+    <Route key="apprentissage-automatique" path="/apprentissage-automatique" element={<ApprentissageAutomatique />} />,
+    <Route key="ia-symbolique" path="/ia-symbolique" element={<IASymbolique />} />,
+    <Route key="ia-connexionniste" path="/ia-connexionniste" element={<IAConnexionniste />} />,
+    <Route key="sante-cardiologie" path="/sante-cardiologie" element={<SanteCardiologie />} />,
+    <Route key="sante-radiologie" path="/sante-radiologie" element={<SanteRadiologie />} />,
+    <Route key="sante-oncologie" path="/sante-oncologie" element={<SanteOncologie />} />,
+    <Route key="ia-debutant" path="/ia-debutant" element={<IADebutant />} />,
+    <Route key="ia-intermediaire" path="/ia-intermediaire" element={<IAIntermediaire />} />,
+    <Route key="ia-expert" path="/ia-expert" element={<IAExpert />} />,
+    <Route key="ia-executive" path="/ia-executive" element={<IAExecutive />} />,
+    <Route key="formationiafinance" path="/formationiafinance" element={<FormationIAFinance />} />
+  ];
 };
 
 export default AllRoutes;
