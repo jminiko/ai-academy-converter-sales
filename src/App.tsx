@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -24,6 +25,7 @@ import { ApplicationsRoutes } from "@/routes/ApplicationsRoutes";
 import { MethodesRoutes } from "@/routes/MethodesRoutes";
 import { TendancesRoutes } from "@/routes/TendancesRoutes";
 import { ReglementationRoutes } from "@/routes/ReglementationRoutes";
+import { ServicesRoutes } from "@/routes/ServicesRoutes";
 
 const queryClient = new QueryClient();
 
@@ -52,6 +54,9 @@ function App() {
             {/* Guides routes */}
             <GuidesRoutes />
             <GuidesAvancesRoutes />
+            
+            {/* Services routes */}
+            <ServicesRoutes />
             
             {/* Secteurs routes */}
             <SecteurRoutes />
