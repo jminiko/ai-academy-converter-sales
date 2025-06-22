@@ -32,6 +32,7 @@ import MetiersRoutes from "./MetiersRoutes";
 import ConceptsRoutes from "./ConceptsRoutes";
 import TypesIARoutes from "./TypesIARoutes";
 import RoutesMassives from "./RoutesMassives";
+import RoutesComplete500 from "./RoutesComplete500";
 
 // Import des nouvelles pages générées
 import FormationIABusiness from "@/pages/formations/FormationIABusiness";
@@ -90,6 +91,9 @@ const AllRoutes = () => {
       {ConceptsRoutes()}
       {TypesIARoutes()}
       {RoutesMassives()}
+
+      {/* NOUVEAU: Routes complètes pour les 500 pages */}
+      {RoutesComplete500()}
 
       {/* Page de statistiques */}
       <Route path="/stats-500-pages" element={<Stats500Pages />} />
