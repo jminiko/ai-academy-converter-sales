@@ -28,7 +28,7 @@ import FormationRoutes from "./FormationRoutes";
 import NouvelleSectionsRoutes from "./NouvelleSectionsRoutes";
 import SolutionsSpecialisees from "./SolutionsSpecialisees";
 import OutilsSpecialisesRoutes from "./OutilsSpecialisesRoutes";
-import MetiersRoutes from "./Metiers
+import MetiersRoutes from "./MetiersRoutes";
 
 import ConceptsRoutes from "./ConceptsRoutes";
 import TypesIARoutes from "./TypesIARoutes";
