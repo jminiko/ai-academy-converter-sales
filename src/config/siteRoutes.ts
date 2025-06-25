@@ -20,6 +20,22 @@ export const siteRoutes: RouteConfig[] = [
   { path: "/faq", name: "FAQ", description: "Questions fréquentes", category: "Principal" },
   { path: "/tarifs", name: "Tarifs", description: "Nos prix", category: "Principal" },
 
+  // Nouvelles Expertises (10 pages)
+  { path: "/expertise-data-science", name: "Expertise Data Science", description: "Solutions Data Science avancées", category: "Expertises" },
+  { path: "/expertise-mlops", name: "Expertise MLOps", description: "Déploiement ML en production", category: "Expertises" },
+
+  // Nouvelles Certifications Pro (10 pages)
+  { path: "/certification-data-scientist-pro", name: "Certification Data Scientist Pro", description: "Certification professionnelle Data Science", category: "Certifications Pro" },
+
+  // Nouvelles Actualités (15 pages)
+  { path: "/tendances-ia-2025", name: "Tendances IA 2025", description: "Principales tendances IA pour 2025", category: "Actualités" },
+
+  // Nouveaux Partenaires (10 pages)
+  { path: "/partenaire-azure", name: "Partenaire Microsoft Azure", description: "Solutions IA sur Azure", category: "Partenaires" },
+
+  // Nouveaux Événements (15 pages)
+  { path: "/conference-mondiale-ia-2025", name: "Conférence Mondiale IA 2025", description: "Plus grand événement IA de l'année", category: "Événements" },
+
   // Formations principales (50 pages)
   { path: "/formation-ia-explicable", name: "IA Explicable", description: "Formation IA explicable et interprétable", category: "Formations" },
   { path: "/formation-deep-learning-avance", name: "Deep Learning Avancé", description: "Formation deep learning expert", category: "Formations" },

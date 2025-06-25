@@ -15,7 +15,7 @@ import SecteursRoutes from "./SecteursRoutes";
 import TechnologiesRoutes from "./TechnologiesRoutes";
 import SolutionsRoutes from "./SolutionsRoutes";
 import SolutionsAvanceesRoutes from "./SolutionsAvanceesRoutes";
-import { MainRoutes } from "./MainRoutes"; // Fixed: using named import
+import { MainRoutes } from "./MainRoutes";
 import { ServicesRoutes } from "./ServicesRoutes";
 import WebinairesRoutes from "./WebinairesRoutes";
 import CasEtudesRoutes from "./CasEtudesRoutes";
@@ -29,11 +29,17 @@ import NouvelleSectionsRoutes from "./NouvelleSectionsRoutes";
 import SolutionsSpecialisees from "./SolutionsSpecialisees";
 import OutilsSpecialisesRoutes from "./OutilsSpecialisesRoutes";
 import MetiersRoutes from "./MetiersRoutes";
-
 import ConceptsRoutes from "./ConceptsRoutes";
 import TypesIARoutes from "./TypesIARoutes";
 import RoutesMassives from "./RoutesMassives";
 import RoutesComplete500 from "./RoutesComplete500";
+
+// Import des nouvelles routes
+import ExpertisesRoutes from "./ExpertisesRoutes";
+import CertificationsProRoutes from "./CertificationsProRoutes";
+import ActualitesRoutes from "./ActualitesRoutes";
+import PartenairesRoutes from "./PartenairesRoutes";
+import EvenementsRoutes from "./EvenementsRoutes";
 
 // Import des nouvelles pages générées
 import FormationIABusiness from "@/pages/formations/FormationIABusiness";
@@ -72,7 +78,7 @@ const AllRoutes = () => {
       {/* Main routes */}
       {MainRoutes()}
       
-      {/* Other route groups */}
+      {/* Routes principales existantes */}
       {FormationsRoutes()}
       {FormationsAvanceesRoutes()}
       {FormationRoutes()}
@@ -103,13 +109,20 @@ const AllRoutes = () => {
       {TypesIARoutes()}
       {RoutesMassives()}
 
-      {/* NOUVEAU: Routes complètes pour les 500 pages */}
+      {/* NOUVELLES ROUTES AJOUTÉES */}
+      {ExpertisesRoutes()}
+      {CertificationsProRoutes()}
+      {ActualitesRoutes()}
+      {PartenairesRoutes()}
+      {EvenementsRoutes()}
+
+      {/* Routes complètes pour les 500 pages */}
       {RoutesComplete500()}
 
       {/* Page de statistiques */}
       <Route key="stats-500" path="/stats-500-pages" element={<Stats500Pages />} />
 
-      {/* Nouvelles routes directes */}
+      {/* Routes directes existantes */}
       <Route key="formation-ia-business" path="/formation-ia-business" element={<FormationIABusiness />} />
       <Route key="formation-ia-leadership" path="/formation-ia-leadership" element={<FormationIALeadership />} />
       <Route key="formation-ia-gestion" path="/formation-ia-gestion" element={<FormationIAGestion />} />
