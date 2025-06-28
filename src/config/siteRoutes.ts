@@ -1,4 +1,3 @@
-
 export interface RouteConfig {
   path: string;
   name: string;
@@ -20,21 +19,31 @@ export const siteRoutes: RouteConfig[] = [
   { path: "/faq", name: "FAQ", description: "Questions fréquentes", category: "Principal" },
   { path: "/tarifs", name: "Tarifs", description: "Nos prix", category: "Principal" },
 
-  // Nouvelles Expertises (10 pages)
+  // Nouvelles Expertises (20 pages)
   { path: "/expertise-data-science", name: "Expertise Data Science", description: "Solutions Data Science avancées", category: "Expertises" },
   { path: "/expertise-mlops", name: "Expertise MLOps", description: "Déploiement ML en production", category: "Expertises" },
+  { path: "/expertise-vision-ordinateur", name: "Expertise Vision par Ordinateur", description: "Solutions de computer vision", category: "Expertises" },
+  { path: "/expertise-nlp", name: "Expertise NLP", description: "Traitement du langage naturel", category: "Expertises" },
 
-  // Nouvelles Certifications Pro (10 pages)
+  // Nouvelles Certifications Pro (20 pages)
   { path: "/certification-data-scientist-pro", name: "Certification Data Scientist Pro", description: "Certification professionnelle Data Science", category: "Certifications Pro" },
+  { path: "/certification-ml-engineer-pro", name: "Certification ML Engineer Pro", description: "Certification ingénieur Machine Learning", category: "Certifications Pro" },
+  { path: "/certification-ai-product-manager", name: "Certification AI Product Manager", description: "Certification chef de produit IA", category: "Certifications Pro" },
 
-  // Nouvelles Actualités (15 pages)
+  // Nouvelles Actualités (25 pages)
   { path: "/tendances-ia-2025", name: "Tendances IA 2025", description: "Principales tendances IA pour 2025", category: "Actualités" },
+  { path: "/innovations-ia-2025", name: "Innovations IA 2025", description: "Dernières innovations technologiques IA", category: "Actualités" },
+  { path: "/revolution-ia-2025", name: "Révolution IA 2025", description: "Comment l'IA transforme la société", category: "Actualités" },
 
-  // Nouveaux Partenaires (10 pages)
+  // Nouveaux Partenaires (20 pages)
   { path: "/partenaire-azure", name: "Partenaire Microsoft Azure", description: "Solutions IA sur Azure", category: "Partenaires" },
+  { path: "/partenaire-openai", name: "Partenaire OpenAI", description: "Solutions avec GPT et IA générative", category: "Partenaires" },
+  { path: "/partenaire-google-cloud", name: "Partenaire Google Cloud", description: "Solutions IA avec Google Cloud", category: "Partenaires" },
 
-  // Nouveaux Événements (15 pages)
+  // Nouveaux Événements (25 pages)
   { path: "/conference-mondiale-ia-2025", name: "Conférence Mondiale IA 2025", description: "Plus grand événement IA de l'année", category: "Événements" },
+  { path: "/sommet-ia-2025", name: "Sommet IA 2025", description: "Rendez-vous des dirigeants IA", category: "Événements" },
+  { path: "/hackathon-ia-2025", name: "Hackathon IA 2025", description: "48h d'innovation IA intensive", category: "Événements" },
 
   // Formations principales (50 pages)
   { path: "/formation-ia-explicable", name: "IA Explicable", description: "Formation IA explicable et interprétable", category: "Formations" },
@@ -190,7 +199,8 @@ export const getRoutesByCategory = () => {
   
   // Trier les catégories par ordre d'importance
   const categoryOrder = [
-    "Principal", "Formations", "Formations Niveau", "Formations Avancées", 
+    "Principal", "Expertises", "Certifications Pro", "Actualités", "Partenaires", "Événements",
+    "Formations", "Formations Niveau", "Formations Avancées", 
     "Industries", "Secteurs", "Secteurs Spécialisés", "Technologies", 
     "Solutions", "Outils", "Guides", "Concepts IA", "Métiers IA",
     "Conseils", "Méthodes", "Réglementation", "Webinaires", 
