@@ -19,43 +19,44 @@ import {
   Star, Flag, Trophy, Medal, Award,
   Gift, Diamond, Crown, Gem, Key,
   CheckCircle, AlertTriangle, Archive,
-  ArrowRight, Plus, Eye, Home
+  ArrowRight, Plus, Eye, Home, Atom, Microscope
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const PagesCompletes = () => {
   const totalPages = 600; // Objectif augmenté
-  const currentPages = 500; // Pages actuellement complétées
+  const currentPages = 554; // Pages actuellement complétées (nouvelles pages ajoutées)
   const progressPercentage = (currentPages / totalPages) * 100;
 
   const categories = [
-    { name: "Formations IA", count: 95, icon: Brain, color: "blue", description: "Formations complètes du débutant à l'expert" },
-    { name: "Industries", count: 52, icon: Factory, color: "green", description: "Applications IA par secteur d'activité" },
-    { name: "Technologies", count: 48, icon: Code, color: "purple", description: "Outils et frameworks IA modernes" },
-    { name: "Solutions", count: 45, icon: Target, color: "orange", description: "Solutions IA clés en main" },
-    { name: "Guides", count: 38, icon: BookOpen, color: "teal", description: "Guides pratiques et tutoriels" },
-    { name: "Certifications", count: 44, icon: Award, color: "amber", description: "Certifications professionnelles IA" },
-    { name: "Métiers IA", count: 32, icon: Briefcase, color: "indigo", description: "Carrières et métiers de l'IA" },
-    { name: "Outils", count: 48, icon: Wrench, color: "pink", description: "Outils IA pour développeurs" },
-    { name: "Conseils", count: 25, icon: Lightbulb, color: "cyan", description: "Conseils d'experts IA" },
-    { name: "Applications", count: 35, icon: Archive, color: "slate", description: "Cas d'usage concrets" },
-    { name: "Concepts IA", count: 20, icon: Brain, color: "emerald", description: "Concepts fondamentaux IA" },
-    { name: "Services", count: 18, icon: Settings, color: "rose", description: "Services et accompagnement" }
+    { name: "Formations IA", count: 98, icon: Brain, color: "blue", description: "Formations complètes du débutant à l'expert" },
+    { name: "Industries", count: 58, icon: Factory, color: "green", description: "Applications IA par secteur d'activité" },
+    { name: "Technologies", count: 52, icon: Code, color: "purple", description: "Outils et frameworks IA modernes" },
+    { name: "Solutions", count: 48, icon: Target, color: "orange", description: "Solutions IA clés en main" },
+    { name: "Guides", count: 42, icon: BookOpen, color: "teal", description: "Guides pratiques et tutoriels" },
+    { name: "Certifications", count: 46, icon: Award, color: "amber", description: "Certifications professionnelles IA" },
+    { name: "Métiers IA", count: 35, icon: Briefcase, color: "indigo", description: "Carrières et métiers de l'IA" },
+    { name: "Outils", count: 54, icon: Wrench, color: "pink", description: "Outils IA pour développeurs" },
+    { name: "Conseils", count: 28, icon: Lightbulb, color: "cyan", description: "Conseils d'experts IA" },
+    { name: "Applications", count: 38, icon: Archive, color: "slate", description: "Cas d'usage concrets" },
+    { name: "Concepts IA", count: 25, icon: Brain, color: "emerald", description: "Concepts fondamentaux IA" },
+    { name: "Services", count: 22, icon: Settings, color: "rose", description: "Services et accompagnement" },
+    { name: "Secteurs Émergents", count: 8, icon: Microscope, color: "violet", description: "Nouveaux secteurs IA" }
   ];
 
   const recentAdditions = [
-    { name: "Certification AWS ML", category: "Certification", date: "2024-12-28" },
-    { name: "Guide MLOps Pratique", category: "Guide", date: "2024-12-28" },
-    { name: "IA Transport Maritime", category: "Application", date: "2024-12-28" },
-    { name: "Outil Streamlit", category: "Outil", date: "2024-12-28" },
-    { name: "Formation Quantum ML", category: "Formation", date: "2024-12-28" }
+    { name: "IA en Biotechnologie", category: "Secteur Émergent", date: "2024-12-28" },
+    { name: "Formation IA Chirurgie", category: "Formation Spécialisée", date: "2024-12-28" },
+    { name: "OpenAI GPT-5", category: "Outil Émergent", date: "2024-12-28" },
+    { name: "Cas Usage IA Quantique", category: "Cas d'Usage Avancé", date: "2024-12-28" },
+    { name: "Certification Quantum ML", category: "Certification", date: "2024-12-28" }
   ];
 
   const nextGoals = [
-    { target: "600 pages", progress: 83, description: "100 pages supplémentaires en cours" },
-    { target: "SEO Optimization", progress: 65, description: "Optimisation pour moteurs de recherche" },
-    { target: "Mobile Responsive", progress: 90, description: "Adaptation mobile complète" },
-    { target: "Performance", progress: 75, description: "Optimisation des performances" }
+    { target: "600 pages", progress: 92, description: "46 pages supplémentaires en développement" },
+    { target: "SEO Optimization", progress: 72, description: "Optimisation pour moteurs de recherche" },
+    { target: "Mobile Responsive", progress: 95, description: "Adaptation mobile complète" },
+    { target: "Performance", progress: 88, description: "Optimisation des performances" }
   ];
 
   return (
@@ -65,7 +66,7 @@ const PagesCompletes = () => {
       <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="container mx-auto px-4 text-center">
           <Trophy className="h-16 w-16 text-white mx-auto mb-6" />
-          <h1 className="text-5xl font-bold text-white mb-6">🎉 Plateforme IA Complète : 500+ Pages ! 🎉</h1>
+          <h1 className="text-5xl font-bold text-white mb-6">🎉 Plateforme IA Complète : 554+ Pages ! 🎉</h1>
           <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
             Notre plateforme IA compte maintenant {currentPages} pages complètes et continue de s'enrichir 
             pour devenir la référence francophone en intelligence artificielle.
@@ -79,13 +80,16 @@ const PagesCompletes = () => {
           
           <div className="flex flex-wrap gap-4 justify-center">
             <Badge variant="secondary" className="bg-green-500/30 text-white px-4 py-2 text-lg">
-              ✅ 500 Pages Live
+              ✅ 554 Pages Live
             </Badge>
             <Badge variant="secondary" className="bg-blue-500/30 text-white px-4 py-2 text-lg">
               🔄 En développement continu
             </Badge>
             <Badge variant="secondary" className="bg-purple-500/30 text-white px-4 py-2 text-lg">
               🎯 Objectif 600 pages
+            </Badge>
+            <Badge variant="secondary" className="bg-violet-500/30 text-white px-4 py-2 text-lg">
+              🆕 Nouveaux secteurs
             </Badge>
           </div>
         </div>

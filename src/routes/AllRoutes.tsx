@@ -1,3 +1,4 @@
+
 import { Route } from "react-router-dom";
 
 // Import route modules
@@ -34,6 +35,7 @@ import RoutesMassives from "./RoutesMassives";
 import RoutesComplete500 from "./RoutesComplete500";
 import Pages500Complete from "./Pages500Complete";
 import RoutesSupplementaires from "./RoutesSupplementaires";
+import NouvellePagesRoutes from "./NouvellePagesRoutes";
 
 // Import new route modules
 import ExpertisesRoutes from "./ExpertisesRoutes";
@@ -108,6 +110,9 @@ const AllRoutes = () => {
       {RoutesComplete500()}
       {Pages500Complete()}
       {RoutesSupplementaires()}
+      
+      {/* Nouvelles pages ajoutées */}
+      {NouvellePagesRoutes()}
     </>
   );
 };
