@@ -3,7 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Shield, Target, Microscope, TrendingUp } from "lucide-react";
+import { Shield, Target, Zap, Activity } from "lucide-react";
 
 const SanteOncologie = () => {
   return (
@@ -15,10 +15,10 @@ const SanteOncologie = () => {
           <Shield className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">IA en Oncologie</h1>
           <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
-            L'intelligence artificielle au service de la lutte contre le cancer
+            Intelligence artificielle pour la lutte contre le cancer
           </p>
           <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
-            Combattre le cancer avec l'IA
+            Solutions onco IA
           </Button>
         </div>
       </section>
@@ -32,18 +32,18 @@ const SanteOncologie = () => {
               <p className="text-gray-600">Traitement personnalisé</p>
             </Card>
             <Card className="p-6 text-center">
-              <Microscope className="h-12 w-12 text-green-600 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Analyse cellulaire</h3>
-              <p className="text-gray-600">Diagnostic précis</p>
+              <Zap className="h-12 w-12 text-green-600 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">Radiothérapie IA</h3>
+              <p className="text-gray-600">Précision maximale</p>
             </Card>
             <Card className="p-6 text-center">
-              <TrendingUp className="h-12 w-12 text-green-600 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Pronostic avancé</h3>
-              <p className="text-gray-600">Prédiction d'évolution</p>
+              <Activity className="h-12 w-12 text-green-600 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">Biomarqueurs</h3>
+              <p className="text-gray-600">Analyse prédictive</p>
             </Card>
             <Card className="p-6 text-center">
               <Shield className="h-12 w-12 text-green-600 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Prévention</h3>
+              <h3 className="text-xl font-bold mb-2">Prévention IA</h3>
               <p className="text-gray-600">Dépistage intelligent</p>
             </Card>
           </div>

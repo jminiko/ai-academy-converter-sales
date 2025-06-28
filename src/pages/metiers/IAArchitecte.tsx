@@ -3,7 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Building, Compass, Ruler, Lightbulb } from "lucide-react";
+import { Building, Ruler, Compass, Blueprint } from "lucide-react";
 
 const IAArchitecte = () => {
   return (
@@ -15,7 +15,7 @@ const IAArchitecte = () => {
           <Building className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">IA pour Architectes</h1>
           <p className="text-xl text-stone-100 mb-8 max-w-3xl mx-auto">
-            Révolutionnez l'architecture avec l'intelligence artificielle
+            Intelligence artificielle au service de l'architecture moderne
           </p>
           <Button size="lg" className="bg-white text-stone-600 hover:bg-gray-100">
             Concevoir avec l'IA
@@ -27,24 +27,24 @@ const IAArchitecte = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="p-6 text-center">
-              <Compass className="h-12 w-12 text-stone-600 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Conception assistée</h3>
-              <p className="text-gray-600">Design génératif</p>
-            </Card>
-            <Card className="p-6 text-center">
               <Ruler className="h-12 w-12 text-stone-600 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Optimisation BIM</h3>
-              <p className="text-gray-600">Modèles intelligents</p>
+              <h3 className="text-xl font-bold mb-2">Design génératif</h3>
+              <p className="text-gray-600">Conception automatisée</p>
             </Card>
             <Card className="p-6 text-center">
-              <Lightbulb className="h-12 w-12 text-stone-600 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Éclairage IA</h3>
-              <p className="text-gray-600">Simulation avancée</p>
+              <Compass className="h-12 w-12 text-stone-600 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">Optimisation spatiale</h3>
+              <p className="text-gray-600">Aménagement optimal</p>
+            </Card>
+            <Card className="p-6 text-center">
+              <Blueprint className="h-12 w-12 text-stone-600 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">Plans automatisés</h3>
+              <p className="text-gray-600">Génération de plans</p>
             </Card>
             <Card className="p-6 text-center">
               <Building className="h-12 w-12 text-stone-600 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Bâtiments intelligents</h3>
-              <p className="text-gray-600">Smart buildings</p>
+              <h3 className="text-xl font-bold mb-2">BIM intelligent</h3>
+              <p className="text-gray-600">Modélisation avancée</p>
             </Card>
           </div>
         </div>

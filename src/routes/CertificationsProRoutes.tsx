@@ -1,15 +1,15 @@
 
 import { Route } from "react-router-dom";
-import CertificationProfessionnelleDataScientist from "@/pages/certifications-pro/CertificationProfessionnelleDataScientist";
-import CertificationMLEngineer from "@/pages/certifications-pro/CertificationMLEngineer";
-import CertificationAIProduct from "@/pages/certifications-pro/CertificationAIProduct";
+import CertificationDataScientistPro from "@/pages/certifications-pro/CertificationDataScientistPro";
+import CertificationMLEngineerPro from "@/pages/certifications-pro/CertificationMLEngineerPro";
+import CertificationAIProductManager from "@/pages/certifications-pro/CertificationAIProductManager";
 
 const CertificationsProRoutes = () => {
   return (
     <>
-      <Route path="/certification-data-scientist-pro" element={<CertificationProfessionnelleDataScientist />} />
-      <Route path="/certification-ml-engineer-pro" element={<CertificationMLEngineer />} />
-      <Route path="/certification-ai-product-manager" element={<CertificationAIProduct />} />
+      <Route path="/certification-data-scientist-pro" element={<CertificationDataScientistPro />} />
+      <Route path="/certification-ml-engineer-pro" element={<CertificationMLEngineerPro />} />
+      <Route path="/certification-ai-product-manager" element={<CertificationAIProductManager />} />
     </>
   );
 };

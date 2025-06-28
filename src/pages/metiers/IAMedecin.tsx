@@ -3,22 +3,22 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Stethoscope, Heart, Brain, Activity } from "lucide-react";
+import { Heart, Stethoscope, Activity, Shield } from "lucide-react";
 
 const IAMedecin = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-red-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Header />
       
-      <section className="py-20 bg-gradient-to-r from-red-600 to-pink-600">
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-cyan-600">
         <div className="container mx-auto px-4 text-center">
-          <Stethoscope className="h-16 w-16 text-white mx-auto mb-6" />
+          <Heart className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">IA pour Médecins</h1>
-          <p className="text-xl text-red-100 mb-8 max-w-3xl mx-auto">
-            L'intelligence artificielle au service de la médecine moderne
+          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+            Intelligence artificielle au service de la médecine moderne
           </p>
-          <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100">
-            Pratiquer avec l'IA
+          <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+            Médecine IA
           </Button>
         </div>
       </section>
@@ -27,24 +27,24 @@ const IAMedecin = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="p-6 text-center">
-              <Heart className="h-12 w-12 text-red-600 mx-auto mb-4" />
+              <Stethoscope className="h-12 w-12 text-blue-600 mx-auto mb-4" />
               <h3 className="text-xl font-bold mb-2">Diagnostic assisté</h3>
-              <p className="text-gray-600">Précision médicale</p>
+              <p className="text-gray-600">Aide à la décision</p>
             </Card>
             <Card className="p-6 text-center">
-              <Brain className="h-12 w-12 text-red-600 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Imagerie médicale</h3>
-              <p className="text-gray-600">Analyse d'images</p>
-            </Card>
-            <Card className="p-6 text-center">
-              <Activity className="h-12 w-12 text-red-600 mx-auto mb-4" />
+              <Activity className="h-12 w-12 text-blue-600 mx-auto mb-4" />
               <h3 className="text-xl font-bold mb-2">Monitoring patient</h3>
               <p className="text-gray-600">Surveillance continue</p>
             </Card>
             <Card className="p-6 text-center">
-              <Stethoscope className="h-12 w-12 text-red-600 mx-auto mb-4" />
+              <Shield className="h-12 w-12 text-blue-600 mx-auto mb-4" />
               <h3 className="text-xl font-bold mb-2">Médecine prédictive</h3>
-              <p className="text-gray-600">Prévention personnalisée</p>
+              <p className="text-gray-600">Prévention des risques</p>
+            </Card>
+            <Card className="p-6 text-center">
+              <Heart className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">Thérapie personnalisée</h3>
+              <p className="text-gray-600">Traitement sur mesure</p>
             </Card>
           </div>
         </div>
