@@ -12,7 +12,7 @@ import {
   Globe, Smartphone, Cloud, Lock, Heart, Briefcase,
   Camera, Mic, FileText, Search, Mail, Phone,
   Calendar, Map, Car, Rocket, Satellite,
-  Building, Briefcase, Factory, School, Hospital,
+  Building, Factory, School, Hospital,
   Store, BookOpen, Music, Film, Gamepad2,
   Palette, Brush, Scissors, Hammer, Wrench,
   Calculator, Ruler, Compass, Timer, Bell,
