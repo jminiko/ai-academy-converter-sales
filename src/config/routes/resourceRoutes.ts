@@ -21,6 +21,13 @@ export const metierRoutes: RouteConfig[] = [
   { path: "/ia-journaliste", name: "IA Journaliste", description: "IA pour les journalistes", category: "Métiers IA" },
   { path: "/ia-avocat", name: "IA Avocat", description: "IA pour les avocats", category: "Métiers IA" },
   { path: "/ia-medecin", name: "IA Médecin", description: "IA pour les médecins", category: "Métiers IA" },
+  { path: "/ia-comptable", name: "IA Comptable", description: "IA pour les comptables", category: "Métiers IA" },
+  { path: "/ia-rh", name: "IA RH", description: "IA pour les ressources humaines", category: "Métiers IA" },
+  { path: "/ia-marketing", name: "IA Marketing", description: "IA pour le marketing", category: "Métiers IA" },
+  { path: "/ia-vendeur", name: "IA Vendeur", description: "IA pour les vendeurs", category: "Métiers IA" },
+  { path: "/ia-logistique", name: "IA Logistique", description: "IA pour la logistique", category: "Métiers IA" },
+  { path: "/ia-finance", name: "IA Finance", description: "IA pour la finance", category: "Métiers IA" },
+  { path: "/ia-production", name: "IA Production", description: "IA pour la production", category: "Métiers IA" },
 ];
 
 export const conseilRoutes: RouteConfig[] = [

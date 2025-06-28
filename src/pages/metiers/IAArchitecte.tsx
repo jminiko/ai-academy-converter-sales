@@ -3,7 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Building, Ruler, Compass, Blueprint } from "lucide-react";
+import { Building, Ruler, Compass, FileText } from "lucide-react";
 
 const IAArchitecte = () => {
   return (
@@ -37,7 +37,7 @@ const IAArchitecte = () => {
               <p className="text-gray-600">Aménagement optimal</p>
             </Card>
             <Card className="p-6 text-center">
-              <Blueprint className="h-12 w-12 text-stone-600 mx-auto mb-4" />
+              <FileText className="h-12 w-12 text-stone-600 mx-auto mb-4" />
               <h3 className="text-xl font-bold mb-2">Plans automatisés</h3>
               <p className="text-gray-600">Génération de plans</p>
             </Card>
