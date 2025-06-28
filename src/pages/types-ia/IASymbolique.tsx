@@ -94,7 +94,7 @@ const IASymbolique = () => {
                   <div className="bg-blue-50 p-4 rounded-lg">
                     <h4 className="font-semibold mb-2">Exemple de règle :</h4>
                     <code className="text-sm">
-                      IF (température > 38°C) AND (symptômes = "fièvre") THEN diagnostic = "possible infection"
+                      IF (température &gt; 38°C) AND (symptômes = "fièvre") THEN diagnostic = "possible infection"
                     </code>
                   </div>
                 </CardContent>
