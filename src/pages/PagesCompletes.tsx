@@ -12,7 +12,8 @@ import {
   Building, Home, Factory, School, Hospital,
   Store, BookOpen, Music, Film, Gamepad2,
   Star, Trophy, Crown, Gem, Rocket,
-  Compass, Wrench, Hammer, Calculator
+  Compass, Wrench, Hammer, Calculator, Trees,
+  Bot, Slash, Dice1, Paintbrush, ChevronRight
 } from "lucide-react";
 
 // Générer 150+ pages automatiquement
@@ -54,7 +55,7 @@ export const generatePages = () => {
     { path: "/tensorflow", title: "TensorFlow", description: "Maîtrise de TensorFlow", icon: Code, color: "orange" },
     { path: "/pytorch", title: "PyTorch", description: "Formation PyTorch avancée", icon: Code, color: "red" },
     { path: "/python-ia", title: "Python IA", description: "Python pour l'intelligence artificielle", icon: Code, color: "blue" },
-    { path: "/blockchain-ai", title: "Blockchain IA", description: "Blockchain et IA", icon: Link, color: "purple" },
+    { path: "/blockchain-ai", title: "Blockchain IA", description: "Blockchain et IA", icon: ChevronRight, color: "purple" },
     { path: "/iot-ai", title: "IoT IA", description: "IoT et IA", icon: Smartphone, color: "teal" },
 
     // Solutions métiers (20 pages)
@@ -75,7 +76,7 @@ export const generatePages = () => {
     // Métiers IA (15 pages)  
     { path: "/ia-architecte", title: "IA Architecte", description: "IA pour les architectes", icon: Building, color: "stone" },
     { path: "/ia-journaliste", title: "IA Journaliste", description: "IA pour les journalistes", icon: FileText, color: "slate" },
-    { path: "/ia-avocat", title: "IA Avocat", description: "IA pour les avocats", icon: Scale, color: "amber" },
+    { path: "/ia-avocat", title: "IA Avocat", description: "IA pour les avocats", icon: Briefcase, color: "amber" },
     { path: "/ia-medecin", title: "IA Médecin", description: "IA pour les médecins", icon: Heart, color: "blue" },
 
     // Conseils et méthodes (15 pages)
