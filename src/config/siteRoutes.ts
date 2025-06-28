@@ -37,6 +37,7 @@ import {
   casEtudeRoutes, 
   certificationAvanceeRoutes 
 } from './routes/utilityRoutes';
+import { toutesNouvellesRoutes } from './routes/newRoutes';
 
 export interface RouteConfig {
   path: string;
@@ -72,6 +73,7 @@ export const siteRoutes: RouteConfig[] = [
   ...webinaireRoutes,
   ...casEtudeRoutes,
   ...certificationAvanceeRoutes,
+  ...toutesNouvellesRoutes,
 ];
 
 // Fonction pour organiser les routes par catégorie - Optimisée pour 500+ pages
