@@ -60,7 +60,7 @@ const routesSupplementaires = [
   { path: "/outil-dash", title: "Dash", description: "Applications web analytiques", icon: Monitor, color: "indigo", category: "Outil" },
   { path: "/outil-voila", title: "Voilà", description: "Notebooks comme applications web", icon: Globe, color: "pink", category: "Outil" },
   { path: "/outil-panel", title: "Panel", description: "Tableaux de bord Python", icon: Monitor, color: "cyan", category: "Outil" },
-  { path: "/outil-holoviz", title: "HoloViz", description: "Écosystème visualisation Python", icon: Eye, color: "emerald", category: "Outil" },
+  { path: "/outil-holoviz", title: "HoloViz", description: "Écosystème visualisation Python", icon: Monitor, color: "emerald", category: "Outil" },
   { path: "/outil-fastapi", title: "FastAPI", description: "API rapides pour ML", icon: Zap, color: "teal", category: "Outil" },
   { path: "/outil-flask", title: "Flask", description: "Micro-framework web Python", icon: Code, color: "blue", category: "Outil" },
   { path: "/outil-django", title: "Django", description: "Framework web complet", icon: Shield, color: "green", category: "Outil" },
@@ -86,7 +86,7 @@ const routesSupplementaires = [
   { path: "/application-ia-banque-retail", title: "IA Banque Retail", description: "Applications IA banque de détail", icon: TrendingUp, color: "green", category: "Application" },
   { path: "/application-ia-banque-investissement", title: "IA Banque Investissement", description: "IA pour banque d'investissement", icon: BarChart, color: "blue", category: "Application" },
   { path: "/application-ia-assurance-auto", title: "IA Assurance Auto", description: "IA pour assurance automobile", icon: Car, color: "red", category: "Application" },
-  { path: "/application-ia-assurance-habitation", title: "IA Assurance Habitation", description: "IA pour assurance habitation", icon: Home, color: "teal", category: "Application" },
+  { path: "/application-ia-assurance-habitation", title: "IA Assurance Habitation", description: "IA pour assurance habitation", icon: Heart, color: "teal", category: "Application" },
   { path: "/application-ia-assurance-sante", title: "IA Assurance Santé", description: "IA pour assurance santé", icon: Heart, color: "pink", category: "Application" },
   { path: "/application-ia-retail-fashion", title: "IA Retail Fashion", description: "IA pour mode et textile", icon: Shirt, color: "purple", category: "Application" },
   { path: "/application-ia-retail-alimentaire", title: "IA Retail Alimentaire", description: "IA pour commerce alimentaire", icon: Apple, color: "green", category: "Application" },
@@ -94,19 +94,19 @@ const routesSupplementaires = [
   { path: "/application-ia-sante-cardiologie", title: "IA Santé Cardiologie", description: "IA pour cardiologie", icon: Heart, color: "red", category: "Application" },
   { path: "/application-ia-sante-radiologie", title: "IA Santé Radiologie", description: "IA pour radiologie", icon: Camera, color: "teal", category: "Application" },
   { path: "/application-ia-sante-pathologie", title: "IA Santé Pathologie", description: "IA pour pathologie", icon: Search, color: "indigo", category: "Application" },
-  { path: "/application-ia-sante-pharmacie", title: "IA Santé Pharmacie", description: "IA pour pharmacie", icon: Pill, color: "green", category: "Application" },
+  { path: "/application-ia-sante-pharmacie", title: "IA Santé Pharmacie", description: "IA pour pharmacie", icon: Heart, color: "green", category: "Application" },
   { path: "/application-ia-education-primaire", title: "IA Éducation Primaire", description: "IA pour enseignement primaire", icon: Book, color: "yellow", category: "Application" },
-  { path: "/application-ia-education-secondaire", title: "IA Éducation Secondaire", description: "IA pour enseignement secondaire", icon: School, color: "blue", category: "Application" },
-  { path: "/application-ia-education-superieur", title: "IA Éducation Supérieur", description: "IA pour enseignement supérieur", icon: GraduationCap, color: "purple", category: "Application" },
+  { path: "/application-ia-education-secondaire", title: "IA Éducation Secondaire", description: "IA pour enseignement secondaire", icon: Brain, color: "blue", category: "Application" },
+  { path: "/application-ia-education-superieur", title: "IA Éducation Supérieur", description: "IA pour enseignement supérieur", icon: Brain, color: "purple", category: "Application" },
   { path: "/application-ia-transport-routier", title: "IA Transport Routier", description: "IA pour transport routier", icon: Truck, color: "orange", category: "Application" },
-  { path: "/application-ia-transport-aerien", title: "IA Transport Aérien", description: "IA pour transport aérien", icon: Plane, color: "cyan", category: "Application" },
-  { path: "/application-ia-transport-ferroviaire", title: "IA Transport Ferroviaire", description: "IA pour transport ferroviaire", icon: Train, color: "green", category: "Application" },
-  { path: "/application-ia-transport-maritime", title: "IA Transport Maritime", description: "IA pour transport maritime", icon: Ship, color: "blue", category: "Application" },
+  { path: "/application-ia-transport-aerien", title: "IA Transport Aérien", description: "IA pour transport aérien", icon: Brain, color: "cyan", category: "Application" },
+  { path: "/application-ia-transport-ferroviaire", title: "IA Transport Ferroviaire", description: "IA pour transport ferroviaire", icon: Brain, color: "green", category: "Application" },
+  { path: "/application-ia-transport-maritime", title: "IA Transport Maritime", description: "IA pour transport maritime", icon: Brain, color: "blue", category: "Application" },
   { path: "/application-ia-energie-solaire", title: "IA Énergie Solaire", description: "IA pour énergie solaire", icon: Sun, color: "yellow", category: "Application" },
   { path: "/application-ia-energie-eolienne", title: "IA Énergie Éolienne", description: "IA pour énergie éolienne", icon: Wind, color: "teal", category: "Application" },
   { path: "/application-ia-energie-hydraulique", title: "IA Énergie Hydraulique", description: "IA pour énergie hydraulique", icon: Droplets, color: "blue", category: "Application" },
-  { path: "/application-ia-energie-nucleaire", title: "IA Énergie Nucléaire", description: "IA pour énergie nucléaire", icon: Atom, color: "green", category: "Application" },
-  { path: "/application-ia-agriculture-cereales", title: "IA Agriculture Céréales", description: "IA pour culture céréalière", icon: Wheat, color: "amber", category: "Application" },
+  { path: "/application-ia-energie-nucleaire", title: "IA Énergie Nucléaire", description: "IA pour énergie nucléaire", icon: Brain, color: "green", category: "Application" },
+  { path: "/application-ia-agriculture-cereales", title: "IA Agriculture Céréales", description: "IA pour culture céréalière", icon: Heart, color: "amber", category: "Application" },
   { path: "/application-ia-agriculture-viticulture", title: "IA Agriculture Viticulture", description: "IA pour viticulture", icon: Grape, color: "purple", category: "Application" },
 
   // Guides pratiques avancés (25 pages)
@@ -131,10 +131,10 @@ const routesSupplementaires = [
   { path: "/guide-pratique-privacy-ml", title: "Guide Privacy ML", description: "Confidentialité des données ML", icon: Lock, color: "purple", category: "Guide" },
   { path: "/guide-pratique-ethics-ml", title: "Guide Ethics ML", description: "Éthique en Machine Learning", icon: Heart, color: "pink", category: "Guide" },
   { path: "/guide-pratique-explainability-ml", title: "Guide Explainability ML", description: "Explicabilité des modèles ML", icon: Lightbulb, color: "amber", category: "Guide" },
-  { path: "/guide-pratique-fairness-ml", title: "Guide Fairness ML", description: "Équité des modèles ML", icon: Balance, color: "teal", category: "Guide" },
+  { path: "/guide-pratique-fairness-ml", title: "Guide Fairness ML", description: "Équité des modèles ML", icon: Heart, color: "teal", category: "Guide" },
   { path: "/guide-pratique-bias-ml", title: "Guide Bias ML", description: "Gestion des biais en ML", icon: AlertTriangle, color: "orange", category: "Guide" },
   { path: "/guide-pratique-drift-ml", title: "Guide Drift ML", description: "Détection de dérive de modèles", icon: TrendingUp, color: "cyan", category: "Guide" },
-  { path: "/guide-pratique-retraining-ml", title: "Guide Retraining ML", description: "Réentraînement de modèles ML", icon: RefreshCw, color: "green", category: "Guide" }
+  { path: "/guide-pratique-retraining-ml", title: "Guide Retraining ML", description: "Réentraînement de modèles ML", icon: Brain, color: "green", category: "Guide" }
 ];
 
 const RoutesSupplementaires = () => {
