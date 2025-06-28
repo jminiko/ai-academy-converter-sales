@@ -13,6 +13,11 @@ export const nouvellesFormationsRoutes: RouteConfig[] = [
   { path: "/formation-multimodal-ai", name: "Formation IA Multimodale", description: "IA combinant texte, image, son", category: "Formations Avancées" },
   { path: "/formation-langchain", name: "Formation LangChain", description: "Framework pour applications LLM", category: "Formations Avancées" },
   { path: "/formation-vector-databases", name: "Formation Bases Vectorielles", description: "Bases de données vectorielles", category: "Formations Avancées" },
+  { path: "/formation-ai-governance", name: "Formation Gouvernance IA", description: "Gouvernance et conformité IA", category: "Formations Avancées" },
+  { path: "/formation-ethical-ai", name: "Formation IA Éthique", description: "IA responsable et éthique", category: "Formations Avancées" },
+  { path: "/formation-ai-explainability", name: "Formation IA Explicable", description: "Explicabilité des modèles IA", category: "Formations Avancées" },
+  { path: "/formation-federated-learning", name: "Formation Apprentissage Fédéré", description: "Apprentissage distribué sécurisé", category: "Formations Avancées" },
+  { path: "/formation-quantum-ml", name: "Formation ML Quantique", description: "Machine Learning quantique", category: "Formations Avancées" },
 ];
 
 export const nouvellesIndustriesRoutes: RouteConfig[] = [
@@ -26,6 +31,11 @@ export const nouvellesIndustriesRoutes: RouteConfig[] = [
   { path: "/ia-petrole-gaz", name: "IA Pétrole & Gaz", description: "IA pour l'énergie fossile", category: "Industries Spécialisées" },
   { path: "/ia-energies-renouvelables", name: "IA Énergies Renouvelables", description: "IA pour énergies vertes", category: "Industries Spécialisées" },
   { path: "/ia-gestion-dechets", name: "IA Gestion Déchets", description: "Gestion intelligente des déchets", category: "Industries Spécialisées" },
+  { path: "/ia-space-tech", name: "IA Space Tech", description: "IA pour technologies spatiales", category: "Industries Spécialisées" },
+  { path: "/ia-maritime-shipping", name: "IA Maritime", description: "IA pour transport maritime", category: "Industries Spécialisées" },
+  { path: "/ia-aviation-civile", name: "IA Aviation Civile", description: "IA pour aviation civile", category: "Industries Spécialisées" },
+  { path: "/ia-railway-systems", name: "IA Systèmes Ferroviaires", description: "IA pour systèmes ferroviaires", category: "Industries Spécialisées" },
+  { path: "/ia-smart-cities", name: "IA Villes Intelligentes", description: "IA pour villes connectées", category: "Industries Spécialisées" },
 ];
 
 export const nouveauxOutilsRoutes: RouteConfig[] = [
@@ -39,6 +49,11 @@ export const nouveauxOutilsRoutes: RouteConfig[] = [
   { path: "/outil-dvc", name: "DVC (Data Version Control)", description: "Versioning pour données ML", category: "Outils Avancés" },
   { path: "/outil-great-expectations", name: "Great Expectations", description: "Tests et validation de données", category: "Outils Avancés" },
   { path: "/outil-evidently", name: "Evidently AI", description: "Monitoring de modèles ML", category: "Outils Avancés" },
+  { path: "/outil-ray", name: "Ray Framework", description: "Calcul distribué pour ML", category: "Outils Avancés" },
+  { path: "/outil-wandb", name: "Weights & Biases", description: "Expérimentation et tracking ML", category: "Outils Avancés" },
+  { path: "/outil-neptune", name: "Neptune AI", description: "Gestion d'expériences ML", category: "Outils Avancés" },
+  { path: "/outil-clearml", name: "ClearML", description: "Plateforme MLOps complète", category: "Outils Avancés" },
+  { path: "/outil-feast", name: "Feast", description: "Feature store pour ML", category: "Outils Avancés" },
 ];
 
 export const nouveauxServicesRoutes: RouteConfig[] = [
@@ -52,6 +67,11 @@ export const nouveauxServicesRoutes: RouteConfig[] = [
   { path: "/service-ethique-ia", name: "Éthique IA", description: "Conseil en éthique et conformité", category: "Services Premium" },
   { path: "/service-roi-ia", name: "Calcul ROI IA", description: "Analyse retour sur investissement", category: "Services Premium" },
   { path: "/service-maintenance-ia", name: "Maintenance IA", description: "Support et maintenance continus", category: "Services Premium" },
+  { path: "/service-data-strategy", name: "Stratégie Data", description: "Stratégie et architecture data", category: "Services Premium" },
+  { path: "/service-ai-recruitment", name: "Recrutement IA", description: "Recrutement experts IA", category: "Services Premium" },
+  { path: "/service-change-management", name: "Conduite du Changement", description: "Accompagnement changement IA", category: "Services Premium" },
+  { path: "/service-security-audit", name: "Audit Sécurité IA", description: "Audit sécurité systèmes IA", category: "Services Premium" },
+  { path: "/service-compliance-ia", name: "Conformité IA", description: "Conformité réglementaire IA", category: "Services Premium" },
 ];
 
 export const nouveauxCasUsageRoutes: RouteConfig[] = [
@@ -65,6 +85,11 @@ export const nouveauxCasUsageRoutes: RouteConfig[] = [
   { path: "/cas-usage-optimisation-prix", name: "Optimisation Prix", description: "Pricing dynamique intelligent", category: "Cas d'Usage" },
   { path: "/cas-usage-forecast-demande", name: "Prévision Demande", description: "Prédiction de la demande", category: "Cas d'Usage" },
   { path: "/cas-usage-qualite-donnees", name: "Qualité des Données", description: "Nettoyage et validation données", category: "Cas d'Usage" },
+  { path: "/cas-usage-recommandation-produits", name: "Recommandation Produits", description: "Système de recommandation IA", category: "Cas d'Usage" },
+  { path: "/cas-usage-maintenance-predictive", name: "Maintenance Prédictive", description: "Prédiction pannes équipements", category: "Cas d'Usage" },
+  { path: "/cas-usage-credit-scoring", name: "Credit Scoring", description: "Évaluation crédit par IA", category: "Cas d'Usage" },
+  { path: "/cas-usage-voice-recognition", name: "Reconnaissance Vocale", description: "Reconnaissance et transcription vocale", category: "Cas d'Usage" },
+  { path: "/cas-usage-computer-vision", name: "Vision par Ordinateur", description: "Analyse et traitement d'images", category: "Cas d'Usage" },
 ];
 
 export const nouveauxMetiersRoutes: RouteConfig[] = [
@@ -78,6 +103,65 @@ export const nouveauxMetiersRoutes: RouteConfig[] = [
   { path: "/metier-robotics-engineer", name: "Robotics Engineer", description: "Ingénieur robotique IA", category: "Métiers IA" },
   { path: "/metier-ai-researcher", name: "AI Researcher", description: "Chercheur en intelligence artificielle", category: "Métiers IA" },
   { path: "/metier-ai-consultant", name: "AI Consultant", description: "Consultant en intelligence artificielle", category: "Métiers IA" },
+  { path: "/metier-data-engineer", name: "Data Engineer", description: "Ingénieur données", category: "Métiers IA" },
+  { path: "/metier-mlops-engineer", name: "MLOps Engineer", description: "Ingénieur MLOps", category: "Métiers IA" },
+  { path: "/metier-ai-trainer", name: "AI Trainer", description: "Formateur IA", category: "Métiers IA" },
+  { path: "/metier-ai-architect", name: "AI Architect", description: "Architecte IA", category: "Métiers IA" },
+  { path: "/metier-ai-business-analyst", name: "AI Business Analyst", description: "Analyste métier IA", category: "Métiers IA" },
+];
+
+export const nouveauxConceptsRoutes: RouteConfig[] = [
+  { path: "/concept-machine-learning", name: "Machine Learning", description: "Apprentissage automatique", category: "Concepts IA" },
+  { path: "/concept-deep-learning", name: "Deep Learning", description: "Apprentissage profond", category: "Concepts IA" },
+  { path: "/concept-neural-networks", name: "Réseaux de Neurones", description: "Réseaux de neurones artificiels", category: "Concepts IA" },
+  { path: "/concept-reinforcement-learning", name: "Apprentissage par Renforcement", description: "Apprentissage par récompenses", category: "Concepts IA" },
+  { path: "/concept-transfer-learning", name: "Transfer Learning", description: "Apprentissage par transfert", category: "Concepts IA" },
+  { path: "/concept-ensemble-methods", name: "Méthodes d'Ensemble", description: "Combinaison de modèles", category: "Concepts IA" },
+  { path: "/concept-overfitting", name: "Surapprentissage", description: "Overfitting et régularisation", category: "Concepts IA" },
+  { path: "/concept-bias-variance", name: "Biais-Variance", description: "Compromis biais-variance", category: "Concepts IA" },
+  { path: "/concept-feature-engineering", name: "Feature Engineering", description: "Ingénierie des caractéristiques", category: "Concepts IA" },
+  { path: "/concept-model-evaluation", name: "Évaluation de Modèles", description: "Métriques et validation", category: "Concepts IA" },
+  { path: "/concept-gradient-descent", name: "Descente de Gradient", description: "Optimisation par gradient", category: "Concepts IA" },
+  { path: "/concept-backpropagation", name: "Rétropropagation", description: "Algorithme de rétropropagation", category: "Concepts IA" },
+  { path: "/concept-attention-mechanism", name: "Mécanisme d'Attention", description: "Attention dans les réseaux", category: "Concepts IA" },
+  { path: "/concept-transformer-architecture", name: "Architecture Transformer", description: "Architecture transformer", category: "Concepts IA" },
+  { path: "/concept-generative-models", name: "Modèles Génératifs", description: "Modèles génératifs IA", category: "Concepts IA" },
+];
+
+export const nouvellesTechnologiesRoutes: RouteConfig[] = [
+  { path: "/tech-pytorch-lightning", name: "PyTorch Lightning", description: "Framework PyTorch simplifié", category: "Technologies" },
+  { path: "/tech-tensorflow-extended", name: "TensorFlow Extended", description: "Pipeline ML production", category: "Technologies" },
+  { path: "/tech-apache-spark", name: "Apache Spark", description: "Calcul distribué pour big data", category: "Technologies" },
+  { path: "/tech-dask", name: "Dask", description: "Calcul parallèle en Python", category: "Technologies" },
+  { path: "/tech-rapids", name: "RAPIDS", description: "GPU-accelerated data science", category: "Technologies" },
+  { path: "/tech-mlx", name: "MLX", description: "Framework ML pour Apple Silicon", category: "Technologies" },
+  { path: "/tech-onnx", name: "ONNX", description: "Open Neural Network Exchange", category: "Technologies" },
+  { path: "/tech-tensorrt", name: "TensorRT", description: "Optimisation modèles NVIDIA", category: "Technologies" },
+  { path: "/tech-triton", name: "Triton Inference Server", description: "Serveur d'inférence", category: "Technologies" },
+  { path: "/tech-seldon", name: "Seldon Core", description: "Déploiement ML Kubernetes", category: "Technologies" },
+  { path: "/tech-bentoml", name: "BentoML", description: "Framework serving ML", category: "Technologies" },
+  { path: "/tech-cortex", name: "Cortex", description: "Plateforme ML cloud-native", category: "Technologies" },
+  { path: "/tech-modeldb", name: "ModelDB", description: "Versioning modèles ML", category: "Technologies" },
+  { path: "/tech-sacred", name: "Sacred", description: "Tracking d'expériences", category: "Technologies" },
+  { path: "/tech-optuna", name: "Optuna", description: "Optimisation hyperparamètres", category: "Technologies" },
+];
+
+export const nouvelleSolutionsRoutes: RouteConfig[] = [
+  { path: "/solution-ai-helpdesk", name: "AI Helpdesk", description: "Support client automatisé", category: "Solutions IA" },
+  { path: "/solution-ai-recruiting", name: "AI Recruiting", description: "Recrutement intelligent", category: "Solutions IA" },
+  { path: "/solution-ai-accounting", name: "AI Accounting", description: "Comptabilité automatisée", category: "Solutions IA" },
+  { path: "/solution-ai-legal", name: "AI Legal", description: "Assistance juridique IA", category: "Solutions IA" },
+  { path: "/solution-ai-translation", name: "AI Translation", description: "Traduction automatique", category: "Solutions IA" },
+  { path: "/solution-ai-content", name: "AI Content", description: "Génération de contenu", category: "Solutions IA" },
+  { path: "/solution-ai-video", name: "AI Video", description: "Génération vidéo IA", category: "Solutions IA" },
+  { path: "/solution-ai-audio", name: "AI Audio", description: "Traitement audio IA", category: "Solutions IA" },
+  { path: "/solution-ai-design", name: "AI Design", description: "Design assisté par IA", category: "Solutions IA" },
+  { path: "/solution-ai-coding", name: "AI Coding", description: "Programmation assistée IA", category: "Solutions IA" },
+  { path: "/solution-ai-testing", name: "AI Testing", description: "Tests automatisés IA", category: "Solutions IA" },
+  { path: "/solution-ai-deployment", name: "AI Deployment", description: "Déploiement automatisé", category: "Solutions IA" },
+  { path: "/solution-ai-monitoring", name: "AI Monitoring", description: "Surveillance système IA", category: "Solutions IA" },
+  { path: "/solution-ai-optimization", name: "AI Optimization", description: "Optimisation par IA", category: "Solutions IA" },
+  { path: "/solution-ai-prediction", name: "AI Prediction", description: "Prédiction intelligente", category: "Solutions IA" },
 ];
 
 // Compilation de toutes les nouvelles routes
@@ -88,4 +172,7 @@ export const toutesNouvellesRoutes: RouteConfig[] = [
   ...nouveauxServicesRoutes,
   ...nouveauxCasUsageRoutes,
   ...nouveauxMetiersRoutes,
+  ...nouveauxConceptsRoutes,
+  ...nouvellesTechnologiesRoutes,
+  ...nouvelleSolutionsRoutes,
 ];

@@ -69,6 +69,7 @@ import IAArchitecte from "@/pages/metiers/IAArchitecte";
 import IAJournaliste from "@/pages/metiers/IAJournaliste";
 import IAMedecin from "@/pages/metiers/IAMedecin";
 import IAAvocat from "@/pages/metiers/IAAvocat";
+import IAComptable from "@/pages/metiers/IAComptable";
 import ReseauxNeurones from "@/pages/concepts/ReseauxNeurones";
 import ApprentissageAutomatique from "@/pages/concepts/ApprentissageAutomatique";
 import IASymbolique from "@/pages/types-ia/IASymbolique";
@@ -84,6 +85,8 @@ import GuideDebutantIA from "@/pages/guides/GuideDebutantIA";
 import GuideAvanceIA from "@/pages/guides/GuideAvanceIA";
 import FormationIAFinance from "@/pages/FormationIAFinance";
 import Stats500Pages from "@/pages/Stats500Pages";
+
+import RoutesSupplementaires from "./RoutesSupplementaires";
 
 const AllRoutes = () => {
   return (
@@ -132,6 +135,7 @@ const AllRoutes = () => {
       {/* Routes complètes pour les 500 pages */}
       {RoutesComplete500()}
       {Pages500Complete()}
+      {RoutesSupplementaires()}
 
       {/* Page de statistiques */}
       <Route key="stats-500" path="/stats-500-pages" element={<Stats500Pages />} />
@@ -175,6 +179,7 @@ const AllRoutes = () => {
       <Route key="ia-journaliste" path="/ia-journaliste" element={<IAJournaliste />} />
       <Route key="ia-medecin" path="/ia-medecin" element={<IAMedecin />} />
       <Route key="ia-avocat" path="/ia-avocat" element={<IAAvocat />} />
+      <Route key="ia-comptable" path="/ia-comptable" element={<IAComptable />} />
       
       {/* Concepts */}
       <Route key="reseaux-neurones" path="/reseaux-neurones" element={<ReseauxNeurones />} />
