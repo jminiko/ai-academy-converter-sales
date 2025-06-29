@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Microscope, Dna, Heart, Zap, Target, TrendingUp, Database, Shield } from "lucide-react";
+import { Microscope, Dna, FlaskConical, Activity, Target, Zap, Heart, Brain } from "lucide-react";
 
 const IABiotechnologie = () => {
   return (
@@ -13,14 +13,14 @@ const IABiotechnologie = () => {
       
       <section className="py-20 bg-gradient-to-r from-green-600 to-emerald-600">
         <div className="container mx-auto px-4 text-center">
-          <Microscope className="h-16 w-16 text-white mx-auto mb-6" />
+          <Dna className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">IA en Biotechnologie</h1>
           <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
-            L'intelligence artificielle révolutionne la biotechnologie moderne.
-            Découverte de médicaments, analyse génétique et médecine personnalisée.
+            Révolutionnez la recherche biotechnologique avec l'intelligence artificielle.
+            Drug discovery, génomique et médecine personnalisée de nouvelle génération.
           </p>
           <Badge variant="secondary" className="bg-emerald-500/30 text-white px-4 py-2 text-lg mb-6">
-            🧬 BioTech Innovation
+            🧬 BioTech AI Innovation
           </Badge>
         </div>
       </section>
@@ -30,21 +30,21 @@ const IABiotechnologie = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             <Card>
               <CardHeader>
-                <Dna className="h-8 w-8 text-green-600 mb-2" />
-                <CardTitle>Analyse Génomique</CardTitle>
+                <FlaskConical className="h-8 w-8 text-green-600 mb-2" />
+                <CardTitle>Drug Discovery IA</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">Séquençage et interprétation de l'ADN par IA</p>
+                <p className="text-gray-600">Accélération de la découverte de médicaments</p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Target className="h-8 w-8 text-blue-600 mb-2" />
-                <CardTitle>Drug Discovery</CardTitle>
+                <Dna className="h-8 w-8 text-blue-600 mb-2" />
+                <CardTitle>Génomique Computationnelle</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">Accélération de la découverte de médicaments</p>
+                <p className="text-gray-600">Analyse des séquences génétiques par IA</p>
               </CardContent>
             </Card>
 
@@ -54,37 +54,37 @@ const IABiotechnologie = () => {
                 <CardTitle>Médecine Personnalisée</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">Traitements adaptés au profil génétique</p>
+                <p className="text-gray-600">Traitements sur mesure basés sur l'IA</p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
                 <Microscope className="h-8 w-8 text-purple-600 mb-2" />
-                <CardTitle>Imagerie Médicale</CardTitle>
+                <CardTitle>Imagerie Biomédicale</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">Diagnostic automatisé par vision IA</p>
+                <p className="text-gray-600">Analyse d'images microscopiques par deep learning</p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <Database className="h-8 w-8 text-orange-600 mb-2" />
-                <CardTitle>Biobanques Intelligentes</CardTitle>
+                <Activity className="h-8 w-8 text-orange-600 mb-2" />
+                <CardTitle>Biomarqueurs IA</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">Gestion optimisée des données biologiques</p>
+                <p className="text-gray-600">Identification de biomarqueurs prédictifs</p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <TrendingUp className="h-8 w-8 text-teal-600 mb-2" />
-                <CardTitle>Épidémiologie Prédictive</CardTitle>
+                <Target className="h-8 w-8 text-teal-600 mb-2" />
+                <CardTitle>Thérapies Ciblées</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">Modélisation des épidémies et pandémies</p>
+                <p className="text-gray-600">Développement de thérapies précises</p>
               </CardContent>
             </Card>
           </div>
@@ -94,47 +94,47 @@ const IABiotechnologie = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="p-6">
                 <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Target className="h-6 w-6 text-blue-600 mr-2" />
-                  Découverte de Médicaments IA
+                  <FlaskConical className="h-6 w-6 text-green-600 mr-2" />
+                  Drug Discovery & Development
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  L'IA accélère la découverte de nouveaux médicaments en analysant 
-                  millions de molécules et prédisant leur efficacité thérapeutique.
-                  Réduction des délais de développement de 10-15 ans à 3-5 ans.
+                  L'IA transforme la découverte de médicaments en prédisant les interactions
+                  moléculaires, optimisant les composés et accélérant les essais cliniques.
                 </p>
                 <ul className="text-sm text-gray-600 mb-4">
-                  <li>• Screening virtuel de millions de composés</li>
-                  <li>• Prédiction de toxicité et effets secondaires</li>
-                  <li>• Optimisation des propriétés pharmacologiques</li>
-                  <li>• Repositionnement de médicaments existants</li>
+                  <li>• Prédiction d'activité biologique</li>
+                  <li>• Optimisation de lead compounds</li>
+                  <li>• Simulation d'essais cliniques</li>
+                  <li>• Repositionnement de médicaments</li>
+                  <li>• Prédiction de toxicité</li>
                 </ul>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Drug Design</Badge>
                   <Badge variant="outline">Molecular Modeling</Badge>
                   <Badge variant="outline">QSAR</Badge>
+                  <Badge variant="outline">Virtual Screening</Badge>
                 </div>
               </Card>
 
               <Card className="p-6">
                 <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Dna className="h-6 w-6 text-green-600 mr-2" />
-                  Génomique et IA
+                  <Dna className="h-6 w-6 text-blue-600 mr-2" />
+                  Génomique & Proteomique
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Analyse intelligente du génome humain pour identifier les variants 
-                  pathogènes, prédire les maladies génétiques et développer 
-                  des thérapies géniques personnalisées.
+                  Analyse massive des données omiques avec deep learning pour
+                  comprendre les mécanismes biologiques fondamentaux.
                 </p>
                 <ul className="text-sm text-gray-600 mb-4">
-                  <li>• Annotation automatique des variants</li>
-                  <li>• Prédiction de pathogénicité</li>
+                  <li>• Séquençage génomique haute débit</li>
+                  <li>• Annotation fonctionnelle automatique</li>
+                  <li>• Prédiction de structure protéique</li>
                   <li>• Analyse d'expression génique</li>
-                  <li>• Édition génomique assistée par IA</li>
+                  <li>• Génomique comparative</li>
                 </ul>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Genomics</Badge>
-                  <Badge variant="outline">CRISPR</Badge>
-                  <Badge variant="outline">Variant Analysis</Badge>
+                  <Badge variant="outline">NGS Analysis</Badge>
+                  <Badge variant="outline">Protein Folding</Badge>
+                  <Badge variant="outline">Gene Expression</Badge>
                 </div>
               </Card>
 
@@ -144,84 +144,84 @@ const IABiotechnologie = () => {
                   Médecine de Précision
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Traitements personnalisés basés sur le profil génétique, 
-                  métabolique et environnemental du patient. L'IA optimise 
-                  le choix thérapeutique et les dosages.
+                  Personnalisation des traitements basée sur le profil génétique,
+                  l'historique médical et les données environnementales du patient.
                 </p>
                 <ul className="text-sm text-gray-600 mb-4">
+                  <li>• Pharmacogénomique personnalisée</li>
+                  <li>• Prédiction de réponse thérapeutique</li>
                   <li>• Stratification de patients</li>
-                  <li>• Biomarqueurs prédictifs</li>
-                  <li>• Pharmacogénomique</li>
-                  <li>• Oncologie personnalisée</li>
+                  <li>• Biomarqueurs compagnons</li>
+                  <li>• Thérapies cellulaires sur mesure</li>
                 </ul>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Precision Medicine</Badge>
-                  <Badge variant="outline">Biomarkers</Badge>
-                  <Badge variant="outline">Personalized Therapy</Badge>
+                  <Badge variant="outline">Pharmacogenomics</Badge>
+                  <Badge variant="outline">Companion Diagnostics</Badge>
+                  <Badge variant="outline">Patient Stratification</Badge>
                 </div>
               </Card>
 
               <Card className="p-6">
                 <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Microscope className="h-6 w-6 text-purple-600 mr-2" />
-                  Diagnostic IA Avancé
+                  <Brain className="h-6 w-6 text-purple-600 mr-2" />
+                  Bioinformatique Avancée
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Systèmes de diagnostic automatisé utilisant l'imagerie médicale, 
-                  l'analyse de biomarqueurs et les données cliniques pour 
-                  détecter précocement les pathologies.
+                  Intégration et analyse de données biologiques complexes
+                  avec algorithmes d'IA pour découvertes scientifiques.
                 </p>
                 <ul className="text-sm text-gray-600 mb-4">
-                  <li>• Radiologie assistée par IA</li>
-                  <li>• Pathologie numérique</li>
-                  <li>• Analyse de biomarqueurs liquides</li>
-                  <li>• Diagnostic différentiel automatisé</li>
+                  <li>• Réseaux biologiques complexes</li>
+                  <li>• Modélisation systémique</li>
+                  <li>• Prédiction d'interactions</li>
+                  <li>• Analyse pathway enrichment</li>
+                  <li>• Multi-omics integration</li>
                 </ul>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Medical Imaging</Badge>
-                  <Badge variant="outline">Digital Pathology</Badge>
-                  <Badge variant="outline">Biomarker Analysis</Badge>
+                  <Badge variant="outline">Systems Biology</Badge>
+                  <Badge variant="outline">Network Analysis</Badge>
+                  <Badge variant="outline">Multi-omics</Badge>
                 </div>
               </Card>
             </div>
           </div>
 
           <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-8 mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Impact sur l'Innovation BioTech</h2>
+            <h2 className="text-3xl font-bold text-center mb-8">Impact Révolutionnaire</h2>
             <div className="grid md:grid-cols-4 gap-6 text-center">
               <div>
-                <div className="text-3xl font-bold text-green-600 mb-2">70%</div>
-                <div className="text-gray-600">Réduction temps R&D</div>
+                <div className="text-3xl font-bold text-green-600 mb-2">90%</div>
+                <div className="text-gray-600">Réduction temps développement</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">5x</div>
-                <div className="text-gray-600">Vitesse de découverte</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">10x</div>
+                <div className="text-gray-600">Accélération découvertes</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-purple-600 mb-2">90%</div>
-                <div className="text-gray-600">Précision diagnostique</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">50%</div>
+                <div className="text-gray-600">Amélioration précision</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-orange-600 mb-2">$100B+</div>
-                <div className="text-gray-600">Économies potentielles</div>
+                <div className="text-3xl font-bold text-orange-600 mb-2">$2B</div>
+                <div className="text-gray-600">Économies R&D annuelles</div>
               </div>
             </div>
           </div>
 
           <div className="text-center">
-            <h2 className="text-3xl font-bold mb-8">Rejoignez la Révolution BioTech</h2>
+            <h2 className="text-3xl font-bold mb-8">Révolutionnez la Biotechnologie</h2>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Explorez comment l'IA transforme la biotechnologie et découvrez 
-              les opportunités d'innovation dans votre domaine de recherche.
+              Découvrez comment l'IA transforme la recherche biotechnologique
+              et accélère les découvertes médicales de demain.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-green-600 hover:bg-green-700">
-                <Microscope className="mr-2 h-5 w-5" />
-                Explorer les Solutions
+                <Dna className="mr-2 h-5 w-5" />
+                Découvrir nos Solutions
               </Button>
               <Button size="lg" variant="outline">
-                <Dna className="mr-2 h-5 w-5" />
-                Recherche Partenaires
+                <Microscope className="mr-2 h-5 w-5" />
+                Études de Cas
               </Button>
             </div>
           </div>

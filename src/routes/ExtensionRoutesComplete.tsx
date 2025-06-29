@@ -34,7 +34,7 @@ import CasUsageIAQuantique from "@/pages/cas-usage-avances/CasUsageIAQuantique";
 import CasUsageIAEducation from "@/pages/cas-usage-avances/CasUsageIAEducation";
 import CasUsageIATourisme from "@/pages/cas-usage-avances/CasUsageIATourisme";
 
-// Extension complète des routes - 580+ pages totales
+// Extension complète des routes - 600+ pages totales
 const ExtensionRoutesComplete = () => {
   return (
     <>
