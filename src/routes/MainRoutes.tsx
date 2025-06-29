@@ -46,6 +46,15 @@ import NotFound from "@/pages/NotFound";
 import Sitemap from "@/pages/Sitemap";
 import FormationIAFinance from "@/pages/FormationIAFinance";
 
+// New pages
+import IAAutomobile from "@/pages/secteurs-emergents/IAAutomobile";
+import IASante from "@/pages/secteurs-emergents/IASante";
+import FormationIAMarketing from "@/pages/formations-specialisees/FormationIAMarketing";
+import OutilMidjourney from "@/pages/outils-emergents/OutilMidjourney";
+import MethodeNLP from "@/pages/methodes/MethodeNLP";
+import IAConsultant from "@/pages/metiers/IAConsultant";
+import CalculateurPerformanceIA from "@/pages/outils/CalculateurPerformanceIA";
+
 export const MainRoutes = () => (
   <>
     <Route path="/" element={<Index />} />
@@ -90,6 +99,15 @@ export const MainRoutes = () => (
     <Route path="/plan-site" element={<PlanSite />} />
     <Route path="/sitemap" element={<Sitemap />} />
     <Route path="/formationiafinance" element={<FormationIAFinance />} />
+    
+    {/* New routes */}
+    <Route path="/secteurs-emergents/ia-automobile" element={<IAAutomobile />} />
+    <Route path="/secteurs-emergents/ia-sante" element={<IASante />} />
+    <Route path="/formations-specialisees/formation-ia-marketing" element={<FormationIAMarketing />} />
+    <Route path="/outils-emergents/outil-midjourney" element={<OutilMidjourney />} />
+    <Route path="/methodes/methode-nlp" element={<MethodeNLP />} />
+    <Route path="/metiers/ia-consultant" element={<IAConsultant />} />
+    <Route path="/outils/calculateur-performance-ia" element={<CalculateurPerformanceIA />} />
     
     <Route path="*" element={<NotFound />} />
   </>
