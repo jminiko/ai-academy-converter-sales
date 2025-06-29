@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Link, Chain, Code, Database, Zap, Users, Globe, Download, Upload, Star, GitBranch, Cpu, Monitor, Bot, Settings } from "lucide-react";
+import { Link, Code, Database, Zap, Users, Globe, Download, Upload, Star, GitBranch, Cpu, Monitor, Bot, Settings } from "lucide-react";
 
 const OutilLangChain = () => {
   return (
@@ -13,7 +13,7 @@ const OutilLangChain = () => {
       
       <section className="py-20 bg-gradient-to-r from-green-600 to-teal-600">
         <div className="container mx-auto px-4 text-center">
-          <Chain className="h-16 w-16 text-white mx-auto mb-6" />
+          <Link className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">LangChain Framework</h1>
           <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
             Le framework de référence pour développer des applications LLM avancées.
@@ -29,7 +29,7 @@ const OutilLangChain = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             <Card className="text-center p-6 hover:shadow-lg transition-all duration-300">
-              <Chain className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <Link className="h-12 w-12 text-blue-600 mx-auto mb-4" />
               <h3 className="text-lg font-bold mb-2">Chaînes Complexes</h3>
               <p className="text-sm text-gray-600">Orchestration de prompts avancée</p>
             </Card>
@@ -55,7 +55,7 @@ const OutilLangChain = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="p-6">
                 <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Chain className="h-6 w-6 text-blue-600 mr-2" />
+                  <Link className="h-6 w-6 text-blue-600 mr-2" />
                   Chains & Prompt Templates
                 </h3>
                 <p className="text-gray-600 mb-4">
@@ -181,7 +181,7 @@ const OutilLangChain = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-green-600 hover:bg-green-700">
-                <Chain className="mr-2 h-5 w-5" />
+                <Link className="mr-2 h-5 w-5" />
                 Formation LangChain
               </Button>
               <Button size="lg" variant="outline">
