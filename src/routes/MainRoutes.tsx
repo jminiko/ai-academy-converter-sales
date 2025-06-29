@@ -101,6 +101,16 @@ import ScikitLearn from "@/pages/formations/Scikit-learn";
 import Pandas from "@/pages/formations/Pandas";
 import NumPy from "@/pages/formations/NumPy";
 import Matplotlib from "@/pages/formations/Matplotlib";
+import Keras from "@/pages/formations/Keras";
+import OpenCV from "@/pages/formations/OpenCV";
+import Seaborn from "@/pages/formations/Seaborn";
+import Plotly from "@/pages/formations/Plotly";
+import PyTorch from "@/pages/formations/PyTorch";
+import PythonIA from "@/pages/formations/PythonIA";
+import FormationIALeadership from "@/pages/formations/FormationIALeadership";
+import FormationVisionIA from "@/pages/formations/FormationVisionIA";
+import FormationIAGestion from "@/pages/formations/FormationIAGestion";
+import FormationIAExplicable from "@/pages/formations/FormationIAExplicable";
 
 export const MainRoutes = () => (
   <>
@@ -202,6 +212,16 @@ export const MainRoutes = () => (
     <Route path="/formations/pandas" element={<Pandas />} />
     <Route path="/formations/numpy" element={<NumPy />} />
     <Route path="/formations/matplotlib" element={<Matplotlib />} />
+    <Route path="/formations/keras" element={<Keras />} />
+    <Route path="/formations/opencv" element={<OpenCV />} />
+    <Route path="/formations/seaborn" element={<Seaborn />} />
+    <Route path="/formations/plotly" element={<Plotly />} />
+    <Route path="/formations/pytorch" element={<PyTorch />} />
+    <Route path="/formations/python-ia" element={<PythonIA />} />
+    <Route path="/formations/formation-ia-leadership" element={<FormationIALeadership />} />
+    <Route path="/formations/formation-vision-ia" element={<FormationVisionIA />} />
+    <Route path="/formations/formation-ia-gestion" element={<FormationIAGestion />} />
+    <Route path="/formations/formation-ia-explicable" element={<FormationIAExplicable />} />
     
     <Route path="*" element={<NotFound />} />
   </>

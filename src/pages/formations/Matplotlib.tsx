@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { BarChart3, LineChart, PieChart, Scatter, TrendingUp, Palette, Eye, Image } from "lucide-react";
+import { BarChart3, LineChart, PieChart, Zap, TrendingUp, Palette, Eye, Image } from "lucide-react";
 
 const Matplotlib = () => {
   return (
@@ -38,7 +38,7 @@ const Matplotlib = () => {
               <p className="text-sm text-gray-600">Distribution des données</p>
             </Card>
             <Card className="text-center p-6 hover:shadow-lg transition-all duration-300">
-              <Scatter className="h-12 w-12 text-green-600 mx-auto mb-4" />
+              <Zap className="h-12 w-12 text-green-600 mx-auto mb-4" />
               <h3 className="text-lg font-bold mb-2">Scatter Plots</h3>
               <p className="text-sm text-gray-600">Corrélations et relations</p>
             </Card>
