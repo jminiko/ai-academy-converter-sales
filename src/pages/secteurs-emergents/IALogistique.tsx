@@ -4,23 +4,23 @@ import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Truck, Package, MapPin, Clock, Zap, Target, Users, TrendingUp, Route, Warehouse, Plane, Ship, BarChart, AlertTriangle, Gauge } from "lucide-react";
+import { Truck, Package, MapPin, Clock, BarChart, Globe, Zap, Target, Users, TrendingUp, Database, Bot } from "lucide-react";
 
 const IALogistique = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white">
       <Header />
       
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-600">
+      <section className="py-20 bg-gradient-to-r from-orange-600 to-amber-600">
         <div className="container mx-auto px-4 text-center">
           <Truck className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">IA Logistique</h1>
-          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-orange-100 mb-8 max-w-3xl mx-auto">
             Optimisez votre chaîne d'approvisionnement avec l'intelligence artificielle.
-            Prédiction de demande, routage intelligent et gestion automatisée des stocks.
+            Transport intelligent, gestion d'entrepôts et prédiction de la demande.
           </p>
-          <Badge variant="secondary" className="bg-indigo-500/30 text-white px-4 py-2 text-lg mb-6">
-            🚚 Supply Chain AI
+          <Badge variant="secondary" className="bg-amber-500/30 text-white px-4 py-2 text-lg mb-6">
+            📦 Smart Logistics AI
           </Badge>
         </div>
       </section>
@@ -29,24 +29,24 @@ const IALogistique = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             <Card className="text-center p-6 hover:shadow-lg transition-all duration-300">
-              <Route className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-              <h3 className="text-lg font-bold mb-2">Routage Intelligent</h3>
-              <p className="text-sm text-gray-600">Optimisation des trajets par IA</p>
+              <MapPin className="h-12 w-12 text-orange-600 mx-auto mb-4" />
+              <h3 className="text-lg font-bold mb-2">Optimisation Routes</h3>
+              <p className="text-sm text-gray-600">Algorithmes de routage IA</p>
             </Card>
             <Card className="text-center p-6 hover:shadow-lg transition-all duration-300">
-              <Package className="h-12 w-12 text-green-600 mx-auto mb-4" />
-              <h3 className="text-lg font-bold mb-2">Gestion Stocks IA</h3>
-              <p className="text-sm text-gray-600">Prédiction et automatisation</p>
+              <Package className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-lg font-bold mb-2">Gestion Entrepôts</h3>
+              <p className="text-sm text-gray-600">Automatisation intelligente</p>
             </Card>
             <Card className="text-center p-6 hover:shadow-lg transition-all duration-300">
-              <BarChart className="h-12 w-12 text-purple-600 mx-auto mb-4" />
+              <BarChart className="h-12 w-12 text-green-600 mx-auto mb-4" />
               <h3 className="text-lg font-bold mb-2">Prédiction Demande</h3>
-              <p className="text-sm text-gray-600">Forecasting ML avancé</p>
+              <p className="text-sm text-gray-600">Forecasting avancé</p>
             </Card>
             <Card className="text-center p-6 hover:shadow-lg transition-all duration-300">
-              <Warehouse className="h-12 w-12 text-orange-600 mx-auto mb-4" />
-              <h3 className="text-lg font-bold mb-2">Entrepôt Intelligent</h3>
-              <p className="text-sm text-gray-600">Automatisation complète</p>
+              <Clock className="h-12 w-12 text-purple-600 mx-auto mb-4" />
+              <h3 className="text-lg font-bold mb-2">Livraison Temps Réel</h3>
+              <p className="text-sm text-gray-600">Tracking intelligent</p>
             </Card>
           </div>
 
@@ -55,138 +55,112 @@ const IALogistique = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="p-6">
                 <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Route className="h-6 w-6 text-blue-600 mr-2" />
-                  Optimisation de Routes IA
+                  <MapPin className="h-6 w-6 text-orange-600 mr-2" />
+                  Optimisation de Routes Intelligente
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Algorithmes d'optimisation avancés pour réduire les coûts
-                  de transport et améliorer les délais de livraison.
+                  Utilisez des algorithmes IA avancés pour optimiser les
+                  itinéraires de livraison et réduire les coûts de transport.
                 </p>
                 <ul className="text-sm text-gray-600 mb-4">
                   <li>• Algorithmes génétiques pour VRP</li>
-                  <li>• Optimisation multi-objectifs</li>
-                  <li>• Prise en compte trafic temps réel</li>
-                  <li>• Contraintes véhicules et conducteurs</li>
-                  <li>• Optimization dynamique en cours</li>
+                  <li>• Optimisation multi-contraintes</li>
+                  <li>• Prédiction trafic temps réel</li>
+                  <li>• Planification dynamique</li>
+                  <li>• Réduction empreinte carbone</li>
                 </ul>
                 <div className="flex flex-wrap gap-2">
+                  <Badge variant="outline">Route Optimization</Badge>
                   <Badge variant="outline">VRP</Badge>
-                  <Badge variant="outline">Genetic Algorithm</Badge>
                   <Badge variant="outline">Real-time</Badge>
                 </div>
               </Card>
 
               <Card className="p-6">
                 <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <BarChart className="h-6 w-6 text-green-600 mr-2" />
-                  Prédiction de Demande
+                  <Package className="h-6 w-6 text-blue-600 mr-2" />
+                  Gestion Intelligente d'Entrepôts
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Modèles prédictifs sophistiqués pour anticiper la demande
-                  et optimiser les niveaux de stock.
+                  Automatisez et optimisez les opérations d'entrepôt avec
+                  des systèmes robotiques guidés par IA.
                 </p>
                 <ul className="text-sm text-gray-600 mb-4">
-                  <li>• Time series forecasting avancé</li>
-                  <li>• Facteurs externes (météo, événements)</li>
-                  <li>• Saisonnalité et tendances ML</li>
-                  <li>• Interval de confiance adaptatifs</li>
-                  <li>• Mise à jour en temps réel</li>
+                  <li>• Robots de picking automatisés</li>
+                  <li>• Optimisation placement produits</li>
+                  <li>• Gestion inventory intelligent</li>
+                  <li>• Prévision besoin stockage</li>
+                  <li>• Maintenance prédictive équipements</li>
                 </ul>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Time Series</Badge>
-                  <Badge variant="outline">Demand Forecasting</Badge>
-                  <Badge variant="outline">ML Prediction</Badge>
-                </div>
-              </Card>
-
-              <Card className="p-6">
-                <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Warehouse className="h-6 w-6 text-purple-600 mr-2" />
-                  Automatisation Entrepôt
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Solutions robotiques et IA pour automatiser complètement
-                  les opérations d'entrepôt et de fulfillment.
-                </p>
-                <ul className="text-sm text-gray-600 mb-4">
-                  <li>• Robotique mobile autonome (AMR)</li>
-                  <li>• Picking et packing automatisés</li>
-                  <li>• Slotting optimization par IA</li>
-                  <li>• Computer vision pour contrôle</li>
-                  <li>• Orchestration workflow intelligent</li>
-                </ul>
-                <div className="flex flex-wrap gap-2">
+                  <Badge variant="outline">Warehouse Automation</Badge>
                   <Badge variant="outline">Robotics</Badge>
-                  <Badge variant="outline">Computer Vision</Badge>
-                  <Badge variant="outline">Automation</Badge>
+                  <Badge variant="outline">Inventory Management</Badge>
                 </div>
               </Card>
 
               <Card className="p-6">
                 <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <AlertTriangle className="h-6 w-6 text-orange-600 mr-2" />
-                  Gestion des Risques IA
+                  <BarChart className="h-6 w-6 text-green-600 mr-2" />
+                  Prédiction et Planification Demande
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Identification proactive des risques supply chain et
-                  mitigation automatique par intelligence artificielle.
+                  Anticipez la demande client avec des modèles prédictifs
+                  avancés pour optimiser les stocks et la production.
                 </p>
                 <ul className="text-sm text-gray-600 mb-4">
-                  <li>• Early warning systems</li>
-                  <li>• Analyse des fournisseurs</li>
-                  <li>• Prédiction de disruptions</li>
-                  <li>• Plans de contingence automatiques</li>
-                  <li>• Monitoring multi-sources</li>
+                  <li>• Machine Learning pour forecasting</li>
+                  <li>• Analyse données saisonnières</li>
+                  <li>• Prédiction trends marché</li>
+                  <li>• Optimisation niveaux stock</li>
+                  <li>• Réduction ruptures stock</li>
                 </ul>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Risk Management</Badge>
+                  <Badge variant="outline">Demand Forecasting</Badge>
+                  <Badge variant="outline">Stock Optimization</Badge>
                   <Badge variant="outline">Predictive Analytics</Badge>
-                  <Badge variant="outline">Supply Chain</Badge>
                 </div>
               </Card>
-            </div>
-          </div>
 
-          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-8 mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Technologies IA Logistique</h2>
-            <div className="grid md:grid-cols-4 gap-6">
-              <Card className="p-6 text-center">
-                <Truck className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-lg font-bold mb-2">TMS Intelligence</h3>
-                <p className="text-sm text-gray-600">Transport Management IA</p>
-              </Card>
-              <Card className="p-6 text-center">
-                <Warehouse className="h-12 w-12 text-green-600 mx-auto mb-4" />
-                <h3 className="text-lg font-bold mb-2">WMS Autonome</h3>
-                <p className="text-sm text-gray-600">Warehouse automatisé</p>
-              </Card>
-              <Card className="p-6 text-center">
-                <Gauge className="h-12 w-12 text-purple-600 mx-auto mb-4" />
-                <h3 className="text-lg font-bold mb-2">IoT Predictive</h3>
-                <p className="text-sm text-gray-600">Capteurs intelligents</p>
-              </Card>
-              <Card className="p-6 text-center">
-                <Clock className="h-12 w-12 text-orange-600 mx-auto mb-4" />
-                <h3 className="text-lg font-bold mb-2">Real-time Analytics</h3>
-                <p className="text-sm text-gray-600">Décisions instantanées</p>
+              <Card className="p-6">
+                <h3 className="text-xl font-bold mb-4 flex items-center">
+                  <Globe className="h-6 w-6 text-purple-600 mr-2" />
+                  Supply Chain Visibility IA
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Obtenez une visibilité complète sur votre chaîne
+                  d'approvisionnement avec des analyses IA en temps réel.
+                </p>
+                <ul className="text-sm text-gray-600 mb-4">
+                  <li>• Tracking end-to-end automatisé</li>
+                  <li>• Détection anomalies supply chain</li>
+                  <li>• Gestion risques fournisseurs</li>
+                  <li>• Optimisation réseau distribution</li>
+                  <li>• Alertes prédictives disruptions</li>
+                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="outline">Supply Chain Visibility</Badge>
+                  <Badge variant="outline">Risk Management</Badge>
+                  <Badge variant="outline">Real-time Analytics</Badge>
+                </div>
               </Card>
             </div>
           </div>
 
           <div className="text-center">
-            <h2 className="text-3xl font-bold mb-8">Optimisez votre Supply Chain</h2>
+            <h2 className="text-3xl font-bold mb-8">Révolutionnez votre Logistique</h2>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Transformez votre logistique avec l'IA : réduction des coûts,
-              amélioration des délais et satisfaction client maximale.
+              Transformez votre chaîne d'approvisionnement avec des solutions IA
+              sur mesure pour maximiser l'efficacité et réduire les coûts.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+              <Button size="lg" className="bg-orange-600 hover:bg-orange-700">
                 <Truck className="mr-2 h-5 w-5" />
-                Solutions IA Logistique
+                Solutions Logistique IA
               </Button>
               <Button size="lg" variant="outline">
-                <BarChart className="mr-2 h-5 w-5" />
-                ROI Calculator
+                <Package className="mr-2 h-5 w-5" />
+                Démo Interactive
               </Button>
             </div>
           </div>

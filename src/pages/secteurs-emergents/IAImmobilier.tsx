@@ -4,23 +4,23 @@ import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Home, TrendingUp, Calculator, Eye, MapPin, Users, Target, Zap, BarChart, Search, Camera, Building, Key, DollarSign, Smartphone } from "lucide-react";
+import { Home, TrendingUp, MapPin, Calculator, Eye, Users, Zap, Target, BarChart, Database, Brain, Search } from "lucide-react";
 
 const IAImmobilier = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-emerald-50 to-white">
       <Header />
       
-      <section className="py-20 bg-gradient-to-r from-amber-600 to-orange-600">
+      <section className="py-20 bg-gradient-to-r from-emerald-600 to-teal-600">
         <div className="container mx-auto px-4 text-center">
           <Home className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">IA Immobilier</h1>
-          <p className="text-xl text-amber-100 mb-8 max-w-3xl mx-auto">
-            Révolutionnez le secteur immobilier avec l'intelligence artificielle.
-            Évaluation automatique, prédiction de prix et personnalisation des recommandations.
+          <p className="text-xl text-emerald-100 mb-8 max-w-3xl mx-auto">
+            Transformez le secteur immobilier avec l'intelligence artificielle.
+            Évaluation automatique, prédiction marché et gestion patrimoniale intelligente.
           </p>
-          <Badge variant="secondary" className="bg-orange-500/30 text-white px-4 py-2 text-lg mb-6">
-            🏠 PropTech AI
+          <Badge variant="secondary" className="bg-teal-500/30 text-white px-4 py-2 text-lg mb-6">
+            🏠 PropTech AI Innovation
           </Badge>
         </div>
       </section>
@@ -29,24 +29,24 @@ const IAImmobilier = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             <Card className="text-center p-6 hover:shadow-lg transition-all duration-300">
-              <Calculator className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <Calculator className="h-12 w-12 text-emerald-600 mx-auto mb-4" />
               <h3 className="text-lg font-bold mb-2">Évaluation Automatique</h3>
-              <p className="text-sm text-gray-600">Prix prédits par IA</p>
+              <p className="text-sm text-gray-600">Prix biens immobiliers</p>
+            </Card>
+            <Card className="text-center p-6 hover:shadow-lg transition-all duration-300">
+              <TrendingUp className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-lg font-bold mb-2">Prédiction Marché</h3>
+              <p className="text-sm text-gray-600">Tendances immobilières</p>
             </Card>
             <Card className="text-center p-6 hover:shadow-lg transition-all duration-300">
               <Search className="h-12 w-12 text-green-600 mx-auto mb-4" />
               <h3 className="text-lg font-bold mb-2">Recherche Intelligente</h3>
-              <p className="text-sm text-gray-600">Matching personnalisé</p>
+              <p className="text-sm text-gray-600">Matching automatique</p>
             </Card>
             <Card className="text-center p-6 hover:shadow-lg transition-all duration-300">
-              <Camera className="h-12 w-12 text-purple-600 mx-auto mb-4" />
-              <h3 className="text-lg font-bold mb-2">Visite Virtuelle IA</h3>
-              <p className="text-sm text-gray-600">Tours immersifs automatisés</p>
-            </Card>
-            <Card className="text-center p-6 hover:shadow-lg transition-all duration-300">
-              <TrendingUp className="h-12 w-12 text-orange-600 mx-auto mb-4" />
-              <h3 className="text-lg font-bold mb-2">Analyse Marché</h3>
-              <p className="text-sm text-gray-600">Tendances prédictives</p>
+              <MapPin className="h-12 w-12 text-purple-600 mx-auto mb-4" />
+              <h3 className="text-lg font-bold mb-2">Analyse Géospatiale</h3>
+              <p className="text-sm text-gray-600">Intelligence territoriale</p>
             </Card>
           </div>
 
@@ -55,19 +55,19 @@ const IAImmobilier = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="p-6">
                 <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Calculator className="h-6 w-6 text-blue-600 mr-2" />
-                  Évaluation Immobilière IA
+                  <Calculator className="h-6 w-6 text-emerald-600 mr-2" />
+                  Évaluation Automatique de Biens
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Algorithmes d'évaluation automatique basés sur l'analyse
-                  de millions de transactions et facteurs de marché.
+                  Obtenez des estimations précises et instantanées de la valeur
+                  immobilière grâce à des algorithmes d'apprentissage automatique.
                 </p>
                 <ul className="text-sm text-gray-600 mb-4">
-                  <li>• Automated Valuation Models (AVM)</li>
-                  <li>• Analyse comparative de marché</li>
-                  <li>• Facteurs géographiques et sociaux</li>
-                  <li>• Prédiction d'évolution des prix</li>
-                  <li>• Évaluation en temps réel</li>
+                  <li>• Modèles AVM (Automated Valuation Model)</li>
+                  <li>• Analyse comparative automatique</li>
+                  <li>• Intégration données marché temps réel</li>
+                  <li>• Évaluation multi-critères intelligente</li>
+                  <li>• Actualisation continue des prix</li>
                 </ul>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="outline">AVM</Badge>
@@ -78,97 +78,97 @@ const IAImmobilier = () => {
 
               <Card className="p-6">
                 <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Search className="h-6 w-6 text-green-600 mr-2" />
-                  Matching & Recommandations
+                  <TrendingUp className="h-6 w-6 text-blue-600 mr-2" />
+                  Prédiction et Analyse de Marché
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Systèmes de recommandation personnalisés qui analysent
-                  les préférences et comportements pour suggérer les biens idéaux.
+                  Anticipez l'évolution du marché immobilier avec des modèles
+                  prédictifs basés sur l'analyse de données massives.
                 </p>
                 <ul className="text-sm text-gray-600 mb-4">
-                  <li>• Profiling comportemental des clients</li>
-                  <li>• Recommandations collaborative filtering</li>
-                  <li>• Critères de recherche intelligents</li>
-                  <li>• Alertes proactives personnalisées</li>
-                  <li>• Scoring de compatibilité</li>
+                  <li>• Forecasting prix immobiliers</li>
+                  <li>• Détection bulles spéculatives</li>
+                  <li>• Analyse cycles marché</li>
+                  <li>• Prédiction demandes locatives</li>
+                  <li>• Intelligence économique territoriale</li>
+                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="outline">Market Forecasting</Badge>
+                  <Badge variant="outline">Trend Analysis</Badge>
+                  <Badge variant="outline">Economic Intelligence</Badge>
+                </div>
+              </Card>
+
+              <Card className="p-6">
+                <h3 className="text-xl font-bold mb-4 flex items-center">
+                  <Search className="h-6 w-6 text-green-600 mr-2" />
+                  Matching et Recommandations IA
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Connectez acheteurs et vendeurs avec des systèmes de
+                  recommandation personnalisés et du matching intelligent.
+                </p>
+                <ul className="text-sm text-gray-600 mb-4">
+                  <li>• Moteurs recommandation personnalisés</li>
+                  <li>• Matching automatique profils</li>
+                  <li>• Analyse préférences utilisateurs</li>
+                  <li>• Recherche sémantique avancée</li>
+                  <li>• Scoring compatibilité biens</li>
                 </ul>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="outline">Recommendation Engine</Badge>
-                  <Badge variant="outline">Personalization</Badge>
-                  <Badge variant="outline">Matching Algorithm</Badge>
+                  <Badge variant="outline">User Matching</Badge>
+                  <Badge variant="outline">Semantic Search</Badge>
                 </div>
               </Card>
 
               <Card className="p-6">
                 <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Camera className="h-6 w-6 text-purple-600 mr-2" />
-                  Computer Vision Immobilier
+                  <Eye className="h-6 w-6 text-purple-600 mr-2" />
+                  Vision par Ordinateur Immobilière
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Technologies de vision par ordinateur pour automatiser
-                  l'analyse des biens et créer des expériences visuelles immersives.
+                  Analysez automatiquement photos et visites virtuelles pour
+                  extraire des informations sur les caractéristiques des biens.
                 </p>
                 <ul className="text-sm text-gray-600 mb-4">
-                  <li>• Reconnaissance automatique des caractéristiques</li>
-                  <li>• Virtual staging automatisé</li>
-                  <li>• Estimation surface par images</li>
+                  <li>• Reconnaissance automatique caractéristiques</li>
+                  <li>• Génération descriptions IA</li>
                   <li>• Détection défauts et rénovations</li>
-                  <li>• Tours virtuels 360° générés</li>
+                  <li>• Création visites virtuelles 360°</li>
+                  <li>• Staging virtuel automatisé</li>
                 </ul>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="outline">Computer Vision</Badge>
-                  <Badge variant="outline">Virtual Staging</Badge>
-                  <Badge variant="outline">360° Tours</Badge>
-                </div>
-              </Card>
-
-              <Card className="p-6">
-                <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <BarChart className="h-6 w-6 text-orange-600 mr-2" />
-                  Analytics & Prédictions Marché
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Analyse prédictive des tendances immobilières pour anticiper
-                  les évolutions de marché et optimiser les investissements.
-                </p>
-                <ul className="text-sm text-gray-600 mb-4">
-                  <li>• Prédiction évolution des quartiers</li>
-                  <li>• Analyse des flux démographiques</li>
-                  <li>• Impact projets urbains sur prix</li>
-                  <li>• Cycles de marché et timing optimal</li>
-                  <li>• ROI prédictif des investissements</li>
-                </ul>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Market Prediction</Badge>
-                  <Badge variant="outline">ROI Analysis</Badge>
-                  <Badge variant="outline">Urban Analytics</Badge>
+                  <Badge variant="outline">Virtual Tours</Badge>
+                  <Badge variant="outline">Property Analysis</Badge>
                 </div>
               </Card>
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg p-8 mb-16">
+          <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-lg p-8 mb-16">
             <h2 className="text-3xl font-bold text-center mb-8">Technologies PropTech IA</h2>
             <div className="grid md:grid-cols-4 gap-6">
               <Card className="p-6 text-center">
-                <Building className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-lg font-bold mb-2">CRM Immobilier IA</h3>
-                <p className="text-sm text-gray-600">Gestion clients intelligente</p>
+                <Database className="h-12 w-12 text-emerald-600 mx-auto mb-4" />
+                <h3 className="text-lg font-bold mb-2">Big Data Immobilier</h3>
+                <p className="text-sm text-gray-600">Analytics avancées</p>
               </Card>
               <Card className="p-6 text-center">
-                <Key className="h-12 w-12 text-green-600 mx-auto mb-4" />
-                <h3 className="text-lg font-bold mb-2">Smart Lock IoT</h3>
-                <p className="text-sm text-gray-600">Visites autonomes sécurisées</p>
+                <Brain className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <h3 className="text-lg font-bold mb-2">Machine Learning</h3>
+                <p className="text-sm text-gray-600">Modèles prédictifs</p>
               </Card>
               <Card className="p-6 text-center">
-                <Smartphone className="h-12 w-12 text-purple-600 mx-auto mb-4" />
-                <h3 className="text-lg font-bold mb-2">Apps AR/VR</h3>
-                <p className="text-sm text-gray-600">Visualisation immersive</p>
+                <MapPin className="h-12 w-12 text-green-600 mx-auto mb-4" />
+                <h3 className="text-lg font-bold mb-2">GIS Intelligence</h3>
+                <p className="text-sm text-gray-600">Géolocalisation avancée</p>
               </Card>
               <Card className="p-6 text-center">
-                <DollarSign className="h-12 w-12 text-orange-600 mx-auto mb-4" />
-                <h3 className="text-lg font-bold mb-2">Fintech Immobilier</h3>
-                <p className="text-sm text-gray-600">Financement automatisé</p>
+                <Users className="h-12 w-12 text-purple-600 mx-auto mb-4" />
+                <h3 className="text-lg font-bold mb-2">CRM Intelligent</h3>
+                <p className="text-sm text-gray-600">Gestion client IA</p>
               </Card>
             </div>
           </div>
@@ -176,25 +176,24 @@ const IAImmobilier = () => {
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-8">Transformez l'Immobilier</h2>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Adoptez l'IA pour révolutionner votre activité immobilière :
-              évaluations précises, expérience client optimale et décisions éclairées.
+              Révolutionnez votre activité immobilière avec des solutions IA
+              innovantes pour l'évaluation, la recherche et la gestion patrimoniale.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-amber-600 hover:bg-amber-700">
+              <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700">
                 <Home className="mr-2 h-5 w-5" />
-                Solutions IA Immobilier
+                Solutions PropTech IA
               </Button>
               <Button size="lg" variant="outline">
                 <Calculator className="mr-2 h-5 w-5" />
-                Évaluateur IA Gratuit
+                Démo Évaluation
               </Button>
             </div>
           </div>
         </div>
       </section>
 
-      <Footer />
-    </div>
+      <Footer />    </div>
   );
 };
 

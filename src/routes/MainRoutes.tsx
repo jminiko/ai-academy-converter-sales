@@ -50,12 +50,18 @@ import FormationIAFinance from "@/pages/FormationIAFinance";
 import IAAutomobile from "@/pages/secteurs-emergents/IAAutomobile";
 import IASante from "@/pages/secteurs-emergents/IASante";
 import IABiotechnologie from "@/pages/secteurs-emergents/IABiotechnologie";
+import IALogistique from "@/pages/secteurs-emergents/IALogistique";
+import IAImmobilier from "@/pages/secteurs-emergents/IAImmobilier";
 
 // Formations spécialisées
 import FormationIAMarketing from "@/pages/formations-specialisees/FormationIAMarketing";
+import FormationIAChirurgie from "@/pages/formations-specialisees/FormationIAChirurgie";
+import FormationIAGameDev from "@/pages/formations-specialisees/FormationIAGameDev";
+import FormationIACybersecurite from "@/pages/formations-specialisees/FormationIACybersecurite";
 
 // Outils émergents
 import OutilMidjourney from "@/pages/outils-emergents/OutilMidjourney";
+import OutilOpenAIGPT5 from "@/pages/outils-emergents/OutilOpenAIGPT5";
 
 // Méthodes
 import MethodeNLP from "@/pages/methodes/MethodeNLP";
@@ -138,12 +144,18 @@ export const MainRoutes = () => (
     <Route path="/secteurs-emergents/ia-automobile" element={<IAAutomobile />} />
     <Route path="/secteurs-emergents/ia-sante" element={<IASante />} />
     <Route path="/secteurs-emergents/ia-biotechnologie" element={<IABiotechnologie />} />
+    <Route path="/secteurs-emergents/ia-logistique" element={<IALogistique />} />
+    <Route path="/secteurs-emergents/ia-immobilier" element={<IAImmobilier />} />
     
     {/* Formations spécialisées */}
     <Route path="/formations-specialisees/formation-ia-marketing" element={<FormationIAMarketing />} />
+    <Route path="/formations-specialisees/formation-ia-chirurgie" element={<FormationIAChirurgie />} />
+    <Route path="/formations-specialisees/formation-ia-gamedev" element={<FormationIAGameDev />} />
+    <Route path="/formations-specialisees/formation-ia-cybersecurite" element={<FormationIACybersecurite />} />
     
     {/* Outils émergents */}
     <Route path="/outils-emergents/outil-midjourney" element={<OutilMidjourney />} />
+    <Route path="/outils-emergents/outil-openai-gpt5" element={<OutilOpenAIGPT5 />} />
     
     {/* Méthodes */}
     <Route path="/methodes/methode-nlp" element={<MethodeNLP />} />
