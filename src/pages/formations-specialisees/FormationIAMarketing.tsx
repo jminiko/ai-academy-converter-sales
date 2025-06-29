@@ -4,23 +4,23 @@ import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Target, TrendingUp, Users, MessageSquare, BarChart, Zap, Eye, Brain } from "lucide-react";
+import { TrendingUp, Target, Users, Zap, BarChart, MessageSquare, Eye, Heart, Share, Search, Mail, Smartphone, Camera, Video } from "lucide-react";
 
 const FormationIAMarketing = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-pink-50 to-white">
       <Header />
       
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-600">
+      <section className="py-20 bg-gradient-to-r from-pink-600 to-rose-600">
         <div className="container mx-auto px-4 text-center">
-          <Target className="h-16 w-16 text-white mx-auto mb-6" />
+          <TrendingUp className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">Formation IA Marketing</h1>
-          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Révolutionnez vos stratégies marketing avec l'intelligence artificielle.
-            Personnalisation, automation et optimisation data-driven.
+          <p className="text-xl text-pink-100 mb-8 max-w-3xl mx-auto">
+            Révolutionnez vos campagnes marketing avec l'intelligence artificielle.
+            Personnalisation, automation et optimisation des performances.
           </p>
-          <Badge variant="secondary" className="bg-indigo-500/30 text-white px-4 py-2 text-lg mb-6">
-            📊 MarTech AI Expert
+          <Badge variant="secondary" className="bg-rose-500/30 text-white px-4 py-2 text-lg mb-6">
+            📊 Marketing AI Expert
           </Badge>
         </div>
       </section>
@@ -28,118 +28,118 @@ const FormationIAMarketing = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-            <Card className="text-center p-6">
-              <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-              <h3 className="text-lg font-bold mb-2">Segmentation IA</h3>
-              <p className="text-sm text-gray-600">Ciblage intelligent des audiences</p>
+            <Card className="text-center p-6 hover:shadow-lg transition-all duration-300">
+              <Target className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-lg font-bold mb-2">Ciblage Intelligent</h3>
+              <p className="text-sm text-gray-600">Audiences optimisées par IA</p>
             </Card>
-            <Card className="text-center p-6">
+            <Card className="text-center p-6 hover:shadow-lg transition-all duration-300">
               <MessageSquare className="h-12 w-12 text-green-600 mx-auto mb-4" />
-              <h3 className="text-lg font-bold mb-2">Contenu Personnalisé</h3>
-              <p className="text-sm text-gray-600">Génération automatique de contenu</p>
+              <h3 className="text-lg font-bold mb-2">Contenu Automatisé</h3>
+              <p className="text-sm text-gray-600">Génération de contenu IA</p>
             </Card>
-            <Card className="text-center p-6">
+            <Card className="text-center p-6 hover:shadow-lg transition-all duration-300">
               <BarChart className="h-12 w-12 text-purple-600 mx-auto mb-4" />
-              <h3 className="text-lg font-bold mb-2">Analytics Avancés</h3>
-              <p className="text-sm text-gray-600">Insights prédictifs</p>
+              <h3 className="text-lg font-bold mb-2">Analytics Prédictifs</h3>
+              <p className="text-sm text-gray-600">ROI optimisé par ML</p>
             </Card>
-            <Card className="text-center p-6">
-              <Zap className="h-12 w-12 text-orange-600 mx-auto mb-4" />
-              <h3 className="text-lg font-bold mb-2">Automation</h3>
-              <p className="text-sm text-gray-600">Campagnes automatisées</p>
+            <Card className="text-center p-6 hover:shadow-lg transition-all duration-300">
+              <Heart className="h-12 w-12 text-red-600 mx-auto mb-4" />
+              <h3 className="text-lg font-bold mb-2">Personnalisation</h3>
+              <p className="text-sm text-gray-600">Expérience sur mesure</p>
             </Card>
           </div>
 
           <div className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-12">Programme de Formation</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Modules Formation Marketing IA</h2>
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="p-6">
                 <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Brain className="h-6 w-6 text-blue-600 mr-2" />
-                  Module 1: IA Customer Analytics
+                  <Target className="h-6 w-6 text-blue-600 mr-2" />
+                  Ciblage et Segmentation IA
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Analyse comportementale avancée et segmentation intelligente
-                  des clients avec machine learning et deep learning.
+                  Maîtrisez les algorithmes de segmentation client et de ciblage
+                  publicitaire pour maximiser vos conversions.
                 </p>
                 <ul className="text-sm text-gray-600 mb-4">
-                  <li>• Customer Journey Mapping IA</li>
-                  <li>• Clustering comportemental</li>
-                  <li>• Lifetime Value prédictif</li>
-                  <li>• Churn prediction</li>
-                  <li>• Recommandation personnalisée</li>
+                  <li>• Clustering avancé de clients</li>
+                  <li>• Lookalike audiences automatisées</li>
+                  <li>• Scoring de propension d'achat</li>
+                  <li>• Optimization multi-objectifs</li>
+                  <li>• Attribution modeling IA</li>
                 </ul>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Analytics</Badge>
-                  <Badge variant="outline">Segmentation</Badge>
-                  <Badge variant="outline">Prediction</Badge>
-                </div>
-              </Card>
-
-              <Card className="p-6">
-                <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <MessageSquare className="h-6 w-6 text-green-600 mr-2" />
-                  Module 2: Génération de Contenu IA
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Création automatisée de contenu marketing personnalisé
-                  avec GPT, DALL-E et outils génératifs avancés.
-                </p>
-                <ul className="text-sm text-gray-600 mb-4">
-                  <li>• Rédaction automatique d'articles</li>
-                  <li>• Génération d'images marketing</li>
-                  <li>• Personnalisation à l'échelle</li>
-                  <li>• A/B testing automatisé</li>
-                  <li>• Optimisation SEO par IA</li>
-                </ul>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Content AI</Badge>
-                  <Badge variant="outline">GPT</Badge>
-                  <Badge variant="outline">Image Gen</Badge>
-                </div>
-              </Card>
-
-              <Card className="p-6">
-                <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Eye className="h-6 w-6 text-purple-600 mr-2" />
-                  Module 3: Publicité Programmique IA
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Optimisation des campagnes publicitaires avec algorithmes
-                  d'enchères automatiques et ciblage intelligent.
-                </p>
-                <ul className="text-sm text-gray-600 mb-4">
-                  <li>• Real-time bidding optimization</li>
-                  <li>• Lookalike audiences IA</li>
-                  <li>• Attribution modeling avancé</li>
-                  <li>• Budget allocation automatique</li>
-                  <li>• Cross-channel optimization</li>
-                </ul>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Programmatic</Badge>
-                  <Badge variant="outline">RTB</Badge>
+                  <Badge variant="outline">Customer Segmentation</Badge>
+                  <Badge variant="outline">Propensity Scoring</Badge>
                   <Badge variant="outline">Attribution</Badge>
                 </div>
               </Card>
 
               <Card className="p-6">
                 <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <TrendingUp className="h-6 w-6 text-orange-600 mr-2" />
-                  Module 4: Marketing Automation
+                  <MessageSquare className="h-6 w-6 text-green-600 mr-2" />
+                  Génération de Contenu IA
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Orchestration intelligente des parcours clients avec
-                  workflows adaptatifs et déclencheurs comportementaux.
+                  Automatisez la création de contenu marketing avec GPT,
+                  DALL-E et les derniers modèles génératifs.
                 </p>
                 <ul className="text-sm text-gray-600 mb-4">
-                  <li>• Lead scoring prédictif</li>
-                  <li>• Email marketing intelligent</li>
-                  <li>• Nurturing automatisé</li>
-                  <li>• Chatbots conversationnels</li>
-                  <li>• Social media automation</li>
+                  <li>• Copywriting automatisé</li>
+                  <li>• Génération d'images marketing</li>
+                  <li>• A/B testing de contenu IA</li>
+                  <li>• Personnalisation à grande échelle</li>
+                  <li>• Video content generation</li>
                 </ul>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Automation</Badge>
+                  <Badge variant="outline">GPT Content</Badge>
+                  <Badge variant="outline">DALL-E</Badge>
+                  <Badge variant="outline">Auto Generation</Badge>
+                </div>
+              </Card>
+
+              <Card className="p-6">
+                <h3 className="text-xl font-bold mb-4 flex items-center">
+                  <BarChart className="h-6 w-6 text-purple-600 mr-2" />
+                  Analytics et Prédiction
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Utilisez l'IA pour analyser et prédire les performances
+                  de vos campagnes marketing en temps réel.
+                </p>
+                <ul className="text-sm text-gray-600 mb-4">
+                  <li>• Prédiction de LTV client</li>
+                  <li>• Forecasting des ventes</li>
+                  <li>• Marketing mix modeling</li>
+                  <li>• Churn prediction avancée</li>
+                  <li>• ROI optimization en temps réel</li>
+                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="outline">Predictive Analytics</Badge>
+                  <Badge variant="outline">LTV Prediction</Badge>
+                  <Badge variant="outline">Marketing Mix</Badge>
+                </div>
+              </Card>
+
+              <Card className="p-6">
+                <h3 className="text-xl font-bold mb-4 flex items-center">
+                  <Smartphone className="h-6 w-6 text-orange-600 mr-2" />
+                  Automation Marketing IA
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Implémentez des workflows marketing automatisés intelligents
+                  qui s'adaptent au comportement de vos prospects.
+                </p>
+                <ul className="text-sm text-gray-600 mb-4">
+                  <li>• Email marketing intelligent</li>
+                  <li>• Lead scoring automatisé</li>
+                  <li>• Chatbots conversationnels</li>
+                  <li>• Nurturing sequences adaptatives</li>
+                  <li>• Cross-channel orchestration</li>
+                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="outline">Marketing Automation</Badge>
                   <Badge variant="outline">Lead Scoring</Badge>
                   <Badge variant="outline">Chatbots</Badge>
                 </div>
@@ -147,20 +147,46 @@ const FormationIAMarketing = () => {
             </div>
           </div>
 
+          <div className="bg-gradient-to-r from-pink-50 to-rose-50 rounded-lg p-8 mb-16">
+            <h2 className="text-3xl font-bold text-center mb-8">Outils Marketing IA</h2>
+            <div className="grid md:grid-cols-4 gap-6">
+              <Card className="p-6 text-center">
+                <Search className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <h3 className="text-lg font-bold mb-2">Google Ads AI</h3>
+                <p className="text-sm text-gray-600">Smart bidding avancé</p>
+              </Card>
+              <Card className="p-6 text-center">
+                <Mail className="h-12 w-12 text-green-600 mx-auto mb-4" />
+                <h3 className="text-lg font-bold mb-2">HubSpot AI</h3>
+                <p className="text-sm text-gray-600">Automation intelligente</p>
+              </Card>
+              <Card className="p-6 text-center">
+                <Camera className="h-12 w-12 text-purple-600 mx-auto mb-4" />
+                <h3 className="text-lg font-bold mb-2">Canva AI</h3>
+                <p className="text-sm text-gray-600">Design automatisé</p>
+              </Card>
+              <Card className="p-6 text-center">
+                <Video className="h-12 w-12 text-orange-600 mx-auto mb-4" />
+                <h3 className="text-lg font-bold mb-2">Loom AI</h3>
+                <p className="text-sm text-gray-600">Vidéo marketing IA</p>
+              </Card>
+            </div>
+          </div>
+
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-8">Transformez votre Marketing</h2>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Maîtrisez les outils IA les plus avancés pour créer des campagnes
-              marketing ultra-performantes et personnalisées à grande échelle.
+              Maîtrisez les technologies IA marketing les plus avancées pour
+              créer des campagnes performantes et personnalisées à grande échelle.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                <Target className="mr-2 h-5 w-5" />
-                S'inscrire à la Formation
+              <Button size="lg" className="bg-pink-600 hover:bg-pink-700">
+                <TrendingUp className="mr-2 h-5 w-5" />
+                Commencer la Formation
               </Button>
               <Button size="lg" variant="outline">
                 <BarChart className="mr-2 h-5 w-5" />
-                Programme Détaillé
+                ROI Calculator IA
               </Button>
             </div>
           </div>
