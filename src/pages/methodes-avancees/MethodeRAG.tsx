@@ -4,23 +4,23 @@ import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Search, Database, Brain, Zap, FileText, Target, Network, Cpu } from "lucide-react";
+import { Brain, Database, Search, Zap, BookOpen, Target, Users, TrendingUp, Code, FileText, Globe, Shield, Lightbulb, Settings } from "lucide-react";
 
 const MethodeRAG = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-indigo-50 to-white">
       <Header />
       
-      <section className="py-20 bg-gradient-to-r from-green-600 to-emerald-600">
+      <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600">
         <div className="container mx-auto px-4 text-center">
-          <Search className="h-16 w-16 text-white mx-auto mb-6" />
+          <Database className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">Méthode RAG</h1>
-          <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
-            Retrieval-Augmented Generation : La révolution de l'IA générative
-            avec accès aux données en temps réel et contexte spécialisé.
+          <p className="text-xl text-indigo-100 mb-8 max-w-3xl mx-auto">
+            Retrieval-Augmented Generation : Combinez la puissance des LLM
+            avec vos données propriétaires pour des réponses précises et contextuelles.
           </p>
-          <Badge variant="secondary" className="bg-emerald-500/30 text-white px-4 py-2 text-lg mb-6">
-            🔍 RAG Expert Method
+          <Badge variant="secondary" className="bg-purple-500/30 text-white px-4 py-2 text-lg">
+            🔍 RAG Expert
           </Badge>
         </div>
       </section>
@@ -28,25 +28,25 @@ const MethodeRAG = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-            <Card className="text-center p-6">
-              <Database className="h-12 w-12 text-green-600 mx-auto mb-4" />
-              <h3 className="text-lg font-bold mb-2">Knowledge Base</h3>
-              <p className="text-sm text-gray-600">Base de connaissances vectorielle</p>
-            </Card>
-            <Card className="text-center p-6">
+            <Card className="text-center p-6 hover:shadow-lg transition-all duration-300">
               <Search className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-              <h3 className="text-lg font-bold mb-2">Retrieval</h3>
-              <p className="text-sm text-gray-600">Recherche sémantique avancée</p>
+              <h3 className="text-lg font-bold mb-2">Recherche Intelligente</h3>
+              <p className="text-sm text-gray-600">Récupération de contexte pertinent</p>
             </Card>
-            <Card className="text-center p-6">
+            <Card className="text-center p-6 hover:shadow-lg transition-all duration-300">
               <Brain className="h-12 w-12 text-purple-600 mx-auto mb-4" />
-              <h3 className="text-lg font-bold mb-2">Generation</h3>
-              <p className="text-sm text-gray-600">Génération contextuelle</p>
+              <h3 className="text-lg font-bold mb-2">Génération Augmentée</h3>
+              <p className="text-sm text-gray-600">LLM enrichi par les données</p>
             </Card>
-            <Card className="text-center p-6">
-              <Target className="h-12 w-12 text-orange-600 mx-auto mb-4" />
-              <h3 className="text-lg font-bold mb-2">Accuracy</h3>
-              <p className="text-sm text-gray-600">Précision et pertinence</p>
+            <Card className="text-center p-6 hover:shadow-lg transition-all duration-300">
+              <Target className="h-12 w-12 text-green-600 mx-auto mb-4" />
+              <h3 className="text-lg font-bold mb-2">Précision Maximale</h3>
+              <p className="text-sm text-gray-600">Réponses basées sur vos sources</p>
+            </Card>
+            <Card className="text-center p-6 hover:shadow-lg transition-all duration-300">
+              <Shield className="h-12 w-12 text-orange-600 mx-auto mb-4" />
+              <h3 className="text-lg font-bold mb-2">Contrôle Total</h3>
+              <p className="text-sm text-gray-600">Maîtrise des sources de données</p>
             </Card>
           </div>
 
@@ -55,133 +55,138 @@ const MethodeRAG = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="p-6">
                 <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Database className="h-6 w-6 text-green-600 mr-2" />
-                  Preprocessing & Indexing
+                  <Database className="h-6 w-6 text-blue-600 mr-2" />
+                  Vector Database
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Préparation et indexation des documents avec embeddings
-                  vectoriels pour une recherche sémantique optimale.
+                  Stockage et indexation des embeddings pour une recherche
+                  sémantique ultra-rapide dans vos documents.
                 </p>
                 <ul className="text-sm text-gray-600 mb-4">
-                  <li>• Chunking intelligent des documents</li>
-                  <li>• Embeddings avec modèles spécialisés</li>
-                  <li>• Indexation dans base vectorielle</li>
-                  <li>• Métadonnées enrichies</li>
-                  <li>• Optimisation des performances</li>
+                  <li>• Pinecone, Weaviate, Chroma</li>
+                  <li>• Embeddings OpenAI, Sentence Transformers</li>
+                  <li>• Indexation hiérarchique intelligente</li>
+                  <li>• Recherche hybride (dense + sparse)</li>
+                  <li>• Mise à jour temps réel</li>
                 </ul>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="outline">Vector DB</Badge>
                   <Badge variant="outline">Embeddings</Badge>
-                  <Badge variant="outline">Chunking</Badge>
+                  <Badge variant="outline">Semantic Search</Badge>
                 </div>
               </Card>
 
               <Card className="p-6">
                 <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Search className="h-6 w-6 text-blue-600 mr-2" />
-                  Retrieval Engine
+                  <FileText className="h-6 w-6 text-green-600 mr-2" />
+                  Document Processing
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Moteur de recherche sémantique avancé avec ranking
-                  et filtrage pour récupérer le contexte le plus pertinent.
+                  Pipeline de traitement avancé pour extraire, chunker
+                  et enrichir vos documents de toute nature.
                 </p>
                 <ul className="text-sm text-gray-600 mb-4">
-                  <li>• Recherche par similarité cosinus</li>
-                  <li>• Hybrid search (dense + sparse)</li>
-                  <li>• Re-ranking avec modèles spécialisés</li>
-                  <li>• Filtrage par métadonnées</li>
-                  <li>• Score de pertinence dynamique</li>
+                  <li>• OCR et extraction de texte</li>
+                  <li>• Chunking intelligent par contexte</li>
+                  <li>• Métadonnées automatiques</li>
+                  <li>• Support multi-formats (PDF, Word, Web)</li>
+                  <li>• Preprocessing personnalisé</li>
                 </ul>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Semantic Search</Badge>
-                  <Badge variant="outline">Hybrid</Badge>
-                  <Badge variant="outline">Re-ranking</Badge>
+                  <Badge variant="outline">OCR</Badge>
+                  <Badge variant="outline">Chunking</Badge>
+                  <Badge variant="outline">Preprocessing</Badge>
                 </div>
               </Card>
 
               <Card className="p-6">
                 <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Brain className="h-6 w-6 text-purple-600 mr-2" />
+                  <Search className="h-6 w-6 text-purple-600 mr-2" />
+                  Retrieval Strategy
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Stratégies de récupération sophistiquées pour identifier
+                  le contexte le plus pertinent selon la requête.
+                </p>
+                <ul className="text-sm text-gray-600 mb-4">
+                  <li>• Similarity search avancée</li>
+                  <li>• Reranking par score de pertinence</li>
+                  <li>• Multi-query expansion</li>
+                  <li>• Contextual compression</li>
+                  <li>• Filtrage par métadonnées</li>
+                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="outline">Similarity</Badge>
+                  <Badge variant="outline">Reranking</Badge>
+                  <Badge variant="outline">Multi-query</Badge>
+                </div>
+              </Card>
+
+              <Card className="p-6">
+                <h3 className="text-xl font-bold mb-4 flex items-center">
+                  <Brain className="h-6 w-6 text-orange-600 mr-2" />
                   Generation Pipeline
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Pipeline de génération avec injection de contexte
-                  et prompting avancé pour des réponses précises.
+                  Pipeline de génération optimisé qui combine contexte
+                  récupéré et capacités de raisonnement du LLM.
                 </p>
                 <ul className="text-sm text-gray-600 mb-4">
-                  <li>• Context injection intelligente</li>
-                  <li>• Prompt engineering spécialisé</li>
-                  <li>• Chain-of-thought reasoning</li>
-                  <li>• Citation et traçabilité</li>
-                  <li>• Validation des réponses</li>
+                  <li>• Prompt engineering contextualisé</li>
+                  <li>• Chain-of-thought avec sources</li>
+                  <li>• Citation automatique des sources</li>
+                  <li>• Hallucination detection</li>
+                  <li>• Response validation</li>
                 </ul>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">LLM</Badge>
                   <Badge variant="outline">Prompting</Badge>
                   <Badge variant="outline">Citations</Badge>
-                </div>
-              </Card>
-
-              <Card className="p-6">
-                <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Zap className="h-6 w-6 text-orange-600 mr-2" />
-                  Optimization & Monitoring
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Optimisation continue et monitoring des performances
-                  pour maintenir la qualité et l'efficacité du système.
-                </p>
-                <ul className="text-sm text-gray-600 mb-4">
-                  <li>• A/B testing des pipelines</li>
-                  <li>• Metrics de performance</li>
-                  <li>• Feedback loop utilisateur</li>
-                  <li>• Caching intelligent</li>
-                  <li>• Auto-scaling</li>
-                </ul>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Monitoring</Badge>
-                  <Badge variant="outline">A/B Testing</Badge>
-                  <Badge variant="outline">Caching</Badge>
+                  <Badge variant="outline">Validation</Badge>
                 </div>
               </Card>
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-8 mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Cas d'Usage RAG</h2>
-            <div className="grid md:grid-cols-3 gap-6">
+          <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-lg p-8 mb-16">
+            <h2 className="text-3xl font-bold text-center mb-8">Cas d'Usage RAG Avancés</h2>
+            <div className="grid md:grid-cols-4 gap-6">
               <Card className="p-6 text-center">
-                <FileText className="h-12 w-12 text-green-600 mx-auto mb-4" />
-                <h3 className="text-lg font-bold mb-2">Documentation QA</h3>
-                <p className="text-sm text-gray-600">Assistant documentaire intelligent</p>
+                <BookOpen className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <h3 className="text-lg font-bold mb-2">Knowledge Base</h3>
+                <p className="text-sm text-gray-600">Support client intelligent</p>
               </Card>
               <Card className="p-6 text-center">
-                <Network className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-lg font-bold mb-2">Knowledge Management</h3>
-                <p className="text-sm text-gray-600">Gestion des connaissances</p>
+                <Code className="h-12 w-12 text-green-600 mx-auto mb-4" />
+                <h3 className="text-lg font-bold mb-2">Code Assistant</h3>
+                <p className="text-sm text-gray-600">Documentation technique</p>
               </Card>
               <Card className="p-6 text-center">
-                <Cpu className="h-12 w-12 text-purple-600 mx-auto mb-4" />
-                <h3 className="text-lg font-bold mb-2">Technical Support</h3>
-                <p className="text-sm text-gray-600">Support technique automatisé</p>
+                <Globe className="h-12 w-12 text-purple-600 mx-auto mb-4" />
+                <h3 className="text-lg font-bold mb-2">Research Assistant</h3>
+                <p className="text-sm text-gray-600">Synthèse de publications</p>
+              </Card>
+              <Card className="p-6 text-center">
+                <Users className="h-12 w-12 text-orange-600 mx-auto mb-4" />
+                <h3 className="text-lg font-bold mb-2">HR Chatbot</h3>
+                <p className="text-sm text-gray-600">Politiques entreprise</p>
               </Card>
             </div>
           </div>
 
           <div className="text-center">
-            <h2 className="text-3xl font-bold mb-8">Maîtrisez le RAG</h2>
+            <h2 className="text-3xl font-bold mb-8">Maîtrisez la Méthode RAG</h2>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Découvrez comment implémenter et optimiser des systèmes RAG
-              pour créer des applications IA contextuelles et précises.
+              Apprenez à implémenter des systèmes RAG robustes et performants
+              pour transformer vos données en intelligence actionnable.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700">
-                <Search className="mr-2 h-5 w-5" />
-                Formation RAG Avancée
+              <Button size="lg" className="bg-indigo-600 hover:bg-indigo-700">
+                <Database className="mr-2 h-5 w-5" />
+                Formation RAG
               </Button>
               <Button size="lg" variant="outline">
-                <Database className="mr-2 h-5 w-5" />
-                Guide Technique
+                <Code className="mr-2 h-5 w-5" />
+                Workshop Pratique
               </Button>
             </div>
           </div>
