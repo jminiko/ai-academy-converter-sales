@@ -95,6 +95,13 @@ import CasEtudes from "@/pages/ressources/CasEtudes";
 import Podcasts from "@/pages/ressources/Podcasts";
 import BibliothequeIA from "@/pages/ressources/BibliothequeIA";
 
+// Nouvelles formations techniques
+import TensorFlow from "@/pages/formations/TensorFlow";
+import ScikitLearn from "@/pages/formations/Scikit-learn";
+import Pandas from "@/pages/formations/Pandas";
+import NumPy from "@/pages/formations/NumPy";
+import Matplotlib from "@/pages/formations/Matplotlib";
+
 export const MainRoutes = () => (
   <>
     <Route path="/" element={<Index />} />
@@ -188,6 +195,13 @@ export const MainRoutes = () => (
     <Route path="/ressources/cas-etudes" element={<CasEtudes />} />
     <Route path="/ressources/podcasts" element={<Podcasts />} />
     <Route path="/ressources/bibliotheque-ia" element={<BibliothequeIA />} />
+    
+    {/* Formations techniques */}
+    <Route path="/formations/tensorflow" element={<TensorFlow />} />
+    <Route path="/formations/scikit-learn" element={<ScikitLearn />} />
+    <Route path="/formations/pandas" element={<Pandas />} />
+    <Route path="/formations/numpy" element={<NumPy />} />
+    <Route path="/formations/matplotlib" element={<Matplotlib />} />
     
     <Route path="*" element={<NotFound />} />
   </>
