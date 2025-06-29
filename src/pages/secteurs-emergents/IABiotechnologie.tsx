@@ -50,138 +50,20 @@ const IABiotechnologie = () => {
             </Card>
           </div>
 
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-12">Applications IA en Biotechnologie</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <Card className="p-6">
-                <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <FlaskConical className="h-6 w-6 text-blue-600 mr-2" />
-                  Drug Discovery & Development
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Accélération du développement de médicaments grâce à l'IA :
-                  prédiction d'efficacité, optimisation moléculaire et tests virtuels.
-                </p>
-                <ul className="text-sm text-gray-600 mb-4">
-                  <li>• Prédiction d'activité biologique</li>
-                  <li>• Optimisation de lead compounds</li>
-                  <li>• Prédiction de toxicité ADMET</li>
-                  <li>• Virtual screening haute performance</li>
-                  <li>• Design rationnel de médicaments</li>
-                </ul>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">QSAR</Badge>
-                  <Badge variant="outline">Molecular ML</Badge>
-                  <Badge variant="outline">ADMET</Badge>
-                </div>
-              </Card>
-
-              <Card className="p-6">
-                <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Dna className="h-6 w-6 text-green-600 mr-2" />
-                  Génomique & Bioinformatique
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Analyse des données génomiques massives pour identifier
-                  biomarqueurs, variants pathogènes et cibles thérapeutiques.
-                </p>
-                <ul className="text-sm text-gray-600 mb-4">
-                  <li>• Séquençage NGS et analyse variants</li>
-                  <li>• GWAS et génétique des populations</li>
-                  <li>• Prédiction d'expression génique</li>
-                  <li>• Analyse multi-omique intégrée</li>
-                  <li>• Pharmacogénomique personnalisée</li>
-                </ul>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">NGS</Badge>
-                  <Badge variant="outline">GWAS</Badge>
-                  <Badge variant="outline">Multi-omics</Badge>
-                </div>
-              </Card>
-
-              <Card className="p-6">
-                <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Atom className="h-6 w-6 text-purple-600 mr-2" />
-                  Structural Biology IA
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Prédiction de structures protéiques et interactions
-                  moléculaires avec AlphaFold et méthodes deep learning.
-                </p>
-                <ul className="text-sm text-gray-600 mb-4">
-                  <li>• Protein folding prediction</li>
-                  <li>• Protein-protein interactions</li>
-                  <li>• Binding site identification</li>
-                  <li>• Allosteric site prediction</li>
-                  <li>• Molecular dynamics simulation</li>
-                </ul>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">AlphaFold</Badge>
-                  <Badge variant="outline">Structural ML</Badge>
-                  <Badge variant="outline">MD Simulation</Badge>
-                </div>
-              </Card>
-
-              <Card className="p-6">
-                <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Beaker className="h-6 w-6 text-orange-600 mr-2" />
-                  Bioprocessing & Manufacturing
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Optimisation des processus de production biologique
-                  et contrôle qualité par intelligence artificielle.
-                </p>
-                <ul className="text-sm text-gray-600 mb-4">
-                  <li>• Optimisation de fermentation</li>
-                  <li>• Contrôle qualité automatisé</li>
-                  <li>• Prédiction de rendement</li>
-                  <li>• Monitoring temps réel</li>
-                  <li>• Maintenance prédictive</li>
-                </ul>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Process Control</Badge>
-                  <Badge variant="outline">Quality Control</Badge>
-                  <Badge variant="outline">Bioprocessing</Badge>
-                </div>
-              </Card>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-lg p-8 mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Technologies IA Biotechnologie</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <Card className="p-6 text-center">
-                <Brain className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-lg font-bold mb-2">Deep Learning</h3>
-                <p className="text-sm text-gray-600">CNN, RNN, Transformers pour bio-séquences</p>
-              </Card>
-              <Card className="p-6 text-center">
-                <Database className="h-12 w-12 text-green-600 mx-auto mb-4" />
-                <h3 className="text-lg font-bold mb-2">Big Data Bio</h3>
-                <p className="text-sm text-gray-600">Analyse de datasets massifs omiques</p>
-              </Card>
-              <Card className="p-6 text-center">
-                <Target className="h-12 w-12 text-purple-600 mx-auto mb-4" />
-                <h3 className="text-lg font-bold mb-2">Graph Neural Networks</h3>
-                <p className="text-sm text-gray-600">Modélisation de réseaux biologiques</p>
-              </Card>
-            </div>
-          </div>
-
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-8">Révolutionnez la Biotechnologie</h2>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Maîtrisez les technologies IA de pointe pour accélérer la recherche
-              biomédicale et développer les thérapies de demain.
+              Exploitez la puissance de l'IA pour accélérer la recherche biomédicale
+              et développer les thérapies de demain.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700">
                 <Dna className="mr-2 h-5 w-5" />
-                Formation BioTech IA
+                Solutions BioTech IA
               </Button>
               <Button size="lg" variant="outline">
                 <Microscope className="mr-2 h-5 w-5" />
-                Workshop Pratique
+                Recherche & Développement
               </Button>
             </div>
           </div>

@@ -46,14 +46,48 @@ import NotFound from "@/pages/NotFound";
 import Sitemap from "@/pages/Sitemap";
 import FormationIAFinance from "@/pages/FormationIAFinance";
 
-// New pages
+// Secteurs émergents
 import IAAutomobile from "@/pages/secteurs-emergents/IAAutomobile";
 import IASante from "@/pages/secteurs-emergents/IASante";
+import IABiotechnologie from "@/pages/secteurs-emergents/IABiotechnologie";
+
+// Formations spécialisées
 import FormationIAMarketing from "@/pages/formations-specialisees/FormationIAMarketing";
+
+// Outils émergents
 import OutilMidjourney from "@/pages/outils-emergents/OutilMidjourney";
+
+// Méthodes
 import MethodeNLP from "@/pages/methodes/MethodeNLP";
+
+// Métiers
 import IAConsultant from "@/pages/metiers/IAConsultant";
+
+// Outils
 import CalculateurPerformanceIA from "@/pages/outils/CalculateurPerformanceIA";
+
+// Secteurs industriels
+import Automobile from "@/pages/secteurs/Automobile";
+import Aeronautique from "@/pages/secteurs/Aeronautique";
+import BTP from "@/pages/secteurs/BTP";
+import Agriculture from "@/pages/secteurs/Agriculture";
+
+// Secteurs spécialisés santé
+import SanteRadiologie from "@/pages/secteurs-specialises/SanteRadiologie";
+import SanteOncologie from "@/pages/secteurs-specialises/SanteOncologie";
+import SanteCardiologie from "@/pages/secteurs-specialises/SanteCardiologie";
+
+// Ressources
+import Templates from "@/pages/ressources/Templates";
+import GuidesIA from "@/pages/ressources/GuidesIA";
+import Webinaires from "@/pages/ressources/Webinaires";
+import CommunauteOpenSource from "@/pages/ressources/CommunauteOpenSource";
+import CommunauteIA from "@/pages/ressources/CommunauteIA";
+import LivresBlancsIA from "@/pages/ressources/LivresBlancsIA";
+import OutilsGratuits from "@/pages/ressources/OutilsGratuits";
+import CasEtudes from "@/pages/ressources/CasEtudes";
+import Podcasts from "@/pages/ressources/Podcasts";
+import BibliothequeIA from "@/pages/ressources/BibliothequeIA";
 
 export const MainRoutes = () => (
   <>
@@ -100,14 +134,48 @@ export const MainRoutes = () => (
     <Route path="/sitemap" element={<Sitemap />} />
     <Route path="/formationiafinance" element={<FormationIAFinance />} />
     
-    {/* New routes */}
+    {/* Secteurs émergents */}
     <Route path="/secteurs-emergents/ia-automobile" element={<IAAutomobile />} />
     <Route path="/secteurs-emergents/ia-sante" element={<IASante />} />
+    <Route path="/secteurs-emergents/ia-biotechnologie" element={<IABiotechnologie />} />
+    
+    {/* Formations spécialisées */}
     <Route path="/formations-specialisees/formation-ia-marketing" element={<FormationIAMarketing />} />
+    
+    {/* Outils émergents */}
     <Route path="/outils-emergents/outil-midjourney" element={<OutilMidjourney />} />
+    
+    {/* Méthodes */}
     <Route path="/methodes/methode-nlp" element={<MethodeNLP />} />
+    
+    {/* Métiers */}
     <Route path="/metiers/ia-consultant" element={<IAConsultant />} />
+    
+    {/* Outils */}
     <Route path="/outils/calculateur-performance-ia" element={<CalculateurPerformanceIA />} />
+    
+    {/* Secteurs industriels */}
+    <Route path="/secteurs/automobile" element={<Automobile />} />
+    <Route path="/secteurs/aeronautique" element={<Aeronautique />} />
+    <Route path="/secteurs/btp" element={<BTP />} />
+    <Route path="/secteurs/agriculture" element={<Agriculture />} />
+    
+    {/* Secteurs spécialisés santé */}
+    <Route path="/secteurs-specialises/sante-radiologie" element={<SanteRadiologie />} />
+    <Route path="/secteurs-specialises/sante-oncologie" element={<SanteOncologie />} />
+    <Route path="/secteurs-specialises/sante-cardiologie" element={<SanteCardiologie />} />
+    
+    {/* Ressources */}
+    <Route path="/ressources/templates" element={<Templates />} />
+    <Route path="/ressources/guides-ia" element={<GuidesIA />} />
+    <Route path="/ressources/webinaires" element={<Webinaires />} />
+    <Route path="/ressources/communaute-opensource" element={<CommunauteOpenSource />} />
+    <Route path="/ressources/communaute-ia" element={<CommunauteIA />} />
+    <Route path="/ressources/livres-blancs-ia" element={<LivresBlancsIA />} />
+    <Route path="/ressources/outils-gratuits" element={<OutilsGratuits />} />
+    <Route path="/ressources/cas-etudes" element={<CasEtudes />} />
+    <Route path="/ressources/podcasts" element={<Podcasts />} />
+    <Route path="/ressources/bibliotheque-ia" element={<BibliothequeIA />} />
     
     <Route path="*" element={<NotFound />} />
   </>
