@@ -114,7 +114,7 @@ const OutilOpenAIGPT5 = () => {
                     </div>
                     <div>
                       <div className="flex justify-between mb-2">
-                        <span>Analyse d'images</span>
+                        <span>Analyse d&apos;images</span>
                         <span className="font-semibold">50ms/image</span>
                       </div>
                       <Progress value={90} />
@@ -204,9 +204,9 @@ const OutilOpenAIGPT5 = () => {
                   <CardContent>
                     <div className="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
                       <div>curl -X POST https://api.openai.com/v1/chat/completions \</div>
-                      <div className="ml-4">-H "Authorization: Bearer $OPENAI_API_KEY" \</div>
-                      <div className="ml-4">-H "Content-Type: application/json" \</div>
-                      <div className="ml-4">-d '{"model": "gpt-5", "messages": [...]}'</div>
+                      <div className="ml-4">-H &quot;Authorization: Bearer $OPENAI_API_KEY&quot; \</div>
+                      <div className="ml-4">-H &quot;Content-Type: application/json&quot; \</div>
+                      <div className="ml-4">-d &apos;{&quot;model&quot;: &quot;gpt-5&quot;, &quot;messages&quot;: [...]}&apos;</div>
                     </div>
                   </CardContent>
                 </Card>

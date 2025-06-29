@@ -1,4 +1,3 @@
-
 import { Route } from "react-router-dom";
 
 // Import route modules
@@ -49,6 +48,8 @@ import { CoreRoutes } from "./CoreRoutes";
 import { IndustryApplicationRoutes } from "./IndustryApplicationRoutes";
 import { ToolsConceptsRoutes } from "./ToolsConceptsRoutes";
 import { CareersGuidesRoutes } from "./CareersGuidesRoutes";
+
+import ExtensionRoutesComplete from "./ExtensionRoutesComplete";
 
 const AllRoutes = () => {
   return (
@@ -113,6 +114,9 @@ const AllRoutes = () => {
       
       {/* Nouvelles pages ajoutées */}
       {NouvellePagesRoutes()}
+      
+      {/* Extension complète - 580+ pages */}
+      {ExtensionRoutesComplete()}
     </>
   );
 };
