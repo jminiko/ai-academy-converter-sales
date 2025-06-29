@@ -1,12 +1,10 @@
 
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Progress } from "@/components/ui/progress";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Atom, Zap, Brain, Cpu, Target, TrendingUp, Shield, Rocket } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Atom, Zap, Brain, Globe, Lock, TrendingUp, Code, Target } from "lucide-react";
 
 const CasUsageIAQuantique = () => {
   return (
@@ -16,265 +14,182 @@ const CasUsageIAQuantique = () => {
       <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600">
         <div className="container mx-auto px-4 text-center">
           <Atom className="h-16 w-16 text-white mx-auto mb-6" />
-          <h1 className="text-5xl font-bold text-white mb-6">IA Quantique : Cas d'Usage</h1>
+          <h1 className="text-5xl font-bold text-white mb-6">Cas d'Usage IA Quantique</h1>
           <p className="text-xl text-indigo-100 mb-8 max-w-3xl mx-auto">
-            Explorez les applications révolutionnaires de l'intelligence artificielle quantique.
-            Optimisation complexe, cryptographie avancée et simulation moléculaire.
+            L'intersection révolutionnaire entre intelligence artificielle et informatique quantique.
+            Découvrez les applications transformatrices de cette convergence technologique.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Badge variant="secondary" className="bg-white/20 text-white">Computing Quantique</Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white">Algorithmes Hybrides</Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white">Suprematie Quantique</Badge>
-          </div>
+          <Badge variant="secondary" className="bg-purple-500/30 text-white px-4 py-2 text-lg mb-6">
+            ⚛️ Quantum AI
+          </Badge>
         </div>
       </section>
 
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <Tabs defaultValue="optimization" className="w-full">
-            <TabsList className="grid w-full grid-cols-4">
-              <TabsTrigger value="optimization">Optimisation</TabsTrigger>
-              <TabsTrigger value="cryptography">Cryptographie</TabsTrigger>
-              <TabsTrigger value="simulation">Simulation</TabsTrigger>
-              <TabsTrigger value="finance">Finance</TabsTrigger>
-            </TabsList>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            <Card className="text-center p-6">
+              <Zap className="h-12 w-12 text-yellow-600 mx-auto mb-4" />
+              <h3 className="text-lg font-bold mb-2">Accélération Calculs</h3>
+              <p className="text-sm text-gray-600">Vitesse quantique exponentielle</p>
+            </Card>
+            <Card className="text-center p-6">
+              <Brain className="h-12 w-12 text-purple-600 mx-auto mb-4" />
+              <h3 className="text-lg font-bold mb-2">ML Quantique</h3>
+              <p className="text-sm text-gray-600">Algorithmes hybrides avancés</p>
+            </Card>
+            <Card className="text-center p-6">
+              <Lock className="h-12 w-12 text-green-600 mx-auto mb-4" />
+              <h3 className="text-lg font-bold mb-2">Cryptographie</h3>
+              <p className="text-sm text-gray-600">Sécurité quantique</p>
+            </Card>
+            <Card className="text-center p-6">
+              <Globe className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-lg font-bold mb-2">Optimisation</h3>
+              <p className="text-sm text-gray-600">Problèmes complexes résolus</p>
+            </Card>
+          </div>
 
-            <TabsContent value="optimization" className="space-y-8">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold mb-4">Optimisation Quantique</h2>
-                <p className="text-lg text-gray-600">Résolution de problèmes d'optimisation complexes</p>
-              </div>
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <Card className="hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <Cpu className="h-8 w-8 text-blue-600 mb-2" />
-                    <CardTitle>Logistics Quantique</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-600 mb-4">
-                      Optimisation de chaînes d'approvisionnement avec des milliers de variables
-                    </p>
-                    <Progress value={89} className="mb-2" />
-                    <span className="text-sm text-gray-500">89% d'amélioration vs classique</span>
-                  </CardContent>
-                </Card>
-
-                <Card className="hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <Target className="h-8 w-8 text-green-600 mb-2" />
-                    <CardTitle>Portfolio Quantique</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-600 mb-4">
-                      Allocation d'actifs optimale avec corrélations quantiques
-                    </p>
-                    <Progress value={94} className="mb-2" />
-                    <span className="text-sm text-gray-500">+15% rendement ajusté</span>
-                  </CardContent>
-                </Card>
-
-                <Card className="hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <TrendingUp className="h-8 w-8 text-purple-600 mb-2" />
-                    <CardTitle>Trafic Urbain</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-600 mb-4">
-                      Gestion du trafic urbain en temps réel avec IA quantique
-                    </p>
-                    <Progress value={76} className="mb-2" />
-                    <span className="text-sm text-gray-500">35% réduction congestion</span>
-                  </CardContent>
-                </Card>
-              </div>
-
-              <Card className="mt-8">
-                <CardHeader>
-                  <CardTitle>Algorithme d'Optimisation Quantique - QAOA</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
-                    <div># Quantum Approximate Optimization Algorithm</div>
-                    <div>def qaoa_circuit(params, graph):</div>
-                    <div className="ml-4">qc = QuantumCircuit(n_qubits)</div>
-                    <div className="ml-4">qc.h(range(n_qubits))  # Superposition</div>
-                    <div className="ml-4">for gamma, beta in params:</div>
-                    <div className="ml-8">apply_cost_operator(qc, gamma, graph)</div>
-                    <div className="ml-8">apply_mixer_operator(qc, beta)</div>
-                    <div className="ml-4">return qc</div>
-                  </div>
-                </CardContent>
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-center mb-12">Applications Révolutionnaires</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <Card className="p-6">
+                <h3 className="text-xl font-bold mb-4 flex items-center">
+                  <Brain className="h-6 w-6 text-purple-600 mr-2" />
+                  Quantum Machine Learning
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Algorithmes d'apprentissage automatique exploitant les propriétés
+                  quantiques pour résoudre des problèmes impossibles classiquement.
+                </p>
+                <ul className="text-sm text-gray-600 mb-4">
+                  <li>• Quantum Neural Networks (QNN)</li>
+                  <li>• Variational Quantum Eigensolver</li>
+                  <li>• Quantum Support Vector Machine</li>
+                  <li>• Quantum Principal Component Analysis</li>
+                  <li>• Quantum Boltzmann Machine</li>
+                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="outline">QNN</Badge>
+                  <Badge variant="outline">VQE</Badge>
+                  <Badge variant="outline">QSVM</Badge>
+                </div>
               </Card>
-            </TabsContent>
 
-            <TabsContent value="cryptography" className="space-y-8">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold mb-4">Cryptographie Post-Quantique</h2>
-                <p className="text-lg text-gray-600">Sécurité à l'ère quantique</p>
-              </div>
+              <Card className="p-6">
+                <h3 className="text-xl font-bold mb-4 flex items-center">
+                  <Globe className="h-6 w-6 text-blue-600 mr-2" />
+                  Optimisation Quantique
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Résolution de problèmes d'optimisation combinatoire complexes
+                  avec des avantages quantiques exponentiels.
+                </p>
+                <ul className="text-sm text-gray-600 mb-4">
+                  <li>• Quantum Approximate Optimization (QAOA)</li>
+                  <li>• Portfolio optimization quantique</li>
+                  <li>• Supply chain optimization</li>
+                  <li>• Traffic flow optimization</li>
+                  <li>• Resource allocation problems</li>
+                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="outline">QAOA</Badge>
+                  <Badge variant="outline">Portfolio</Badge>
+                  <Badge variant="outline">Supply Chain</Badge>
+                </div>
+              </Card>
 
-              <div className="grid md:grid-cols-2 gap-8">
-                <Card>
-                  <CardHeader>
-                    <Shield className="h-8 w-8 text-red-600 mb-2" />
-                    <CardTitle>Chiffrement Quantique</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-3 text-gray-600">
-                      <li className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                        Distribution de clés quantiques (QKD)
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                        Cryptographie basée sur les réseaux
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
-                        Signatures quantiques sécurisées
-                      </li>
-                    </ul>
-                  </CardContent>
-                </Card>
+              <Card className="p-6">
+                <h3 className="text-xl font-bold mb-4 flex items-center">
+                  <Lock className="h-6 w-6 text-green-600 mr-2" />
+                  Sécurité Quantique
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Applications de cryptographie quantique et détection
+                  d'intrusions avec algorithmes quantiques.
+                </p>
+                <ul className="text-sm text-gray-600 mb-4">
+                  <li>• Quantum Key Distribution (QKD)</li>
+                  <li>• Post-quantum cryptography</li>
+                  <li>• Quantum random number generation</li>
+                  <li>• Quantum authentication protocols</li>
+                  <li>• Quantum-safe ML algorithms</li>
+                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="outline">QKD</Badge>
+                  <Badge variant="outline">Post-Quantum</Badge>
+                  <Badge variant="outline">Authentication</Badge>
+                </div>
+              </Card>
 
-                <Card>
-                  <CardHeader>
-                    <Zap className="h-8 w-8 text-yellow-600 mb-2" />
-                    <CardTitle>Détection d'Intrusion</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-3 text-gray-600">
-                      <li className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-red-500 rounded-full"></span>
-                        Analyse comportementale quantique
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
-                        Pattern matching quantique
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-cyan-500 rounded-full"></span>
-                        Réponse adaptative en temps réel
-                      </li>
-                    </ul>
-                  </CardContent>
-                </Card>
-              </div>
-            </TabsContent>
+              <Card className="p-6">
+                <h3 className="text-xl font-bold mb-4 flex items-center">
+                  <Target className="h-6 w-6 text-orange-600 mr-2" />
+                  Simulation Quantique
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Simulation de systèmes quantiques complexes pour
+                  la recherche scientifique et l'innovation technologique.
+                </p>
+                <ul className="text-sm text-gray-600 mb-4">
+                  <li>• Molecular dynamics simulation</li>
+                  <li>• Materials science modeling</li>
+                  <li>• Quantum chemistry calculations</li>
+                  <li>• Drug discovery acceleration</li>
+                  <li>• Financial risk modeling</li>
+                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="outline">Molecular</Badge>
+                  <Badge variant="outline">Materials</Badge>
+                  <Badge variant="outline">Chemistry</Badge>
+                </div>
+              </Card>
+            </div>
+          </div>
 
-            <TabsContent value="simulation" className="space-y-8">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold mb-4">Simulation Moléculaire Quantique</h2>
-                <p className="text-lg text-gray-600">Modélisation de systèmes quantiques complexes</p>
-              </div>
+          <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-lg p-8 mb-16">
+            <h2 className="text-3xl font-bold text-center mb-8">Secteurs d'Impact</h2>
+            <div className="grid md:grid-cols-4 gap-6">
+              <Card className="p-6 text-center">
+                <TrendingUp className="h-12 w-12 text-green-600 mx-auto mb-4" />
+                <h3 className="text-lg font-bold mb-2">Finance</h3>
+                <p className="text-sm text-gray-600">Trading & Risk Management</p>
+              </Card>
+              <Card className="p-6 text-center">
+                <Code className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <h3 className="text-lg font-bold mb-2">Tech</h3>
+                <p className="text-sm text-gray-600">Quantum Computing as a Service</p>
+              </Card>
+              <Card className="p-6 text-center">
+                <Atom className="h-12 w-12 text-purple-600 mx-auto mb-4" />
+                <h3 className="text-lg font-bold mb-2">Recherche</h3>
+                <p className="text-sm text-gray-600">Découvertes scientifiques</p>
+              </Card>
+              <Card className="p-6 text-center">
+                <Globe className="h-12 w-12 text-orange-600 mx-auto mb-4" />
+                <h3 className="text-lg font-bold mb-2">Énergie</h3>
+                <p className="text-sm text-gray-600">Optimisation énergétique</p>
+              </Card>
+            </div>
+          </div>
 
-              <div className="space-y-6">
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <Brain className="h-6 w-6 text-purple-600" />
-                      Découverte de Médicaments
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-600 mb-4">
-                      Simulation quantique de l'interaction médicament-protéine pour la découverte pharmaceutique
-                    </p>
-                    <div className="grid md:grid-cols-3 gap-4">
-                      <div className="text-center">
-                        <div className="text-2xl font-bold text-green-600">1000x</div>
-                        <div className="text-sm text-gray-500">Plus rapide</div>
-                      </div>
-                      <div className="text-center">
-                        <div className="text-2xl font-bold text-blue-600">92%</div>
-                        <div className="text-sm text-gray-500">Précision</div>
-                      </div>
-                      <div className="text-center">
-                        <div className="text-2xl font-bold text-purple-600">50M$</div>
-                        <div className="text-sm text-gray-500">Économies R&D</div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <Atom className="h-6 w-6 text-blue-600" />
-                      Matériaux Quantiques
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-600 mb-4">
-                      Design de nouveaux matériaux avec propriétés quantiques sur mesure
-                    </p>
-                    <div className="space-y-2">
-                      <div className="flex justify-between">
-                        <span>Supraconducteurs haute température</span>
-                        <Progress value={78} className="w-32" />
-                      </div>
-                      <div className="flex justify-between">
-                        <span>Matériaux photovoltaïques</span>
-                        <Progress value={85} className="w-32" />
-                      </div>
-                      <div className="flex justify-between">
-                        <span>Catalyseurs quantiques</span>
-                        <Progress value={91} className="w-32" />
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-            </TabsContent>
-
-            <TabsContent value="finance" className="space-y-8">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold mb-4">Finance Quantique</h2>
-                <p className="text-lg text-gray-600">Applications financières de l'IA quantique</p>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-8">
-                <Card>
-                  <CardHeader>
-                    <Rocket className="h-8 w-8 text-green-600 mb-2" />
-                    <CardTitle>Trading Algorithmique</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-4">
-                      <p className="text-gray-600">
-                        Stratégies de trading optimisées par algorithmes quantiques
-                      </p>
-                      <div className="bg-green-50 p-4 rounded-lg">
-                        <div className="text-lg font-semibold text-green-800">Performance</div>
-                        <div className="text-2xl font-bold text-green-600">+247%</div>
-                        <div className="text-sm text-green-600">Rendement annualisé</div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader>
-                    <Shield className="h-8 w-8 text-blue-600 mb-2" />
-                    <CardTitle>Gestion des Risques</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-4">
-                      <p className="text-gray-600">
-                        Évaluation des risques avec simulation Monte Carlo quantique
-                      </p>
-                      <div className="bg-blue-50 p-4 rounded-lg">
-                        <div className="text-lg font-semibold text-blue-800">Réduction VaR</div>
-                        <div className="text-2xl font-bold text-blue-600">-35%</div>
-                        <div className="text-sm text-blue-600">Value at Risk</div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-            </TabsContent>
-          </Tabs>
+          <div className="text-center">
+            <h2 className="text-3xl font-bold mb-8">Préparez-vous à l'Ère Quantique</h2>
+            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+              Explorez les applications concrètes de l'IA quantique et positionnez-vous
+              à l'avant-garde de cette révolution technologique.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" className="bg-indigo-600 hover:bg-indigo-700">
+                <Atom className="mr-2 h-5 w-5" />
+                Formation Quantum AI
+              </Button>
+              <Button size="lg" variant="outline">
+                <Brain className="mr-2 h-5 w-5" />
+                Guide Pratique
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
