@@ -80,7 +80,7 @@ import SanteCardiologie from "@/pages/secteurs-specialises/SanteCardiologie";
 // Ressources
 import Templates from "@/pages/ressources/Templates";
 import GuidesIA from "@/pages/ressources/GuidesIA";
-import Webinaires from "@/pages/ressources/Webinaires";
+import WebinairesRessources from "@/pages/ressources/Webinaires";
 import CommunauteOpenSource from "@/pages/ressources/CommunauteOpenSource";
 import CommunauteIA from "@/pages/ressources/CommunauteIA";
 import LivresBlancsIA from "@/pages/ressources/LivresBlancsIA";
@@ -168,7 +168,7 @@ export const MainRoutes = () => (
     {/* Ressources */}
     <Route path="/ressources/templates" element={<Templates />} />
     <Route path="/ressources/guides-ia" element={<GuidesIA />} />
-    <Route path="/ressources/webinaires" element={<Webinaires />} />
+    <Route path="/ressources/webinaires" element={<WebinairesRessources />} />
     <Route path="/ressources/communaute-opensource" element={<CommunauteOpenSource />} />
     <Route path="/ressources/communaute-ia" element={<CommunauteIA />} />
     <Route path="/ressources/livres-blancs-ia" element={<LivresBlancsIA />} />
