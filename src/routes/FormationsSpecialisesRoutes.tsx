@@ -16,6 +16,11 @@ import FormationComputerVision from "@/pages/formations/FormationComputerVision"
 import FormationRobotics from "@/pages/formations/FormationRobotics";
 import FormationIoTAI from "@/pages/formations/FormationIoTAI";
 import FormationBlockchainAI from "@/pages/formations/FormationBlockchainAI";
+import FormationCybersecurityAI from "@/pages/formations/FormationCybersecurityAI";
+import FormationGameAI from "@/pages/formations/FormationGameAI";
+import FormationQuantumAI from "@/pages/formations/FormationQuantumAI";
+import FormationMetaverseAI from "@/pages/formations/FormationMetaverseAI";
+import FormationBiotechAI from "@/pages/formations/FormationBiotechAI";
 
 const FormationsSpecialisesRoutes = () => {
   return (
@@ -36,6 +41,11 @@ const FormationsSpecialisesRoutes = () => {
       <Route path="/formation-robotics" element={<FormationRobotics />} />
       <Route path="/formation-iot-ai" element={<FormationIoTAI />} />
       <Route path="/formation-blockchain-ai" element={<FormationBlockchainAI />} />
+      <Route path="/formation-cybersecurity-ai" element={<FormationCybersecurityAI />} />
+      <Route path="/formation-game-ai" element={<FormationGameAI />} />
+      <Route path="/formation-quantum-ai" element={<FormationQuantumAI />} />
+      <Route path="/formation-metaverse-ai" element={<FormationMetaverseAI />} />
+      <Route path="/formation-biotech-ai" element={<FormationBiotechAI />} />
     </>
   );
 };

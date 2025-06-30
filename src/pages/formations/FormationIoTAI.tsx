@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Wifi, Smartphone, Cloud, Zap, Sensor, Shield, Database, Settings } from "lucide-react";
+import { Wifi, Smartphone, Cloud, Zap, Settings, Shield, Database, Activity } from "lucide-react";
 
 const FormationIoTAI = () => {
   return (
@@ -28,7 +28,7 @@ const FormationIoTAI = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             <Card className="text-center p-6 hover:shadow-lg transition-all duration-300">
-              <Sensor className="h-12 w-12 text-emerald-600 mx-auto mb-4" />
+              <Activity className="h-12 w-12 text-emerald-600 mx-auto mb-4" />
               <h3 className="text-lg font-bold mb-2">Capteurs Intelligents</h3>
               <p className="text-sm text-gray-600">Data collection avancée</p>
             </Card>
@@ -77,7 +77,7 @@ const FormationIoTAI = () => {
 
               <Card className="p-6">
                 <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Sensor className="h-6 w-6 text-teal-600 mr-2" />
+                  <Activity className="h-6 w-6 text-teal-600 mr-2" />
                   Capteurs et Acquisition
                 </h3>
                 <p className="text-gray-600 mb-4">
