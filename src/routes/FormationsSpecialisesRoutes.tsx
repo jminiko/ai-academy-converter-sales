@@ -11,6 +11,11 @@ import Seaborn from "@/pages/formations/Seaborn";
 import Plotly from "@/pages/formations/Plotly";
 import OpenCV from "@/pages/formations/OpenCV";
 import PythonIA from "@/pages/formations/PythonIA";
+import FormationNLP from "@/pages/formations/FormationNLP";
+import FormationComputerVision from "@/pages/formations/FormationComputerVision";
+import FormationRobotics from "@/pages/formations/FormationRobotics";
+import FormationIoTAI from "@/pages/formations/FormationIoTAI";
+import FormationBlockchainAI from "@/pages/formations/FormationBlockchainAI";
 
 const FormationsSpecialisesRoutes = () => {
   return (
@@ -26,6 +31,11 @@ const FormationsSpecialisesRoutes = () => {
       <Route path="/plotly" element={<Plotly />} />
       <Route path="/opencv" element={<OpenCV />} />
       <Route path="/python-ia" element={<PythonIA />} />
+      <Route path="/formation-nlp" element={<FormationNLP />} />
+      <Route path="/formation-computer-vision" element={<FormationComputerVision />} />
+      <Route path="/formation-robotics" element={<FormationRobotics />} />
+      <Route path="/formation-iot-ai" element={<FormationIoTAI />} />
+      <Route path="/formation-blockchain-ai" element={<FormationBlockchainAI />} />
     </>
   );
 };
