@@ -1,10 +1,9 @@
-
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Factory, Cog, Robot, TrendingUp, Shield, Zap, Settings, Target } from "lucide-react";
+import { Factory, Cog, Bot, TrendingUp, Shield, Zap, Settings, Target } from "lucide-react";
 
 const Industrie = () => {
   return (
@@ -28,7 +27,7 @@ const Industrie = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             <Card className="text-center p-6 hover:shadow-lg transition-all duration-300">
-              <Robot className="h-12 w-12 text-gray-600 mx-auto mb-4" />
+              <Bot className="h-12 w-12 text-gray-600 mx-auto mb-4" />
               <h3 className="text-lg font-bold mb-2">Robotique Avancée</h3>
               <p className="text-sm text-gray-600">Automatisation intelligente</p>
             </Card>
@@ -54,7 +53,7 @@ const Industrie = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="p-6">
                 <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Robot className="h-6 w-6 text-gray-600 mr-2" />
+                  <Bot className="h-6 w-6 text-gray-600 mr-2" />
                   Automatisation Intelligente
                 </h3>
                 <p className="text-gray-600 mb-4">
