@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Globe, VirtualReality, Users, Sparkles, Zap, Eye, Headphones, Camera } from "lucide-react";
+import { Globe, Monitor, Users, Sparkles, Zap, Eye, Headphones, Camera } from "lucide-react";
 
 const FormationMetaverseAI = () => {
   return (
@@ -28,7 +28,7 @@ const FormationMetaverseAI = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             <Card className="text-center p-6 hover:shadow-lg transition-all duration-300">
-              <VirtualReality className="h-12 w-12 text-cyan-600 mx-auto mb-4" />
+              <Monitor className="h-12 w-12 text-cyan-600 mx-auto mb-4" />
               <h3 className="text-lg font-bold mb-2">Réalité Virtuelle IA</h3>
               <p className="text-sm text-gray-600">Mondes intelligents</p>
             </Card>

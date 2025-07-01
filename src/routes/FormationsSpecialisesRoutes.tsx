@@ -21,6 +21,9 @@ import FormationGameAI from "@/pages/formations/FormationGameAI";
 import FormationQuantumAI from "@/pages/formations/FormationQuantumAI";
 import FormationMetaverseAI from "@/pages/formations/FormationMetaverseAI";
 import FormationBiotechAI from "@/pages/formations/FormationBiotechAI";
+import FormationAutomatisationRPA from "@/pages/formations/FormationAutomatisationRPA";
+import FormationDataSciencePro from "@/pages/formations/FormationDataSciencePro";
+import FormationMLOpsPro from "@/pages/formations/FormationMLOpsPro";
 
 const FormationsSpecialisesRoutes = () => {
   return (
@@ -46,6 +49,9 @@ const FormationsSpecialisesRoutes = () => {
       <Route path="/formation-quantum-ai" element={<FormationQuantumAI />} />
       <Route path="/formation-metaverse-ai" element={<FormationMetaverseAI />} />
       <Route path="/formation-biotech-ai" element={<FormationBiotechAI />} />
+      <Route path="/formation-automatisation-rpa" element={<FormationAutomatisationRPA />} />
+      <Route path="/formation-data-science-pro" element={<FormationDataSciencePro />} />
+      <Route path="/formation-mlops-pro" element={<FormationMLOpsPro />} />
     </>
   );
 };
