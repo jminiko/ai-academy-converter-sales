@@ -1,10 +1,9 @@
-
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { BookOpen, Users, Brain, Target, Lightbulb, Monitor, Graduation Cap, Star } from "lucide-react";
+import { BookOpen, Users, Brain, Target, Lightbulb, Monitor, GraduationCap, Star } from "lucide-react";
 
 const FormationIAEducation = () => {
   return (
@@ -13,7 +12,7 @@ const FormationIAEducation = () => {
       
       <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="container mx-auto px-4 text-center">
-          <Graduation Cap className="h-16 w-16 text-white mx-auto mb-6" />
+          <GraduationCap className="h-16 w-16 text-white mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-white mb-6">Formation IA dans l'Éducation</h1>
           <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
             Révolutionnez l'apprentissage avec l'intelligence artificielle
@@ -196,7 +195,7 @@ const FormationIAEducation = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                <Graduation Cap className="mr-2 h-5 w-5" />
+                <GraduationCap className="mr-2 h-5 w-5" />
                 Formation EdTech IA
               </Button>
               <Button size="lg" variant="outline">
