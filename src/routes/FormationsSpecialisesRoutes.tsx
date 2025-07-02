@@ -24,6 +24,9 @@ import FormationBiotechAI from "@/pages/formations/FormationBiotechAI";
 import FormationAutomatisationRPA from "@/pages/formations/FormationAutomatisationRPA";
 import FormationDataSciencePro from "@/pages/formations/FormationDataSciencePro";
 import FormationMLOpsPro from "@/pages/formations/FormationMLOpsPro";
+import FormationRPAZapier from "@/pages/formations/FormationRPAZapier";
+import FormationIAEthique from "@/pages/formations/FormationIAEthique";
+import FormationIAEducation from "@/pages/formations/FormationIAEducation";
 
 const FormationsSpecialisesRoutes = () => {
   return (
@@ -52,6 +55,9 @@ const FormationsSpecialisesRoutes = () => {
       <Route path="/formation-automatisation-rpa" element={<FormationAutomatisationRPA />} />
       <Route path="/formation-data-science-pro" element={<FormationDataSciencePro />} />
       <Route path="/formation-mlops-pro" element={<FormationMLOpsPro />} />
+      <Route path="/formation-rpa-zapier" element={<FormationRPAZapier />} />
+      <Route path="/formation-ia-ethique" element={<FormationIAEthique />} />
+      <Route path="/formation-ia-education" element={<FormationIAEducation />} />
     </>
   );
 };
