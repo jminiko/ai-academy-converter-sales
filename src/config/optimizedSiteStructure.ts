@@ -4,121 +4,142 @@ export interface OptimizedSection {
   count: number;
   priority: 'Critical' | 'High' | 'Medium' | 'Low';
   pages: string[];
-  reduction: number;
+  expansion: number; // Changé de "reduction" à "expansion"
 }
 
 export const optimizedSiteStructure: OptimizedSection[] = [
   {
     category: "Pages Principales",
-    count: 10,
+    count: 12,
     priority: "Critical",
     pages: [
       "Accueil", "À propos", "Services", "Contact", "Blog", 
-      "FAQ", "Tarifs", "Partenaires", "Équipe", "Mentions légales"
+      "FAQ", "Tarifs", "Partenaires", "Équipe", "Mentions légales",
+      "Plan du site", "Politique de confidentialité"
     ],
-    reduction: 0
+    expansion: 2
   },
   {
     category: "Formations IA", 
-    count: 75,
+    count: 95,
     priority: "High",
     pages: [
-      "Formations de base (20)", "Formations avancées (30)", 
-      "Formations sectorielles (25)"
+      "Formations de base (25)", "Formations avancées (35)", 
+      "Formations sectorielles (35)"
     ],
-    reduction: -10
+    expansion: 20
   },
   {
     category: "Industries & Secteurs",
-    count: 55,
+    count: 68,
     priority: "High", 
     pages: [
-      "Secteurs principaux (25)", "Secteurs émergents (15)",
-      "Applications spécialisées (15)"
+      "Secteurs principaux (30)", "Secteurs émergents (20)",
+      "Applications spécialisées (18)"
     ],
-    reduction: -10
+    expansion: 13
   },
   {
     category: "Solutions & Services",
-    count: 50,
+    count: 62,
     priority: "High",
     pages: [
-      "Solutions métier (20)", "Solutions sectorielles (18)",
-      "Services d'accompagnement (12)"
+      "Solutions métier (25)", "Solutions sectorielles (22)",
+      "Services d'accompagnement (15)"
     ],
-    reduction: -10
+    expansion: 12
   },
   {
     category: "Outils & Technologies",
-    count: 45,
+    count: 58,
     priority: "Medium",
     pages: [
-      "Outils IA (20)", "Frameworks (12)", "Plateformes (13)"
+      "Outils IA (25)", "Frameworks (18)", "Plateformes (15)"
     ],
-    reduction: -10
+    expansion: 13
   },
   {
     category: "Guides & Ressources",
-    count: 40,
+    count: 52,
     priority: "Medium",
     pages: [
-      "Guides débutants (15)", "Guides avancés (15)", "Ressources (10)"
+      "Guides débutants (20)", "Guides avancés (20)", "Ressources (12)"
     ],
-    reduction: -10
+    expansion: 12
   },
   {
     category: "Certifications",
-    count: 35,
+    count: 48,
     priority: "Medium",
     pages: [
-      "Certifications professionnelles (18)", "Certifications techniques (17)"
+      "Certifications professionnelles (25)", "Certifications techniques (23)"
     ],
-    reduction: -5
+    expansion: 13
   },
   {
     category: "Conseils & Méthodes",
-    count: 30,
+    count: 38,
     priority: "Medium",
     pages: [
-      "Conseils stratégiques (12)", "Méthodes (18)"
+      "Conseils stratégiques (18)", "Méthodes (20)"
     ],
-    reduction: -5
+    expansion: 8
   },
   {
     category: "Actualités & Événements",
-    count: 25,
+    count: 32,
     priority: "Low",
     pages: [
-      "Actualités (12)", "Événements (13)"
+      "Actualités (16)", "Événements (16)"
     ],
-    reduction: -5
+    expansion: 7
   },
   {
     category: "Métiers & Carrières",
-    count: 20,
+    count: 28,
     priority: "Medium",
     pages: [
-      "Métiers IA (12)", "Carrières (8)"
+      "Métiers IA (16)", "Carrières (12)"
     ],
-    reduction: -5
+    expansion: 8
   },
   {
     category: "Réglementation & Éthique",
-    count: 12,
+    count: 18,
     priority: "Medium",
     pages: [
-      "RGPD & IA", "Éthique IA", "Conformité", "Audit", "IA responsable"
+      "RGPD & IA", "Éthique IA", "Conformité", "Audit", "IA responsable",
+      "Législation IA", "Standards ISO"
     ],
-    reduction: -3
+    expansion: 6
   },
   {
     category: "Pages Utilitaires", 
-    count: 18,
+    count: 24,
     priority: "Low",
     pages: [
-      "Plan du site", "Confidentialité", "CGV", "Accessibilité", "Support"
+      "Plan du site", "Confidentialité", "CGV", "Accessibilité", "Support",
+      "Contact technique", "Aide", "Documentation"
     ],
-    reduction: -2
+    expansion: 6
+  },
+  {
+    category: "Nouveaux Secteurs",
+    count: 25,
+    priority: "High",
+    pages: [
+      "IA Quantique (8)", "Biotechnologie IA (8)", "Web3 & IA (9)"
+    ],
+    expansion: 25
+  },
+  {
+    category: "Formations Spécialisées",
+    count: 30,
+    priority: "High",
+    pages: [
+      "Gaming IA (10)", "Chirurgie IA (10)", "Cybersécurité IA (10)"
+    ],
+    expansion: 30
   }
 ];
 
@@ -126,12 +147,12 @@ export const getTotalOptimizedPages = () => {
   return optimizedSiteStructure.reduce((total, section) => total + section.count, 0);
 };
 
-export const getTotalReduction = () => {
-  return optimizedSiteStructure.reduce((total, section) => total + Math.abs(section.reduction), 0);
+export const getTotalExpansion = () => {
+  return optimizedSiteStructure.reduce((total, section) => total + section.expansion, 0);
 };
 
 export const getOriginalTotal = () => {
-  return getTotalOptimizedPages() + getTotalReduction();
+  return getTotalOptimizedPages() - getTotalExpansion();
 };
 
 export const getSectionsByPriority = (priority: string) => {

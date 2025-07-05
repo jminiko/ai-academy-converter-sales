@@ -8,183 +8,206 @@ import { Button } from "@/components/ui/button";
 import { 
   Home, BookOpen, Factory, Target, Wrench, FileText, 
   Award, Lightbulb, Calendar, Users, Shield, Settings,
-  Brain, Code, Database, TrendingUp, Star, CheckCircle
+  Brain, Code, Database, TrendingUp, Star, CheckCircle,
+  Rocket, Plus, Zap
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const OptimizedSitemap = () => {
-  const totalTarget = 500;
-  const currentOptimized = 480; // Pages optimisées
-  const progressPercentage = (currentOptimized / totalTarget) * 100;
+  const targetGoal = 600;
+  const currentOptimized = 595; // Pages actuelles vers l'objectif 600
+  const progressPercentage = (currentOptimized / targetGoal) * 100;
 
   const optimizedStructure = [
     {
       category: "Pages Principales",
       icon: Home, 
       color: "blue",
-      count: 10,
+      count: 12,
       priority: "Critical",
       pages: [
         "Accueil", "À propos", "Services", "Contact", "Blog", 
-        "FAQ", "Tarifs", "Partenaires", "Équipe", "Mentions légales"
+        "FAQ", "Tarifs", "Partenaires", "Équipe", "Mentions légales",
+        "Plan du site", "Politique de confidentialité"
       ]
     },
     {
       category: "Formations IA",
       icon: BookOpen,
       color: "green", 
-      count: 75, // Réduit de 85 à 75
+      count: 95, // Étendu de 75 à 95
       priority: "High",
       pages: [
-        "Formations de base (20)", "Formations avancées (30)", 
-        "Formations sectorielles (25)"
+        "Formations de base (25)", "Formations avancées (35)", 
+        "Formations sectorielles (35)"
       ]
     },
     {
       category: "Industries & Secteurs", 
       icon: Factory,
       color: "purple",
-      count: 55, // Réduit de 65 à 55
+      count: 68, // Étendu de 55 à 68
       priority: "High",
       pages: [
-        "Secteurs principaux (25)", "Secteurs émergents (15)", 
-        "Applications spécialisées (15)"
+        "Secteurs principaux (30)", "Secteurs émergents (20)", 
+        "Applications spécialisées (18)"
       ]
     },
     {
       category: "Solutions & Services",
       icon: Target,
       color: "orange",
-      count: 50, // Réduit de 60 à 50  
+      count: 62, // Étendu de 50 à 62  
       priority: "High",
       pages: [
-        "Solutions métier (20)", "Solutions sectorielles (18)",
-        "Services d'accompagnement (12)"
+        "Solutions métier (25)", "Solutions sectorielles (22)",
+        "Services d'accompagnement (15)"
       ]
     },
     {
       category: "Outils & Technologies",
       icon: Wrench,
       color: "teal",
-      count: 45, // Réduit de 55 à 45
+      count: 58, // Étendu de 45 à 58
       priority: "Medium",
       pages: [
-        "Outils IA (20)", "Frameworks (12)", "Plateformes (13)"
+        "Outils IA (25)", "Frameworks (18)", "Plateformes (15)"
       ]
     },
     {
       category: "Guides & Ressources",
       icon: FileText,
       color: "amber",
-      count: 40, // Réduit de 50 à 40
+      count: 52, // Étendu de 40 à 52
       priority: "Medium", 
       pages: [
-        "Guides débutants (15)", "Guides avancés (15)", "Ressources (10)"
+        "Guides débutants (20)", "Guides avancés (20)", "Ressources (12)"
       ]
     },
     {
       category: "Certifications",
       icon: Award,
       color: "indigo",
-      count: 35, // Réduit de 40 à 35
+      count: 48, // Étendu de 35 à 48
       priority: "Medium",
       pages: [
-        "Certifications professionnelles (18)", "Certifications techniques (17)"
+        "Certifications professionnelles (25)", "Certifications techniques (23)"
       ]
     },
     {
       category: "Conseils & Méthodes",
       icon: Lightbulb,
       color: "pink",
-      count: 30, // Réduit de 35 à 30
+      count: 38, // Étendu de 30 à 38
       priority: "Medium",
       pages: [
-        "Conseils stratégiques (12)", "Méthodes (18)"
+        "Conseils stratégiques (18)", "Méthodes (20)"
       ]
     },
     {
       category: "Actualités & Événements",
       icon: Calendar,
       color: "cyan",
-      count: 25, // Réduit de 30 à 25
+      count: 32, // Étendu de 25 à 32
       priority: "Low",
       pages: [
-        "Actualités (12)", "Événements (13)"
+        "Actualités (16)", "Événements (16)"
       ]
     },
     {
       category: "Métiers & Carrières",
       icon: Users,
       color: "rose",
-      count: 20, // Réduit de 25 à 20
+      count: 28, // Étendu de 20 à 28
       priority: "Medium",
       pages: [
-        "Métiers IA (12)", "Carrières (8)"
+        "Métiers IA (16)", "Carrières (12)"
       ]
     },
     {
       category: "Réglementation & Éthique",
       icon: Shield,
       color: "emerald",
-      count: 12, // Réduit de 15 à 12
+      count: 18, // Étendu de 12 à 18
       priority: "Medium",
       pages: [
-        "RGPD & IA", "Éthique IA", "Conformité", "Audit", "IA responsable"
+        "RGPD & IA", "Éthique IA", "Conformité", "Audit", "IA responsable",
+        "Législation IA", "Standards ISO"
       ]
     },
     {
       category: "Pages Utilitaires",
       icon: Settings,
       color: "slate",
-      count: 18, // Réduit de 20 à 18
+      count: 24, // Étendu de 18 à 24
       priority: "Low",
       pages: [
-        "Plan du site", "Confidentialité", "CGV", "Accessibilité", "Support"
+        "Plan du site", "Confidentialité", "CGV", "Accessibilité", "Support",
+        "Contact technique", "Aide", "Documentation"
+      ]
+    },
+    {
+      category: "Nouveaux Secteurs",
+      icon: Rocket,
+      color: "violet",
+      count: 25, // Nouvelle catégorie
+      priority: "High",
+      pages: [
+        "IA Quantique (8)", "Biotechnologie IA (8)", "Web3 & IA (9)"
+      ]
+    },
+    {
+      category: "Formations Spécialisées",
+      icon: Brain,
+      color: "red",
+      count: 30, // Nouvelle catégorie
+      priority: "High",
+      pages: [
+        "Gaming IA (10)", "Chirurgie IA (10)", "Cybersécurité IA (10)"
       ]
     }
   ];
 
-  const reductionPlan = [
-    { action: "Consolidation formations redondantes", pages: -10 },
-    { action: "Fusion secteurs similaires", pages: -10 },
-    { action: "Optimisation solutions", pages: -10 },
-    { action: "Regroupement outils", pages: -10 },
-    { action: "Simplification guides", pages: -10 },
-    { action: "Optimisation certifications", pages: -5 },
-    { action: "Réduction actualités/événements", pages: -7 },
-    { action: "Streamlining général", pages: -2 }
+  const expansionPlan = [
+    { action: "Nouvelles formations spécialisées", pages: +30 },
+    { action: "Secteurs émergents (Quantique, Bio)", pages: +25 },
+    { action: "Extensions outils avancés", pages: +13 },
+    { action: "Ressources et guides étendus", pages: +12 },
+    { action: "Certifications supplémentaires", pages: +13 },
+    { action: "Solutions métiers avancées", pages: +12 },
+    { action: "Contenus réglementaires", pages: +6 },
+    { action: "Expansion générale", pages: +8 }
   ];
 
-  const totalReduction = reductionPlan.reduce((sum, item) => sum + Math.abs(item.pages), 0);
+  const totalExpansion = expansionPlan.reduce((sum, item) => sum + item.pages, 0);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <Header />
+    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
       
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600">
+      <section className="py-16 bg-gradient-to-r from-green-600 to-emerald-600">
         <div className="container mx-auto px-4 text-center">
-          <CheckCircle className="h-16 w-16 text-white mx-auto mb-6" />
-          <h1 className="text-4xl font-bold text-white mb-6">📋 Structure Optimisée - 500 Pages Max</h1>
-          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Restructuration intelligente pour respecter l'objectif de 500 pages 
-            tout en conservant la qualité et la pertinence du contenu.
+          <Rocket className="h-16 w-16 text-white mx-auto mb-6" />
+          <h1 className="text-4xl font-bold text-white mb-6">🚀 Objectif 600 Pages - Expansion Optimisée</h1>
+          <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
+            Extension stratégique pour atteindre 600 pages de contenu expert 
+            avec de nouveaux secteurs et formations spécialisées.
           </p>
           
           <div className="bg-white/20 rounded-lg p-6 max-w-md mx-auto mb-8">
-            <div className="text-3xl font-bold text-white mb-2">{currentOptimized}/{totalTarget}</div>
+            <div className="text-3xl font-bold text-white mb-2">{currentOptimized}/{targetGoal}</div>
             <Progress value={progressPercentage} className="w-full h-4 mb-2" />
-            <div className="text-white/80">✅ {progressPercentage.toFixed(1)}% de l'objectif</div>
+            <div className="text-white/80">🎯 {progressPercentage.toFixed(1)}% vers l'objectif</div>
           </div>
 
           <div className="flex flex-wrap gap-4 justify-center">
             <Badge variant="secondary" className="bg-green-500/30 text-white px-4 py-2">
-              ✂️ {totalReduction} pages réduites
+              ➕ +{totalExpansion} pages ajoutées
             </Badge>
             <Badge variant="secondary" className="bg-blue-500/30 text-white px-4 py-2">
-              🎯 Objectif respecté
+              🎯 Objectif 600 pages
             </Badge>
             <Badge variant="secondary" className="bg-purple-500/30 text-white px-4 py-2">
-              📊 Structure optimisée
+              🆕 Nouveaux secteurs
             </Badge>
           </div>
         </div>
@@ -192,24 +215,24 @@ const OptimizedSitemap = () => {
 
       <section className="py-16">
         <div className="container mx-auto px-4">
-          {/* Plan de Réduction */}
+          {/* Plan d'Expansion */}
           <div className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Plan d'Optimisation</h2>
+            <h2 className="text-3xl font-bold text-center mb-8">Plan d'Expansion vers 600 Pages</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-              {reductionPlan.map((item, index) => (
+              {expansionPlan.map((item, index) => (
                 <Card key={index} className="text-center p-4">
                   <h3 className="font-semibold text-sm mb-2">{item.action}</h3>
-                  <div className={`text-2xl font-bold ${item.pages < 0 ? 'text-red-600' : 'text-green-600'}`}>
-                    {item.pages}
+                  <div className="text-2xl font-bold text-green-600">
+                    +{item.pages}
                   </div>
                 </Card>
               ))}
             </div>
           </div>
 
-          {/* Structure Optimisée */}
+          {/* Structure Étendue */}
           <div className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-12">Structure Optimisée du Site</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Structure Étendue du Site (600 Pages)</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {optimizedStructure.map((section, index) => {
                 const IconComponent = section.icon;
@@ -254,46 +277,44 @@ const OptimizedSitemap = () => {
             </div>
           </div>
 
-          {/* Résumé de l'optimisation */}
+          {/* Résumé de l'expansion */}
           <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-8 text-center">
-            <h2 className="text-2xl font-bold mb-4">✅ Optimisation Réussie</h2>
+            <h2 className="text-2xl font-bold mb-4">🎯 Objectif 600 Pages en Vue</h2>
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div>
-                <div className="text-3xl font-bold text-red-600 mb-2">554</div>
-                <div className="text-gray-600">Pages initiales</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">554</div>
+                <div className="text-gray-600">Pages actuelles</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-orange-600 mb-2">-54</div>
-                <div className="text-gray-600">Pages optimisées</div>
+                <div className="text-3xl font-bold text-green-600 mb-2">+46</div>
+                <div className="text-gray-600">Pages à ajouter</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-green-600 mb-2">500</div>
-                <div className="text-gray-600">Objectif atteint</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">600</div>
+                <div className="text-gray-600">Objectif final</div>
               </div>
             </div>
             
             <p className="text-lg text-gray-700 mb-6">
-              Structure optimisée qui maintient la qualité tout en respectant 
-              la limite de 500 pages pour une meilleure performance et maintenance.
+              Extension stratégique pour créer la plateforme IA la plus complète 
+              avec 600 pages de contenu expert, incluant de nouveaux secteurs émergents.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/sitemap">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                  <FileText className="mr-2 h-5 w-5" />
-                  Voir le Plan du Site
+                <Button size="lg" className="bg-green-600 hover:bg-green-700">
+                  <Plus className="mr-2 h-5 w-5" />
+                  Voir le Plan d'Extension
                 </Button>
               </Link>
               <Button size="lg" variant="outline">
                 <Star className="mr-2 h-5 w-5" />
-                Structure Approuvée
+                Développer vers 600 Pages
               </Button>
             </div>
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };
