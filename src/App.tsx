@@ -9,6 +9,7 @@ import FormationsRoutes from "./routes/FormationsRoutes";
 import FormationsAvanceesRoutes from "./routes/FormationsAvanceesRoutes";
 import FormationsSpecialisesRoutes from "./routes/FormationsSpecialisesRoutes";
 import SecteursRoutes from "./routes/SecteursRoutes";
+import OptimizedRoutes from "./routes/OptimizedRoutes";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
           {FormationsAvanceesRoutes()}
           {FormationsSpecialisesRoutes()}
           {SecteursRoutes()}
+          {OptimizedRoutes()}
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

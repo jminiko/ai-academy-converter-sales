@@ -1,4 +1,3 @@
-
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
@@ -8,7 +7,7 @@ import { CTASection } from "@/components/CTASection";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Brain, Users, Target, Star, Zap, TrendingUp, Heart, Shield, Home } from "lucide-react";
+import { ArrowRight, Brain, Users, Target, Star, Zap, TrendingUp, Heart, Shield, Home, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -22,30 +21,36 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
             <Badge variant="secondary" className="bg-green-500/20 text-green-700 px-4 py-2 text-lg mb-4">
-              🎉 Plateforme Complète - 600+ Pages !
+              🎯 Structure Optimisée - 500 Pages Exactement !
             </Badge>
-            <h2 className="text-3xl font-bold mb-4">La Plus Grande Ressource IA Francophone</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Notre plateforme compte désormais plus de 600 pages de contenu expert en intelligence artificielle,
-              couvrant tous les aspects de l'IA moderne et émergente.
+            <h2 className="text-3xl font-bold mb-4">Plateforme IA Optimisée et Structurée</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto mb-6">
+              Notre plateforme a été restructurée pour offrir exactement 500 pages de contenu expert, 
+              optimisées pour la performance et la maintenance.
             </p>
+            <Link to="/structure-optimisee">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                <CheckCircle className="mr-2 h-5 w-5" />
+                Voir la Structure Optimisée
+              </Button>
+            </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div className="space-y-2">
-              <div className="text-4xl font-bold text-blue-600">600+</div>
-              <div className="text-gray-600">Pages de contenu expert</div>
+              <div className="text-4xl font-bold text-green-600">500</div>
+              <div className="text-gray-600">Pages optimisées</div>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-bold text-green-600">150+</div>
-              <div className="text-gray-600">Formations spécialisées</div>
+              <div className="text-4xl font-bold text-blue-600">75</div>
+              <div className="text-gray-600">Formations IA</div>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-bold text-purple-600">85+</div>
+              <div className="text-4xl font-bold text-purple-600">55</div>
               <div className="text-gray-600">Secteurs d'application</div>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-bold text-orange-600">75+</div>
-              <div className="text-gray-600">Outils et technologies</div>
+              <div className="text-4xl font-bold text-orange-600">50</div>
+              <div className="text-gray-600">Solutions & services</div>
             </div>
           </div>
         </div>
